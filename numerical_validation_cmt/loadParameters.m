@@ -8,7 +8,7 @@ Parameters.Lz = 0.598;
 % Parameters.Lz = 1;
 % % Parameters.Nx = 20; % discretized
 % % Parameters.Ny = 30; % Ny
-Parameters.Nz = 500; % Nz
+Parameters.Nz = 50; % Nz
 
 % Parameters.P = 200; % modes for the cavity
 Parameters.Q = 30; % radiation modes for the open space

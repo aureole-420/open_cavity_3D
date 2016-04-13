@@ -13,7 +13,7 @@ rho0 = Parameters.rho0 ;
 c0 = Parameters.c0 ;
 
 x0 = 0.1; y0=0.1; z0= -Lz+0.1;
-xp = 0.2; yp = 0.3; zp = -Lz +0.3;
+xp = 0.2; yp = 0.3; zp = -Lz +0.4;
 
 f = 500;
 k = 2*pi*f/340;

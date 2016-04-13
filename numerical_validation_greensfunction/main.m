@@ -35,7 +35,7 @@ for q = 1:Q
         tempP = tempP -1i*k*((2-KronDelta(0,w))/Lz)/(ku^2+kv^2+kw^2 -k^2);
     end
     P(q,q) = tempP;
-    S(q,q) = tempS;
+    S(q) = tempS;
 end
 V = (P+Zmat)\S;
 
@@ -55,5 +55,5 @@ for q = 1:Q
     pr = pr +temp1 +temp2;
 end
 abs(pr)
-
+VV = abs(V);
 
