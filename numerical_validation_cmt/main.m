@@ -1,4 +1,4 @@
-% task 1: plot the frequency 
+% task 1: plot the convergence (amp & pha) vs num of modes 
 
 mappingmodes2D;
 clear;close all;clc;
