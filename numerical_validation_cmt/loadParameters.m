@@ -22,3 +22,4 @@ Parameters.k = 10*2*pi/340; % frequency
 
 Parameters.rho0 = 1.225;
 Parameters.c0 = 340;
+Parameters.kdir = ['zmat/k',num2str(Parameters.k)];
