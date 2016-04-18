@@ -1,0 +1,1514 @@
+% Model:              opencavity3D.mph
+% Version:            COMSOL 5.2.0.166
+% Date:               Apr 18 2016, 17:33
+% Dimension:          0
+% Nodes:              753
+% Expressions:        753
+% Description:        Frequency, , 
+% Length unit:        m
+% x
+1.3
+% y
+1.4
+% z
+0.902
+% acpr.freq (Hz) @ freq=2
+2
+% real(acpr.p_t) (Pa) @ freq=2
+-1.8211752507661007E-5
+% imag(acpr.p_t) (Pa) @ freq=2
+6.70486649945178E-5
+% acpr.freq (Hz) @ freq=4
+4
+% real(acpr.p_t) (Pa) @ freq=4
+-1.2513272712548587E-5
+% imag(acpr.p_t) (Pa) @ freq=4
+9.789347862962529E-5
+% acpr.freq (Hz) @ freq=6
+6
+% real(acpr.p_t) (Pa) @ freq=6
+5.649478568546822E-6
+% imag(acpr.p_t) (Pa) @ freq=6
+1.1187223568743958E-4
+% acpr.freq (Hz) @ freq=8
+8
+% real(acpr.p_t) (Pa) @ freq=8
+2.1978222178673275E-5
+% imag(acpr.p_t) (Pa) @ freq=8
+1.1352100090896495E-4
+% acpr.freq (Hz) @ freq=10
+10
+% real(acpr.p_t) (Pa) @ freq=10
+3.380377974264483E-5
+% imag(acpr.p_t) (Pa) @ freq=10
+1.1089295589418733E-4
+% acpr.freq (Hz) @ freq=12
+12
+% real(acpr.p_t) (Pa) @ freq=12
+4.289648861154083E-5
+% imag(acpr.p_t) (Pa) @ freq=12
+1.0746846717322225E-4
+% acpr.freq (Hz) @ freq=14
+14
+% real(acpr.p_t) (Pa) @ freq=14
+5.073220727701302E-5
+% imag(acpr.p_t) (Pa) @ freq=14
+1.0400794932607929E-4
+% acpr.freq (Hz) @ freq=16
+16
+% real(acpr.p_t) (Pa) @ freq=16
+5.8013692829052547E-5
+% imag(acpr.p_t) (Pa) @ freq=16
+1.0050028817490228E-4
+% acpr.freq (Hz) @ freq=18
+18
+% real(acpr.p_t) (Pa) @ freq=18
+6.501950854033377E-5
+% imag(acpr.p_t) (Pa) @ freq=18
+9.682143383563034E-5
+% acpr.freq (Hz) @ freq=20
+20
+% real(acpr.p_t) (Pa) @ freq=20
+7.18473733805714E-5
+% imag(acpr.p_t) (Pa) @ freq=20
+9.287520623492155E-5
+% acpr.freq (Hz) @ freq=22
+22
+% real(acpr.p_t) (Pa) @ freq=22
+7.85244606168581E-5
+% imag(acpr.p_t) (Pa) @ freq=22
+8.860237707078392E-5
+% acpr.freq (Hz) @ freq=24
+24
+% real(acpr.p_t) (Pa) @ freq=24
+8.505132522691221E-5
+% imag(acpr.p_t) (Pa) @ freq=24
+8.39681784365651E-5
+% acpr.freq (Hz) @ freq=26
+26
+% real(acpr.p_t) (Pa) @ freq=26
+9.14184855141714E-5
+% imag(acpr.p_t) (Pa) @ freq=26
+7.895160412480733E-5
+% acpr.freq (Hz) @ freq=28
+28
+% real(acpr.p_t) (Pa) @ freq=28
+9.761251679332943E-5
+% imag(acpr.p_t) (Pa) @ freq=28
+7.353888208757625E-5
+% acpr.freq (Hz) @ freq=30
+30
+% real(acpr.p_t) (Pa) @ freq=30
+8.40001136450539E-5
+% imag(acpr.p_t) (Pa) @ freq=30
+7.935680615478684E-5
+% acpr.freq (Hz) @ freq=32
+32
+% real(acpr.p_t) (Pa) @ freq=32
+9.353137223554001E-5
+% imag(acpr.p_t) (Pa) @ freq=32
+7.360359288282421E-5
+% acpr.freq (Hz) @ freq=34
+34
+% real(acpr.p_t) (Pa) @ freq=34
+1.0230009761151899E-4
+% imag(acpr.p_t) (Pa) @ freq=34
+6.691775049145981E-5
+% acpr.freq (Hz) @ freq=36
+36
+% real(acpr.p_t) (Pa) @ freq=36
+1.1031550297971093E-4
+% imag(acpr.p_t) (Pa) @ freq=36
+5.9463564688465384E-5
+% acpr.freq (Hz) @ freq=38
+38
+% real(acpr.p_t) (Pa) @ freq=38
+1.1761067033551737E-4
+% imag(acpr.p_t) (Pa) @ freq=38
+5.1364050439909104E-5
+% acpr.freq (Hz) @ freq=40
+40
+% real(acpr.p_t) (Pa) @ freq=40
+1.24228150283145E-4
+% imag(acpr.p_t) (Pa) @ freq=40
+4.270465963481437E-5
+% acpr.freq (Hz) @ freq=42
+42
+% real(acpr.p_t) (Pa) @ freq=42
+1.302101399637172E-4
+% imag(acpr.p_t) (Pa) @ freq=42
+3.353935826698768E-5
+% acpr.freq (Hz) @ freq=44
+44
+% real(acpr.p_t) (Pa) @ freq=44
+1.355924983677653E-4
+% imag(acpr.p_t) (Pa) @ freq=44
+2.3897130267199695E-5
+% acpr.freq (Hz) @ freq=46
+46
+% real(acpr.p_t) (Pa) @ freq=46
+1.404015462983673E-4
+% imag(acpr.p_t) (Pa) @ freq=46
+1.3787810670711866E-5
+% acpr.freq (Hz) @ freq=48
+48
+% real(acpr.p_t) (Pa) @ freq=48
+1.4465264762256034E-4
+% imag(acpr.p_t) (Pa) @ freq=48
+3.206778953566387E-6
+% acpr.freq (Hz) @ freq=50
+50
+% real(acpr.p_t) (Pa) @ freq=50
+1.4834976873088465E-4
+% imag(acpr.p_t) (Pa) @ freq=50
+-7.861569905643668E-6
+% acpr.freq (Hz) @ freq=52
+52
+% real(acpr.p_t) (Pa) @ freq=52
+1.5148543599876246E-4
+% imag(acpr.p_t) (Pa) @ freq=52
+-1.9441462310839177E-5
+% acpr.freq (Hz) @ freq=54
+54
+% real(acpr.p_t) (Pa) @ freq=54
+1.5404069632575434E-4
+% imag(acpr.p_t) (Pa) @ freq=54
+-3.156430296065132E-5
+% acpr.freq (Hz) @ freq=56
+56
+% real(acpr.p_t) (Pa) @ freq=56
+1.559848152326478E-4
+% imag(acpr.p_t) (Pa) @ freq=56
+-4.4267958005855256E-5
+% acpr.freq (Hz) @ freq=58
+58
+% real(acpr.p_t) (Pa) @ freq=58
+1.572745223945882E-4
+% imag(acpr.p_t) (Pa) @ freq=58
+-5.759659473510539E-5
+% acpr.freq (Hz) @ freq=60
+60
+% real(acpr.p_t) (Pa) @ freq=60
+1.5785264428895424E-4
+% imag(acpr.p_t) (Pa) @ freq=60
+-7.160093928737738E-5
+% acpr.freq (Hz) @ freq=62
+62
+% real(acpr.p_t) (Pa) @ freq=62
+1.5764595568841354E-4
+% imag(acpr.p_t) (Pa) @ freq=62
+-8.633883937940478E-5
+% acpr.freq (Hz) @ freq=64
+64
+% real(acpr.p_t) (Pa) @ freq=64
+1.565620401961101E-4
+% imag(acpr.p_t) (Pa) @ freq=64
+-1.0187603088738228E-4
+% acpr.freq (Hz) @ freq=66
+66
+% real(acpr.p_t) (Pa) @ freq=66
+1.5448487416245453E-4
+% imag(acpr.p_t) (Pa) @ freq=66
+-1.1828699820117498E-4
+% acpr.freq (Hz) @ freq=68
+68
+% real(acpr.p_t) (Pa) @ freq=68
+1.5126873189354417E-4
+% imag(acpr.p_t) (Pa) @ freq=68
+-1.3565577834482115E-4
+% acpr.freq (Hz) @ freq=70
+70
+% real(acpr.p_t) (Pa) @ freq=70
+1.467298406442747E-4
+% imag(acpr.p_t) (Pa) @ freq=70
+-1.5407646996282E-4
+% acpr.freq (Hz) @ freq=72
+72
+% real(acpr.p_t) (Pa) @ freq=72
+1.406349720650061E-4
+% imag(acpr.p_t) (Pa) @ freq=72
+-1.7365303763813803E-4
+% acpr.freq (Hz) @ freq=74
+74
+% real(acpr.p_t) (Pa) @ freq=74
+1.3268581571806843E-4
+% imag(acpr.p_t) (Pa) @ freq=74
+-1.9449768977967217E-4
+% acpr.freq (Hz) @ freq=76
+76
+% real(acpr.p_t) (Pa) @ freq=76
+1.224975080185197E-4
+% imag(acpr.p_t) (Pa) @ freq=76
+-2.1672654517791395E-4
+% acpr.freq (Hz) @ freq=78
+78
+% real(acpr.p_t) (Pa) @ freq=78
+1.0956906045345276E-4
+% imag(acpr.p_t) (Pa) @ freq=78
+-2.4045028925748598E-4
+% acpr.freq (Hz) @ freq=80
+80
+% real(acpr.p_t) (Pa) @ freq=80
+9.324266071832391E-5
+% imag(acpr.p_t) (Pa) @ freq=80
+-2.6575568983772466E-4
+% acpr.freq (Hz) @ freq=82
+82
+% real(acpr.p_t) (Pa) @ freq=82
+7.26480738004303E-5
+% imag(acpr.p_t) (Pa) @ freq=82
+-2.92670527132524E-4
+% acpr.freq (Hz) @ freq=84
+84
+% real(acpr.p_t) (Pa) @ freq=84
+4.662824284499417E-5
+% imag(acpr.p_t) (Pa) @ freq=84
+-3.210985043073801E-4
+% acpr.freq (Hz) @ freq=86
+86
+% real(acpr.p_t) (Pa) @ freq=86
+1.3644442661853367E-5
+% imag(acpr.p_t) (Pa) @ freq=86
+-3.5070002970834176E-4
+% acpr.freq (Hz) @ freq=88
+88
+% real(acpr.p_t) (Pa) @ freq=88
+-2.833128313902406E-5
+% imag(acpr.p_t) (Pa) @ freq=88
+-3.8067642689575994E-4
+% acpr.freq (Hz) @ freq=90
+90
+% real(acpr.p_t) (Pa) @ freq=90
+-8.190022076627123E-5
+% imag(acpr.p_t) (Pa) @ freq=90
+-4.093864616849731E-4
+% acpr.freq (Hz) @ freq=92
+92
+% real(acpr.p_t) (Pa) @ freq=92
+-1.5018634501391359E-4
+% imag(acpr.p_t) (Pa) @ freq=92
+-4.3369004182328494E-4
+% acpr.freq (Hz) @ freq=94
+94
+% real(acpr.p_t) (Pa) @ freq=94
+-2.36364421767731E-4
+% imag(acpr.p_t) (Pa) @ freq=94
+-4.479151818582645E-4
+% acpr.freq (Hz) @ freq=96
+96
+% real(acpr.p_t) (Pa) @ freq=96
+-3.421459327421496E-4
+% imag(acpr.p_t) (Pa) @ freq=96
+-4.4253855583910036E-4
+% acpr.freq (Hz) @ freq=98
+98
+% real(acpr.p_t) (Pa) @ freq=98
+-4.6424565096825376E-4
+% imag(acpr.p_t) (Pa) @ freq=98
+-4.0347282316330666E-4
+% acpr.freq (Hz) @ freq=100
+100
+% real(acpr.p_t) (Pa) @ freq=100
+-5.885249728776786E-4
+% imag(acpr.p_t) (Pa) @ freq=100
+-3.1475536105916304E-4
+% acpr.freq (Hz) @ freq=102
+102
+% real(acpr.p_t) (Pa) @ freq=102
+-6.858211183281407E-4
+% imag(acpr.p_t) (Pa) @ freq=102
+-1.6886846860378834E-4
+% acpr.freq (Hz) @ freq=104
+104
+% real(acpr.p_t) (Pa) @ freq=104
+-7.205315201138746E-4
+% imag(acpr.p_t) (Pa) @ freq=104
+1.7644822350309033E-5
+% acpr.freq (Hz) @ freq=106
+106
+% real(acpr.p_t) (Pa) @ freq=106
+-6.758245623384652E-4
+% imag(acpr.p_t) (Pa) @ freq=106
+2.0249760435697188E-4
+% acpr.freq (Hz) @ freq=108
+108
+% real(acpr.p_t) (Pa) @ freq=108
+-5.697782305356906E-4
+% imag(acpr.p_t) (Pa) @ freq=108
+3.435907627781579E-4
+% acpr.freq (Hz) @ freq=110
+110
+% real(acpr.p_t) (Pa) @ freq=110
+-4.39179687629733E-4
+% imag(acpr.p_t) (Pa) @ freq=110
+4.252118565520099E-4
+% acpr.freq (Hz) @ freq=112
+112
+% real(acpr.p_t) (Pa) @ freq=112
+-3.136949288744807E-4
+% imag(acpr.p_t) (Pa) @ freq=112
+4.562577976693916E-4
+% acpr.freq (Hz) @ freq=114
+114
+% real(acpr.p_t) (Pa) @ freq=114
+-2.0713468116965458E-4
+% imag(acpr.p_t) (Pa) @ freq=114
+4.539233206659742E-4
+% acpr.freq (Hz) @ freq=116
+116
+% real(acpr.p_t) (Pa) @ freq=116
+-1.2206718527380003E-4
+% imag(acpr.p_t) (Pa) @ freq=116
+4.329868584908706E-4
+% acpr.freq (Hz) @ freq=118
+118
+% real(acpr.p_t) (Pa) @ freq=118
+-5.6081028123517E-5
+% imag(acpr.p_t) (Pa) @ freq=118
+4.0319293375503854E-4
+% acpr.freq (Hz) @ freq=120
+120
+% real(acpr.p_t) (Pa) @ freq=120
+-5.475075698585612E-6
+% imag(acpr.p_t) (Pa) @ freq=120
+3.701731568255262E-4
+% acpr.freq (Hz) @ freq=122
+122
+% real(acpr.p_t) (Pa) @ freq=122
+3.3223864672667665E-5
+% imag(acpr.p_t) (Pa) @ freq=122
+3.369231854295664E-4
+% acpr.freq (Hz) @ freq=124
+124
+% real(acpr.p_t) (Pa) @ freq=124
+6.283339915363643E-5
+% imag(acpr.p_t) (Pa) @ freq=124
+3.049189475293656E-4
+% acpr.freq (Hz) @ freq=126
+126
+% real(acpr.p_t) (Pa) @ freq=126
+8.550981174239232E-5
+% imag(acpr.p_t) (Pa) @ freq=126
+2.7480771786108575E-4
+% acpr.freq (Hz) @ freq=128
+128
+% real(acpr.p_t) (Pa) @ freq=128
+1.028653822828646E-4
+% imag(acpr.p_t) (Pa) @ freq=128
+2.4680210779382715E-4
+% acpr.freq (Hz) @ freq=130
+130
+% real(acpr.p_t) (Pa) @ freq=130
+1.1609780096505251E-4
+% imag(acpr.p_t) (Pa) @ freq=130
+2.2089608358889597E-4
+% acpr.freq (Hz) @ freq=132
+132
+% real(acpr.p_t) (Pa) @ freq=132
+1.2609864107506686E-4
+% imag(acpr.p_t) (Pa) @ freq=132
+1.9698084097208288E-4
+% acpr.freq (Hz) @ freq=134
+134
+% real(acpr.p_t) (Pa) @ freq=134
+1.335360414306037E-4
+% imag(acpr.p_t) (Pa) @ freq=134
+1.749058443281604E-4
+% acpr.freq (Hz) @ freq=136
+136
+% real(acpr.p_t) (Pa) @ freq=136
+1.3891528313416104E-4
+% imag(acpr.p_t) (Pa) @ freq=136
+1.545102061805872E-4
+% acpr.freq (Hz) @ freq=138
+138
+% real(acpr.p_t) (Pa) @ freq=138
+1.4262247065510012E-4
+% imag(acpr.p_t) (Pa) @ freq=138
+1.3563813843048834E-4
+% acpr.freq (Hz) @ freq=140
+140
+% real(acpr.p_t) (Pa) @ freq=140
+1.449558991658342E-4
+% imag(acpr.p_t) (Pa) @ freq=140
+1.1814591931421675E-4
+% acpr.freq (Hz) @ freq=142
+142
+% real(acpr.p_t) (Pa) @ freq=142
+1.4614862687468625E-4
+% imag(acpr.p_t) (Pa) @ freq=142
+1.0190440700341332E-4
+% acpr.freq (Hz) @ freq=144
+144
+% real(acpr.p_t) (Pa) @ freq=144
+1.4638480849838917E-4
+% imag(acpr.p_t) (Pa) @ freq=144
+8.67992814982199E-5
+% acpr.freq (Hz) @ freq=146
+146
+% real(acpr.p_t) (Pa) @ freq=146
+1.4581160193700366E-4
+% imag(acpr.p_t) (Pa) @ freq=146
+7.273019189537053E-5
+% acpr.freq (Hz) @ freq=148
+148
+% real(acpr.p_t) (Pa) @ freq=148
+1.4454792054970265E-4
+% imag(acpr.p_t) (Pa) @ freq=148
+5.960943838436303E-5
+% acpr.freq (Hz) @ freq=150
+150
+% real(acpr.p_t) (Pa) @ freq=150
+1.4269092305787612E-4
+% imag(acpr.p_t) (Pa) @ freq=150
+4.736051890799697E-5
+% acpr.freq (Hz) @ freq=152
+152
+% real(acpr.p_t) (Pa) @ freq=152
+1.4032086823374907E-4
+% imag(acpr.p_t) (Pa) @ freq=152
+3.5916706816428865E-5
+% acpr.freq (Hz) @ freq=154
+154
+% real(acpr.p_t) (Pa) @ freq=154
+1.3750477772169509E-4
+% imag(acpr.p_t) (Pa) @ freq=154
+2.5219736946811203E-5
+% acpr.freq (Hz) @ freq=156
+156
+% real(acpr.p_t) (Pa) @ freq=156
+1.3429922258537612E-4
+% imag(acpr.p_t) (Pa) @ freq=156
+1.5218629929097805E-5
+% acpr.freq (Hz) @ freq=158
+158
+% real(acpr.p_t) (Pa) @ freq=158
+1.3075245998800261E-4
+% imag(acpr.p_t) (Pa) @ freq=158
+5.868659704494521E-6
+% acpr.freq (Hz) @ freq=160
+160
+% real(acpr.p_t) (Pa) @ freq=160
+1.2690608376966897E-4
+% imag(acpr.p_t) (Pa) @ freq=160
+-2.8695429971520384E-6
+% acpr.freq (Hz) @ freq=162
+162
+% real(acpr.p_t) (Pa) @ freq=162
+1.2279630837091736E-4
+% imag(acpr.p_t) (Pa) @ freq=162
+-1.1030763856390139E-5
+% acpr.freq (Hz) @ freq=164
+164
+% real(acpr.p_t) (Pa) @ freq=164
+1.1845497396094152E-4
+% imag(acpr.p_t) (Pa) @ freq=164
+-1.8645869193029138E-5
+% acpr.freq (Hz) @ freq=166
+166
+% real(acpr.p_t) (Pa) @ freq=166
+1.1391033792861806E-4
+% imag(acpr.p_t) (Pa) @ freq=166
+-2.574237541547166E-5
+% acpr.freq (Hz) @ freq=168
+168
+% real(acpr.p_t) (Pa) @ freq=168
+1.0918770145048652E-4
+% imag(acpr.p_t) (Pa) @ freq=168
+-3.2344936824885774E-5
+% acpr.freq (Hz) @ freq=170
+170
+% real(acpr.p_t) (Pa) @ freq=170
+1.0430990784085443E-4
+% imag(acpr.p_t) (Pa) @ freq=170
+-3.847576349722577E-5
+% acpr.freq (Hz) @ freq=172
+172
+% real(acpr.p_t) (Pa) @ freq=172
+9.929774054818832E-5
+% imag(acpr.p_t) (Pa) @ freq=172
+-4.415497948424463E-5
+% acpr.freq (Hz) @ freq=174
+174
+% real(acpr.p_t) (Pa) @ freq=174
+9.417024210082383E-5
+% imag(acpr.p_t) (Pa) @ freq=174
+-4.940093016501012E-5
+% acpr.freq (Hz) @ freq=176
+176
+% real(acpr.p_t) (Pa) @ freq=176
+8.894497039661122E-5
+% imag(acpr.p_t) (Pa) @ freq=176
+-5.4230446305522454E-5
+% acpr.freq (Hz) @ freq=178
+178
+% real(acpr.p_t) (Pa) @ freq=178
+8.363820502958827E-5
+% imag(acpr.p_t) (Pa) @ freq=178
+-5.865907126681753E-5
+% acpr.freq (Hz) @ freq=180
+180
+% real(acpr.p_t) (Pa) @ freq=180
+7.826511353251656E-5
+% imag(acpr.p_t) (Pa) @ freq=180
+-6.270125683995605E-5
+% acpr.freq (Hz) @ freq=182
+182
+% real(acpr.p_t) (Pa) @ freq=182
+7.283988525634723E-5
+% imag(acpr.p_t) (Pa) @ freq=182
+-6.637053236734723E-5
+% acpr.freq (Hz) @ freq=184
+184
+% real(acpr.p_t) (Pa) @ freq=184
+6.737583893883866E-5
+% imag(acpr.p_t) (Pa) @ freq=184
+-6.967965111753346E-5
+% acpr.freq (Hz) @ freq=186
+186
+% real(acpr.p_t) (Pa) @ freq=186
+6.188550871161674E-5
+% imag(acpr.p_t) (Pa) @ freq=186
+-7.264071729742156E-5
+% acpr.freq (Hz) @ freq=188
+188
+% real(acpr.p_t) (Pa) @ freq=188
+5.638071226720245E-5
+% imag(acpr.p_t) (Pa) @ freq=188
+-7.526529659532881E-5
+% acpr.freq (Hz) @ freq=190
+190
+% real(acpr.p_t) (Pa) @ freq=190
+5.0872604087574285E-5
+% imag(acpr.p_t) (Pa) @ freq=190
+-7.756451273538977E-5
+% acpr.freq (Hz) @ freq=192
+192
+% real(acpr.p_t) (Pa) @ freq=192
+4.5371715972654715E-5
+% imag(acpr.p_t) (Pa) @ freq=192
+-7.95491321755884E-5
+% acpr.freq (Hz) @ freq=194
+194
+% real(acpr.p_t) (Pa) @ freq=194
+3.9887986562344886E-5
+% imag(acpr.p_t) (Pa) @ freq=194
+-8.122963878697663E-5
+% acpr.freq (Hz) @ freq=196
+196
+% real(acpr.p_t) (Pa) @ freq=196
+3.443078108934323E-5
+% imag(acpr.p_t) (Pa) @ freq=196
+-8.261630010116969E-5
+% acpr.freq (Hz) @ freq=198
+198
+% real(acpr.p_t) (Pa) @ freq=198
+2.900890220850151E-5
+% imag(acpr.p_t) (Pa) @ freq=198
+-8.371922649907978E-5
+% acpr.freq (Hz) @ freq=200
+200
+% real(acpr.p_t) (Pa) @ freq=200
+2.363059240261986E-5
+% imag(acpr.p_t) (Pa) @ freq=200
+-8.454842452976348E-5
+% acpr.freq (Hz) @ freq=202
+202
+% real(acpr.p_t) (Pa) @ freq=202
+1.8303528148016848E-5
+% imag(acpr.p_t) (Pa) @ freq=202
+-8.511384538880075E-5
+% acpr.freq (Hz) @ freq=204
+204
+% real(acpr.p_t) (Pa) @ freq=204
+1.3034805721228815E-5
+% imag(acpr.p_t) (Pa) @ freq=204
+-8.542542944637328E-5
+% acpr.freq (Hz) @ freq=206
+206
+% real(acpr.p_t) (Pa) @ freq=206
+7.830918226570889E-6
+% imag(acpr.p_t) (Pa) @ freq=206
+-8.549314759235853E-5
+% acpr.freq (Hz) @ freq=208
+208
+% real(acpr.p_t) (Pa) @ freq=208
+2.6977231084492205E-6
+% imag(acpr.p_t) (Pa) @ freq=208
+-8.532704005611282E-5
+% acpr.freq (Hz) @ freq=210
+210
+% real(acpr.p_t) (Pa) @ freq=210
+-2.3596009342528754E-6
+% imag(acpr.p_t) (Pa) @ freq=210
+-8.493725325872763E-5
+% acpr.freq (Hz) @ freq=212
+212
+% real(acpr.p_t) (Pa) @ freq=212
+-7.33660911063004E-6
+% imag(acpr.p_t) (Pa) @ freq=212
+-8.43340751626351E-5
+% acpr.freq (Hz) @ freq=214
+214
+% real(acpr.p_t) (Pa) @ freq=214
+-1.2229659725903628E-5
+% imag(acpr.p_t) (Pa) @ freq=214
+-8.35279694933704E-5
+% acpr.freq (Hz) @ freq=216
+216
+% real(acpr.p_t) (Pa) @ freq=216
+-1.7035999917957355E-5
+% imag(acpr.p_t) (Pa) @ freq=216
+-8.252960911682483E-5
+% acpr.freq (Hz) @ freq=218
+218
+% real(acpr.p_t) (Pa) @ freq=218
+-2.1753871182736343E-5
+% imag(acpr.p_t) (Pa) @ freq=218
+-8.134990875608493E-5
+% acpr.freq (Hz) @ freq=220
+220
+% real(acpr.p_t) (Pa) @ freq=220
+-2.6382638844294687E-5
+% imag(acpr.p_t) (Pa) @ freq=220
+-8.00000571161633E-5
+% acpr.freq (Hz) @ freq=222
+222
+% real(acpr.p_t) (Pa) @ freq=222
+-3.092295081110952E-5
+% imag(acpr.p_t) (Pa) @ freq=222
+-7.849154833973627E-5
+% acpr.freq (Hz) @ freq=224
+224
+% real(acpr.p_t) (Pa) @ freq=224
+-3.5376932517713725E-5
+% imag(acpr.p_t) (Pa) @ freq=224
+-7.683621252289783E-5
+% acpr.freq (Hz) @ freq=226
+226
+% real(acpr.p_t) (Pa) @ freq=226
+-3.9748427021162496E-5
+% imag(acpr.p_t) (Pa) @ freq=226
+-7.504624474739184E-5
+% acpr.freq (Hz) @ freq=228
+228
+% real(acpr.p_t) (Pa) @ freq=228
+-4.404329200617929E-5
+% imag(acpr.p_t) (Pa) @ freq=228
+-7.313423168888458E-5
+% acpr.freq (Hz) @ freq=230
+230
+% real(acpr.p_t) (Pa) @ freq=230
+-4.8269769239351384E-5
+% imag(acpr.p_t) (Pa) @ freq=230
+-7.111317426779774E-5
+% acpr.freq (Hz) @ freq=232
+232
+% real(acpr.p_t) (Pa) @ freq=232
+-5.24389472213397E-5
+% imag(acpr.p_t) (Pa) @ freq=232
+-6.899650390595592E-5
+% acpr.freq (Hz) @ freq=234
+234
+% real(acpr.p_t) (Pa) @ freq=234
+-5.656534503586155E-5
+% imag(acpr.p_t) (Pa) @ freq=234
+-6.679808855539054E-5
+% acpr.freq (Hz) @ freq=236
+236
+% real(acpr.p_t) (Pa) @ freq=236
+-6.066765561172345E-5
+% imag(acpr.p_t) (Pa) @ freq=236
+-6.453222247549355E-5
+% acpr.freq (Hz) @ freq=238
+238
+% real(acpr.p_t) (Pa) @ freq=238
+-6.476970120644011E-5
+% imag(acpr.p_t) (Pa) @ freq=238
+-6.221359025460963E-5
+% acpr.freq (Hz) @ freq=240
+240
+% real(acpr.p_t) (Pa) @ freq=240
+-6.890167505819459E-5
+% imag(acpr.p_t) (Pa) @ freq=240
+-5.9857189963788657E-5
+% acpr.freq (Hz) @ freq=242
+242
+% real(acpr.p_t) (Pa) @ freq=242
+-7.310177424509832E-5
+% imag(acpr.p_t) (Pa) @ freq=242
+-5.747819115267175E-5
+% acpr.freq (Hz) @ freq=244
+244
+% real(acpr.p_t) (Pa) @ freq=244
+-7.741837528437418E-5
+% imag(acpr.p_t) (Pa) @ freq=244
+-5.509168812088029E-5
+% acpr.freq (Hz) @ freq=246
+246
+% real(acpr.p_t) (Pa) @ freq=246
+-8.19129747779018E-5
+% imag(acpr.p_t) (Pa) @ freq=246
+-5.271228298143445E-5
+% acpr.freq (Hz) @ freq=248
+248
+% real(acpr.p_t) (Pa) @ freq=248
+-8.666422724155935E-5
+% imag(acpr.p_t) (Pa) @ freq=248
+-5.035338811606775E-5
+% acpr.freq (Hz) @ freq=250
+250
+% real(acpr.p_t) (Pa) @ freq=250
+-9.177358629180836E-5
+% imag(acpr.p_t) (Pa) @ freq=250
+-4.802605788600876E-5
+% acpr.freq (Hz) @ freq=252
+252
+% real(acpr.p_t) (Pa) @ freq=252
+-9.737333743087094E-5
+% imag(acpr.p_t) (Pa) @ freq=252
+-4.573701403548228E-5
+% acpr.freq (Hz) @ freq=254
+254
+% real(acpr.p_t) (Pa) @ freq=254
+-1.0363827908508532E-4
+% imag(acpr.p_t) (Pa) @ freq=254
+-4.3485255772799704E-5
+% acpr.freq (Hz) @ freq=256
+256
+% real(acpr.p_t) (Pa) @ freq=256
+-1.1080310690895745E-4
+% imag(acpr.p_t) (Pa) @ freq=256
+-4.125611324812757E-5
+% acpr.freq (Hz) @ freq=258
+258
+% real(acpr.p_t) (Pa) @ freq=258
+-1.1918895480057889E-4
+% imag(acpr.p_t) (Pa) @ freq=258
+-3.90105255988381E-5
+% acpr.freq (Hz) @ freq=260
+260
+% real(acpr.p_t) (Pa) @ freq=260
+-1.2924506449271954E-4
+% imag(acpr.p_t) (Pa) @ freq=260
+-3.6665043212754815E-5
+% acpr.freq (Hz) @ freq=262
+262
+% real(acpr.p_t) (Pa) @ freq=262
+-1.4161620911458433E-4
+% imag(acpr.p_t) (Pa) @ freq=262
+-3.4052968207717984E-5
+% acpr.freq (Hz) @ freq=264
+264
+% real(acpr.p_t) (Pa) @ freq=264
+-1.5725524789614873E-4
+% imag(acpr.p_t) (Pa) @ freq=264
+-3.084502011673218E-5
+% acpr.freq (Hz) @ freq=266
+266
+% real(acpr.p_t) (Pa) @ freq=266
+-1.7761652530375323E-4
+% imag(acpr.p_t) (Pa) @ freq=266
+-2.637746973962392E-5
+% acpr.freq (Hz) @ freq=268
+268
+% real(acpr.p_t) (Pa) @ freq=268
+-2.0499358867834394E-4
+% imag(acpr.p_t) (Pa) @ freq=268
+-1.9252422792977004E-5
+% acpr.freq (Hz) @ freq=270
+270
+% real(acpr.p_t) (Pa) @ freq=270
+-2.4308996932048143E-4
+% imag(acpr.p_t) (Pa) @ freq=270
+-6.327160496055355E-6
+% acpr.freq (Hz) @ freq=272
+272
+% real(acpr.p_t) (Pa) @ freq=272
+-2.97754449278385E-4
+% imag(acpr.p_t) (Pa) @ freq=272
+2.008780013723763E-5
+% acpr.freq (Hz) @ freq=274
+274
+% real(acpr.p_t) (Pa) @ freq=274
+-3.7597732466085863E-4
+% imag(acpr.p_t) (Pa) @ freq=274
+8.058240438568822E-5
+% acpr.freq (Hz) @ freq=276
+276
+% real(acpr.p_t) (Pa) @ freq=276
+-4.666315483863035E-4
+% imag(acpr.p_t) (Pa) @ freq=276
+2.3081315648051825E-4
+% acpr.freq (Hz) @ freq=278
+278
+% real(acpr.p_t) (Pa) @ freq=278
+-4.23955989098004E-4
+% imag(acpr.p_t) (Pa) @ freq=278
+5.43401254046992E-4
+% acpr.freq (Hz) @ freq=280
+280
+% real(acpr.p_t) (Pa) @ freq=280
+-3.367250501227327E-5
+% imag(acpr.p_t) (Pa) @ freq=280
+7.033628009450668E-4
+% acpr.freq (Hz) @ freq=282
+282
+% real(acpr.p_t) (Pa) @ freq=282
+2.217776213395333E-4
+% imag(acpr.p_t) (Pa) @ freq=282
+5.00515762250303E-4
+% acpr.freq (Hz) @ freq=284
+284
+% real(acpr.p_t) (Pa) @ freq=284
+2.5808288239974087E-4
+% imag(acpr.p_t) (Pa) @ freq=284
+3.2109313913202106E-4
+% acpr.freq (Hz) @ freq=286
+286
+% real(acpr.p_t) (Pa) @ freq=286
+2.397993361812952E-4
+% imag(acpr.p_t) (Pa) @ freq=286
+2.198295870110708E-4
+% acpr.freq (Hz) @ freq=288
+288
+% real(acpr.p_t) (Pa) @ freq=288
+2.1613264632276233E-4
+% imag(acpr.p_t) (Pa) @ freq=288
+1.614834535905613E-4
+% acpr.freq (Hz) @ freq=290
+290
+% real(acpr.p_t) (Pa) @ freq=290
+1.961803959369583E-4
+% imag(acpr.p_t) (Pa) @ freq=290
+1.2493447024268875E-4
+% acpr.freq (Hz) @ freq=292
+292
+% real(acpr.p_t) (Pa) @ freq=292
+1.806951653844997E-4
+% imag(acpr.p_t) (Pa) @ freq=292
+1.0006383402217086E-4
+% acpr.freq (Hz) @ freq=294
+294
+% real(acpr.p_t) (Pa) @ freq=294
+1.6892470937727742E-4
+% imag(acpr.p_t) (Pa) @ freq=294
+8.184440579351774E-5
+% acpr.freq (Hz) @ freq=296
+296
+% real(acpr.p_t) (Pa) @ freq=296
+1.600123964461421E-4
+% imag(acpr.p_t) (Pa) @ freq=296
+6.759856918462246E-5
+% acpr.freq (Hz) @ freq=298
+298
+% real(acpr.p_t) (Pa) @ freq=298
+1.532511557098904E-4
+% imag(acpr.p_t) (Pa) @ freq=298
+5.580177091485749E-5
+% acpr.freq (Hz) @ freq=300
+300
+% real(acpr.p_t) (Pa) @ freq=300
+1.4809350126911012E-4
+% imag(acpr.p_t) (Pa) @ freq=300
+4.553512649857785E-5
+% acpr.freq (Hz) @ freq=302
+302
+% real(acpr.p_t) (Pa) @ freq=302
+1.4411755083113754E-4
+% imag(acpr.p_t) (Pa) @ freq=302
+3.6218643540393166E-5
+% acpr.freq (Hz) @ freq=304
+304
+% real(acpr.p_t) (Pa) @ freq=304
+1.4099313640881516E-4
+% imag(acpr.p_t) (Pa) @ freq=304
+2.7473166911660772E-5
+% acpr.freq (Hz) @ freq=306
+306
+% real(acpr.p_t) (Pa) @ freq=306
+1.38455797684396E-4
+% imag(acpr.p_t) (Pa) @ freq=306
+1.9045083680448856E-5
+% acpr.freq (Hz) @ freq=308
+308
+% real(acpr.p_t) (Pa) @ freq=308
+1.3628825121524826E-4
+% imag(acpr.p_t) (Pa) @ freq=308
+1.0763387491680329E-5
+% acpr.freq (Hz) @ freq=310
+310
+% real(acpr.p_t) (Pa) @ freq=310
+1.343075516141171E-4
+% imag(acpr.p_t) (Pa) @ freq=310
+2.5142699735590596E-6
+% acpr.freq (Hz) @ freq=312
+312
+% real(acpr.p_t) (Pa) @ freq=312
+1.323563407146117E-4
+% imag(acpr.p_t) (Pa) @ freq=312
+-5.774386724893605E-6
+% acpr.freq (Hz) @ freq=314
+314
+% real(acpr.p_t) (Pa) @ freq=314
+1.3029700107233073E-4
+% imag(acpr.p_t) (Pa) @ freq=314
+-1.4142730410428806E-5
+% acpr.freq (Hz) @ freq=316
+316
+% real(acpr.p_t) (Pa) @ freq=316
+1.2800788966735627E-4
+% imag(acpr.p_t) (Pa) @ freq=316
+-2.2605194737555066E-5
+% acpr.freq (Hz) @ freq=318
+318
+% real(acpr.p_t) (Pa) @ freq=318
+1.2538108435146932E-4
+% imag(acpr.p_t) (Pa) @ freq=318
+-3.11546605840526E-5
+% acpr.freq (Hz) @ freq=320
+320
+% real(acpr.p_t) (Pa) @ freq=320
+1.2232124625882323E-4
+% imag(acpr.p_t) (Pa) @ freq=320
+-3.976536759250755E-5
+% acpr.freq (Hz) @ freq=322
+322
+% real(acpr.p_t) (Pa) @ freq=322
+1.1874530996730301E-4
+% imag(acpr.p_t) (Pa) @ freq=322
+-4.8395119877885945E-5
+% acpr.freq (Hz) @ freq=324
+324
+% real(acpr.p_t) (Pa) @ freq=324
+1.1458277920946744E-4
+% imag(acpr.p_t) (Pa) @ freq=324
+-5.698715039579795E-5
+% acpr.freq (Hz) @ freq=326
+326
+% real(acpr.p_t) (Pa) @ freq=326
+1.097764436614232E-4
+% imag(acpr.p_t) (Pa) @ freq=326
+-6.54718949804397E-5
+% acpr.freq (Hz) @ freq=328
+328
+% real(acpr.p_t) (Pa) @ freq=328
+1.0428335211196612E-4
+% imag(acpr.p_t) (Pa) @ freq=328
+-7.376884916823184E-5
+% acpr.freq (Hz) @ freq=330
+330
+% real(acpr.p_t) (Pa) @ freq=330
+9.807588687026237E-5
+% imag(acpr.p_t) (Pa) @ freq=330
+-8.178862148523468E-5
+% acpr.freq (Hz) @ freq=332
+332
+% real(acpr.p_t) (Pa) @ freq=332
+9.114278969265967E-5
+% imag(acpr.p_t) (Pa) @ freq=332
+-8.943524636563034E-5
+% acpr.freq (Hz) @ freq=334
+334
+% real(acpr.p_t) (Pa) @ freq=334
+8.348999572944676E-5
+% imag(acpr.p_t) (Pa) @ freq=334
+-9.660877348559237E-5
+% acpr.freq (Hz) @ freq=336
+336
+% real(acpr.p_t) (Pa) @ freq=336
+7.514114291253305E-5
+% imag(acpr.p_t) (Pa) @ freq=336
+-1.0320810642978276E-4
+% acpr.freq (Hz) @ freq=338
+338
+% real(acpr.p_t) (Pa) @ freq=338
+6.613764260114406E-5
+% imag(acpr.p_t) (Pa) @ freq=338
+-1.091340229004544E-4
+% acpr.freq (Hz) @ freq=340
+340
+% real(acpr.p_t) (Pa) @ freq=340
+5.6538224574836856E-5
+% imag(acpr.p_t) (Pa) @ freq=340
+-1.1429227330261913E-4
+% acpr.freq (Hz) @ freq=342
+342
+% real(acpr.p_t) (Pa) @ freq=342
+4.641790542868737E-5
+% imag(acpr.p_t) (Pa) @ freq=342
+-1.1859662748420819E-4
+% acpr.freq (Hz) @ freq=344
+344
+% real(acpr.p_t) (Pa) @ freq=344
+3.586637222459276E-5
+% imag(acpr.p_t) (Pa) @ freq=344
+-1.2197172373813163E-4
+% acpr.freq (Hz) @ freq=346
+346
+% real(acpr.p_t) (Pa) @ freq=346
+2.4985819507876374E-5
+% imag(acpr.p_t) (Pa) @ freq=346
+-1.2435557225905865E-4
+% acpr.freq (Hz) @ freq=348
+348
+% real(acpr.p_t) (Pa) @ freq=348
+1.3888323043350384E-5
+% imag(acpr.p_t) (Pa) @ freq=348
+-1.25701578124917E-4
+% acpr.freq (Hz) @ freq=350
+350
+% real(acpr.p_t) (Pa) @ freq=350
+2.692872986488013E-6
+% imag(acpr.p_t) (Pa) @ freq=350
+-1.2597997581303158E-4
+% acpr.freq (Hz) @ freq=352
+352
+% real(acpr.p_t) (Pa) @ freq=352
+-8.477781787309576E-6
+% imag(acpr.p_t) (Pa) @ freq=352
+-1.25178605673681E-4
+% acpr.freq (Hz) @ freq=354
+354
+% real(acpr.p_t) (Pa) @ freq=354
+-1.9500311096650505E-5
+% imag(acpr.p_t) (Pa) @ freq=354
+-1.233030085136957E-4
+% acpr.freq (Hz) @ freq=356
+356
+% real(acpr.p_t) (Pa) @ freq=356
+-3.0253835272039394E-5
+% imag(acpr.p_t) (Pa) @ freq=356
+-1.2037586237488801E-4
+% acpr.freq (Hz) @ freq=358
+358
+% real(acpr.p_t) (Pa) @ freq=358
+-4.062265840803754E-5
+% imag(acpr.p_t) (Pa) @ freq=358
+-1.1643583047408713E-4
+% acpr.freq (Hz) @ freq=360
+360
+% real(acpr.p_t) (Pa) @ freq=360
+-5.0498576640627375E-5
+% imag(acpr.p_t) (Pa) @ freq=360
+-1.1153592654695122E-4
+% acpr.freq (Hz) @ freq=362
+362
+% real(acpr.p_t) (Pa) @ freq=362
+-5.9782669950531796E-5
+% imag(acpr.p_t) (Pa) @ freq=362
+-1.057415303281748E-4
+% acpr.freq (Hz) @ freq=364
+364
+% real(acpr.p_t) (Pa) @ freq=364
+-6.838652467796827E-5
+% imag(acpr.p_t) (Pa) @ freq=364
+-9.912820019813546E-5
+% acpr.freq (Hz) @ freq=366
+366
+% real(acpr.p_t) (Pa) @ freq=366
+-7.623287182714181E-5
+% imag(acpr.p_t) (Pa) @ freq=366
+-9.177943255709916E-5
+% acpr.freq (Hz) @ freq=368
+368
+% real(acpr.p_t) (Pa) @ freq=368
+-8.325565941565264E-5
+% imag(acpr.p_t) (Pa) @ freq=368
+-8.378451028424002E-5
+% acpr.freq (Hz) @ freq=370
+370
+% real(acpr.p_t) (Pa) @ freq=370
+-8.939960272064716E-5
+% imag(acpr.p_t) (Pa) @ freq=370
+-7.523656892574206E-5
+% acpr.freq (Hz) @ freq=372
+372
+% real(acpr.p_t) (Pa) @ freq=372
+-9.461927263801294E-5
+% imag(acpr.p_t) (Pa) @ freq=372
+-6.623099300527772E-5
+% acpr.freq (Hz) @ freq=374
+374
+% real(acpr.p_t) (Pa) @ freq=374
+-9.887778896617343E-5
+% imag(acpr.p_t) (Pa) @ freq=374
+-5.6864240437616746E-5
+% acpr.freq (Hz) @ freq=376
+376
+% real(acpr.p_t) (Pa) @ freq=376
+-1.0214518254479584E-4
+% imag(acpr.p_t) (Pa) @ freq=376
+-4.72331851510413E-5
+% acpr.freq (Hz) @ freq=378
+378
+% real(acpr.p_t) (Pa) @ freq=378
+-1.0439647854342514E-4
+% imag(acpr.p_t) (Pa) @ freq=378
+-3.743507201795083E-5
+% acpr.freq (Hz) @ freq=380
+380
+% real(acpr.p_t) (Pa) @ freq=380
+-1.056095335228234E-4
+% imag(acpr.p_t) (Pa) @ freq=380
+-2.75682009396763E-5
+% acpr.freq (Hz) @ freq=382
+382
+% real(acpr.p_t) (Pa) @ freq=382
+-1.0576263149017685E-4
+% imag(acpr.p_t) (Pa) @ freq=382
+-1.7733508772759787E-5
+% acpr.freq (Hz) @ freq=384
+384
+% real(acpr.p_t) (Pa) @ freq=384
+-1.0483180865794276E-4
+% imag(acpr.p_t) (Pa) @ freq=384
+-8.037316232277387E-6
+% acpr.freq (Hz) @ freq=386
+386
+% real(acpr.p_t) (Pa) @ freq=386
+-1.0278783201314552E-4
+% imag(acpr.p_t) (Pa) @ freq=386
+1.4043160519346476E-6
+% acpr.freq (Hz) @ freq=388
+388
+% real(acpr.p_t) (Pa) @ freq=388
+-9.95927027186836E-5
+% imag(acpr.p_t) (Pa) @ freq=388
+1.0458861114791383E-5
+% acpr.freq (Hz) @ freq=390
+390
+% real(acpr.p_t) (Pa) @ freq=390
+-9.519549669048507E-5
+% imag(acpr.p_t) (Pa) @ freq=390
+1.8966887792711068E-5
+% acpr.freq (Hz) @ freq=392
+392
+% real(acpr.p_t) (Pa) @ freq=392
+-8.952731750462745E-5
+% imag(acpr.p_t) (Pa) @ freq=392
+2.672547129019599E-5
+% acpr.freq (Hz) @ freq=394
+394
+% real(acpr.p_t) (Pa) @ freq=394
+-8.249522122443823E-5
+% imag(acpr.p_t) (Pa) @ freq=394
+3.346083297224801E-5
+% acpr.freq (Hz) @ freq=396
+396
+% real(acpr.p_t) (Pa) @ freq=396
+-7.397553293370371E-5
+% imag(acpr.p_t) (Pa) @ freq=396
+3.8781036695901235E-5
+% acpr.freq (Hz) @ freq=398
+398
+% real(acpr.p_t) (Pa) @ freq=398
+-6.380926355739355E-5
+% imag(acpr.p_t) (Pa) @ freq=398
+4.2089470277491526E-5
+% acpr.freq (Hz) @ freq=400
+400
+% real(acpr.p_t) (Pa) @ freq=400
+-5.181099383568704E-5
+% imag(acpr.p_t) (Pa) @ freq=400
+4.241591590405009E-5
+% acpr.freq (Hz) @ freq=402
+402
+% real(acpr.p_t) (Pa) @ freq=402
+-3.783625370067386E-5
+% imag(acpr.p_t) (Pa) @ freq=402
+3.8061275905527165E-5
+% acpr.freq (Hz) @ freq=404
+404
+% real(acpr.p_t) (Pa) @ freq=404
+-2.2094785764491084E-5
+% imag(acpr.p_t) (Pa) @ freq=404
+2.5788794961203945E-5
+% acpr.freq (Hz) @ freq=406
+406
+% real(acpr.p_t) (Pa) @ freq=406
+-6.5801565659421615E-6
+% imag(acpr.p_t) (Pa) @ freq=406
+-1.1303668026935301E-6
+% acpr.freq (Hz) @ freq=408
+408
+% real(acpr.p_t) (Pa) @ freq=408
+-2.2400897908173275E-6
+% imag(acpr.p_t) (Pa) @ freq=408
+-5.709350109894732E-5
+% acpr.freq (Hz) @ freq=410
+410
+% real(acpr.p_t) (Pa) @ freq=410
+-6.48223092209661E-5
+% imag(acpr.p_t) (Pa) @ freq=410
+-1.567366733051075E-4
+% acpr.freq (Hz) @ freq=412
+412
+% real(acpr.p_t) (Pa) @ freq=412
+-2.936731000893053E-4
+% imag(acpr.p_t) (Pa) @ freq=412
+-1.3887929061605863E-4
+% acpr.freq (Hz) @ freq=414
+414
+% real(acpr.p_t) (Pa) @ freq=414
+-3.259391222034637E-4
+% imag(acpr.p_t) (Pa) @ freq=414
+1.0119169417152334E-4
+% acpr.freq (Hz) @ freq=416
+416
+% real(acpr.p_t) (Pa) @ freq=416
+-2.1990732360585954E-4
+% imag(acpr.p_t) (Pa) @ freq=416
+1.941697289826311E-4
+% acpr.freq (Hz) @ freq=418
+418
+% real(acpr.p_t) (Pa) @ freq=418
+-1.4370249621757132E-4
+% imag(acpr.p_t) (Pa) @ freq=418
+2.141350113900386E-4
+% acpr.freq (Hz) @ freq=420
+420
+% real(acpr.p_t) (Pa) @ freq=420
+-9.204612491348195E-5
+% imag(acpr.p_t) (Pa) @ freq=420
+2.1612094863645808E-4
+% acpr.freq (Hz) @ freq=422
+422
+% real(acpr.p_t) (Pa) @ freq=422
+-5.326153150891913E-5
+% imag(acpr.p_t) (Pa) @ freq=422
+2.1274588517327525E-4
+% acpr.freq (Hz) @ freq=424
+424
+% real(acpr.p_t) (Pa) @ freq=424
+-2.154968082791502E-5
+% imag(acpr.p_t) (Pa) @ freq=424
+2.0688951597812015E-4
+% acpr.freq (Hz) @ freq=426
+426
+% real(acpr.p_t) (Pa) @ freq=426
+5.802397498372502E-6
+% imag(acpr.p_t) (Pa) @ freq=426
+1.9916863199642327E-4
+% acpr.freq (Hz) @ freq=428
+428
+% real(acpr.p_t) (Pa) @ freq=428
+3.0042261823300055E-5
+% imag(acpr.p_t) (Pa) @ freq=428
+1.896469085442716E-4
+% acpr.freq (Hz) @ freq=430
+430
+% real(acpr.p_t) (Pa) @ freq=430
+5.168014558909819E-5
+% imag(acpr.p_t) (Pa) @ freq=430
+1.7829551423257422E-4
+% acpr.freq (Hz) @ freq=432
+432
+% real(acpr.p_t) (Pa) @ freq=432
+7.083612664340655E-5
+% imag(acpr.p_t) (Pa) @ freq=432
+1.6514008788519056E-4
+% acpr.freq (Hz) @ freq=434
+434
+% real(acpr.p_t) (Pa) @ freq=434
+8.742841163391238E-5
+% imag(acpr.p_t) (Pa) @ freq=434
+1.5031347858313532E-4
+% acpr.freq (Hz) @ freq=436
+436
+% real(acpr.p_t) (Pa) @ freq=436
+1.0129175749112748E-4
+% imag(acpr.p_t) (Pa) @ freq=436
+1.3407074501134618E-4
+% acpr.freq (Hz) @ freq=438
+438
+% real(acpr.p_t) (Pa) @ freq=438
+1.1226061982084343E-4
+% imag(acpr.p_t) (Pa) @ freq=438
+1.1678161484117449E-4
+% acpr.freq (Hz) @ freq=440
+440
+% real(acpr.p_t) (Pa) @ freq=440
+1.2022868776320635E-4
+% imag(acpr.p_t) (Pa) @ freq=440
+9.890575872727574E-5
+% acpr.freq (Hz) @ freq=442
+442
+% real(acpr.p_t) (Pa) @ freq=442
+1.2518722181345537E-4
+% imag(acpr.p_t) (Pa) @ freq=442
+8.095561270150772E-5
+% acpr.freq (Hz) @ freq=444
+444
+% real(acpr.p_t) (Pa) @ freq=444
+1.2724226994503243E-4
+% imag(acpr.p_t) (Pa) @ freq=444
+6.34531423399779E-5
+% acpr.freq (Hz) @ freq=446
+446
+% real(acpr.p_t) (Pa) @ freq=446
+1.2661209929942712E-4
+% imag(acpr.p_t) (Pa) @ freq=446
+4.6888014421920705E-5
+% acpr.freq (Hz) @ freq=448
+448
+% real(acpr.p_t) (Pa) @ freq=448
+1.236087426239137E-4
+% imag(acpr.p_t) (Pa) @ freq=448
+3.168398638614292E-5
+% acpr.freq (Hz) @ freq=450
+450
+% real(acpr.p_t) (Pa) @ freq=450
+1.186096720061011E-4
+% imag(acpr.p_t) (Pa) @ freq=450
+1.8178018004928543E-5
+% acpr.freq (Hz) @ freq=452
+452
+% real(acpr.p_t) (Pa) @ freq=452
+1.1202629202135076E-4
+% imag(acpr.p_t) (Pa) @ freq=452
+6.613530334698263E-6
+% acpr.freq (Hz) @ freq=454
+454
+% real(acpr.p_t) (Pa) @ freq=454
+1.0427508677186624E-4
+% imag(acpr.p_t) (Pa) @ freq=454
+-2.8535301792452437E-6
+% acpr.freq (Hz) @ freq=456
+456
+% real(acpr.p_t) (Pa) @ freq=456
+9.575541912216075E-5
+% imag(acpr.p_t) (Pa) @ freq=456
+-1.0138851507360807E-5
+% acpr.freq (Hz) @ freq=458
+458
+% real(acpr.p_t) (Pa) @ freq=458
+8.683596092894804E-5
+% imag(acpr.p_t) (Pa) @ freq=458
+-1.5207544118481209E-5
+% acpr.freq (Hz) @ freq=460
+460
+% real(acpr.p_t) (Pa) @ freq=460
+7.78501950178358E-5
+% imag(acpr.p_t) (Pa) @ freq=460
+-1.804822177297722E-5
+% acpr.freq (Hz) @ freq=462
+462
+% real(acpr.p_t) (Pa) @ freq=462
+6.910076647560842E-5
+% imag(acpr.p_t) (Pa) @ freq=462
+-1.8644527660012627E-5
+% acpr.freq (Hz) @ freq=464
+464
+% real(acpr.p_t) (Pa) @ freq=464
+6.087289280362951E-5
+% imag(acpr.p_t) (Pa) @ freq=464
+-1.6943177443549966E-5
+% acpr.freq (Hz) @ freq=466
+466
+% real(acpr.p_t) (Pa) @ freq=466
+5.345891365803546E-5
+% imag(acpr.p_t) (Pa) @ freq=466
+-1.2814757038191327E-5
+% acpr.freq (Hz) @ freq=468
+468
+% real(acpr.p_t) (Pa) @ freq=468
+4.7200418657257335E-5
+% imag(acpr.p_t) (Pa) @ freq=468
+-5.999045371782352E-6
+% acpr.freq (Hz) @ freq=470
+470
+% real(acpr.p_t) (Pa) @ freq=470
+4.256438362240871E-5
+% imag(acpr.p_t) (Pa) @ freq=470
+3.981749957397084E-6
+% acpr.freq (Hz) @ freq=472
+472
+% real(acpr.p_t) (Pa) @ freq=472
+4.0294879842176245E-5
+% imag(acpr.p_t) (Pa) @ freq=472
+1.7976321282732872E-5
+% acpr.freq (Hz) @ freq=474
+474
+% real(acpr.p_t) (Pa) @ freq=474
+4.175333993065893E-5
+% imag(acpr.p_t) (Pa) @ freq=474
+3.749990610244644E-5
+% acpr.freq (Hz) @ freq=476
+476
+% real(acpr.p_t) (Pa) @ freq=476
+4.9794531424480706E-5
+% imag(acpr.p_t) (Pa) @ freq=476
+6.534674376981811E-5
+% acpr.freq (Hz) @ freq=478
+478
+% real(acpr.p_t) (Pa) @ freq=478
+7.144199122032249E-5
+% imag(acpr.p_t) (Pa) @ freq=478
+1.0690101629646022E-4
+% acpr.freq (Hz) @ freq=480
+480
+% real(acpr.p_t) (Pa) @ freq=480
+1.2811692964653085E-4
+% imag(acpr.p_t) (Pa) @ freq=480
+1.722977012223381E-4
+% acpr.freq (Hz) @ freq=482
+482
+% real(acpr.p_t) (Pa) @ freq=482
+3.0624350147547696E-4
+% imag(acpr.p_t) (Pa) @ freq=482
+2.6286598107098474E-4
+% acpr.freq (Hz) @ freq=484
+484
+% real(acpr.p_t) (Pa) @ freq=484
+8.072499746261359E-4
+% imag(acpr.p_t) (Pa) @ freq=484
+-2.5645784381456877E-5
+% acpr.freq (Hz) @ freq=486
+486
+% real(acpr.p_t) (Pa) @ freq=486
+2.997168599228785E-4
+% imag(acpr.p_t) (Pa) @ freq=486
+-5.881947398534468E-4
+% acpr.freq (Hz) @ freq=488
+488
+% real(acpr.p_t) (Pa) @ freq=488
+2.7652073484865473E-5
+% imag(acpr.p_t) (Pa) @ freq=488
+-4.136673123345521E-4
+% acpr.freq (Hz) @ freq=490
+490
+% real(acpr.p_t) (Pa) @ freq=490
+-3.444657807484709E-5
+% imag(acpr.p_t) (Pa) @ freq=490
+-3.019207158506228E-4
+% acpr.freq (Hz) @ freq=492
+492
+% real(acpr.p_t) (Pa) @ freq=492
+-5.552054038531923E-5
+% imag(acpr.p_t) (Pa) @ freq=492
+-2.3844718718234656E-4
+% acpr.freq (Hz) @ freq=494
+494
+% real(acpr.p_t) (Pa) @ freq=494
+-6.521176486985061E-5
+% imag(acpr.p_t) (Pa) @ freq=494
+-1.9781566438041814E-4
+% acpr.freq (Hz) @ freq=496
+496
+% real(acpr.p_t) (Pa) @ freq=496
+-7.068861786216464E-5
+% imag(acpr.p_t) (Pa) @ freq=496
+-1.6909623179341298E-4
+% acpr.freq (Hz) @ freq=498
+498
+% real(acpr.p_t) (Pa) @ freq=498
+-7.419657299893986E-5
+% imag(acpr.p_t) (Pa) @ freq=498
+-1.472244210414212E-4
+% acpr.freq (Hz) @ freq=500
+500
+% real(acpr.p_t) (Pa) @ freq=500
+-7.655341137705153E-5
+% imag(acpr.p_t) (Pa) @ freq=500
+-1.2958705591799207E-4

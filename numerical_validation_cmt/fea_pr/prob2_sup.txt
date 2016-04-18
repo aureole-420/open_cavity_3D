@@ -1,0 +1,104 @@
+% Model:              opencavity3D.mph
+% Version:            COMSOL 5.2.0.166
+% Date:               Apr 18 2016, 22:18
+% Dimension:          0
+% Nodes:              48
+% Expressions:        48
+% Description:        Frequency, , 
+% Length unit:        m
+% x
+1.3
+% y
+1.4
+% z
+0.902
+% acpr.freq (Hz) @ freq=2
+2
+% real(acpr.p_t) (Pa) @ freq=2
+-1.8211752507661007E-5
+% imag(acpr.p_t) (Pa) @ freq=2
+6.70486649945178E-5
+% acpr.freq (Hz) @ freq=4
+4
+% real(acpr.p_t) (Pa) @ freq=4
+-1.2513272712548587E-5
+% imag(acpr.p_t) (Pa) @ freq=4
+9.789347862962529E-5
+% acpr.freq (Hz) @ freq=6
+6
+% real(acpr.p_t) (Pa) @ freq=6
+5.649478568546822E-6
+% imag(acpr.p_t) (Pa) @ freq=6
+1.1187223568743958E-4
+% acpr.freq (Hz) @ freq=8
+8
+% real(acpr.p_t) (Pa) @ freq=8
+2.1978222178673275E-5
+% imag(acpr.p_t) (Pa) @ freq=8
+1.1352100090896495E-4
+% acpr.freq (Hz) @ freq=10
+10
+% real(acpr.p_t) (Pa) @ freq=10
+3.380377974264483E-5
+% imag(acpr.p_t) (Pa) @ freq=10
+1.1089295589418733E-4
+% acpr.freq (Hz) @ freq=12
+12
+% real(acpr.p_t) (Pa) @ freq=12
+4.289648861154083E-5
+% imag(acpr.p_t) (Pa) @ freq=12
+1.0746846717322225E-4
+% acpr.freq (Hz) @ freq=14
+14
+% real(acpr.p_t) (Pa) @ freq=14
+5.073220727701302E-5
+% imag(acpr.p_t) (Pa) @ freq=14
+1.0400794932607929E-4
+% acpr.freq (Hz) @ freq=16
+16
+% real(acpr.p_t) (Pa) @ freq=16
+5.8013692829052547E-5
+% imag(acpr.p_t) (Pa) @ freq=16
+1.0050028817490228E-4
+% acpr.freq (Hz) @ freq=18
+18
+% real(acpr.p_t) (Pa) @ freq=18
+6.501950854033377E-5
+% imag(acpr.p_t) (Pa) @ freq=18
+9.682143383563034E-5
+% acpr.freq (Hz) @ freq=20
+20
+% real(acpr.p_t) (Pa) @ freq=20
+7.18473733805714E-5
+% imag(acpr.p_t) (Pa) @ freq=20
+9.287520623492155E-5
+% acpr.freq (Hz) @ freq=22
+22
+% real(acpr.p_t) (Pa) @ freq=22
+7.85244606168581E-5
+% imag(acpr.p_t) (Pa) @ freq=22
+8.860237707078392E-5
+% acpr.freq (Hz) @ freq=24
+24
+% real(acpr.p_t) (Pa) @ freq=24
+8.505132522691221E-5
+% imag(acpr.p_t) (Pa) @ freq=24
+8.39681784365651E-5
+% acpr.freq (Hz) @ freq=26
+26
+% real(acpr.p_t) (Pa) @ freq=26
+9.14184855141714E-5
+% imag(acpr.p_t) (Pa) @ freq=26
+7.895160412480733E-5
+% acpr.freq (Hz) @ freq=28
+28
+% real(acpr.p_t) (Pa) @ freq=28
+9.761251679332943E-5
+% imag(acpr.p_t) (Pa) @ freq=28
+7.353888208757625E-5
+% acpr.freq (Hz) @ freq=30
+30
+% real(acpr.p_t) (Pa) @ freq=30
+1.0361823168835335E-4
+% imag(acpr.p_t) (Pa) @ freq=30
+6.771983014257628E-5

@@ -147,12 +147,12 @@ figure(1)
 plot(freqfea,pin_spl,'r','LineWidth',2)
 hold on
 % plot(freq, pr_in_spl,'b','LineWidth',0.5,'LineStyle','none','Marker','o','MarkerSize',5)
-plot(freq, pr_in_spl,'b','LineWidth',1)
+plot(freq, pr_in_spl,'b','LineWidth',2)
 hold on;
-plot(freqfea,pout_spl,'k','LineWidth',2,'LineStyle','-')
+plot(freqfea,pout_spl,'k','LineWidth',1,'LineStyle','-')
 % plot(freqfea,pout_spl,'g','LineWidth',1,'LineStyle','-')
 hold on;
-plot(freq,pr_out_spl,'g','LineWidth',1)
+plot(freq,pr_out_spl,'g','LineWidth',2)
 % plot(freq,pr_out_spl,'b','LineWidth',0.5,'LineStyle','none','Marker','x','MarkerSize',5)
 xlim([30 500]);
 ylim([-20 60])
