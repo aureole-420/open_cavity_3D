@@ -1,0 +1,439 @@
+%% LyX 2.1.4 created this file.  For more info, see http://www.lyx.org/.
+%% Do not edit unless you really know what you are doing.
+\documentclass[english]{article}
+\usepackage[T1]{fontenc}
+\usepackage[latin9]{inputenc}
+\usepackage[letterpaper]{geometry}
+\geometry{verbose,tmargin=2cm,bmargin=2cm,lmargin=4.5cm,rmargin=4.5cm}
+\usepackage{amsbsy}
+\usepackage{graphicx}
+\usepackage{esint}
+
+\makeatletter
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% LyX specific LaTeX commands.
+%% Because html converters don't know tabularnewline
+\providecommand{\tabularnewline}{\\}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Textclass specific LaTeX commands.
+\newcommand{\lyxaddress}[1]{
+\par {\raggedright #1
+\vspace{1.4em}
+\noindent\par}
+}
+
+\makeatother
+
+\usepackage{babel}
+\begin{document}
+
+\title{Acoustic modal expansion of open cavity using coupled mode theory}
+
+
+\author{Yuhui Tong, Yiwei Kou, Jie Pan}
+
+\maketitle
+
+\lyxaddress{Schoold of Mechanical and Chemical Engineering, The University of
+Western Australia, Crawley, WA 6009, Australia}
+
+
+\section{Introduction }
+
+Open cavity widely ... problem
+
+Intensive study eigenvalue problem, the modal expansion has long been
+absence. 
+
+Several attempts done before, but none solve the problem nor did provide
+any information to verify the ...
+
+A recent progress made in acoustic resonators for using coupled mode
+theory, to . It is also proved that with frequency-dependent eigenmodes. 
+
+In the present paper, it is extended to open cavity problem. The baffled
+being treated ... 
+
+
+\section{Theory}
+
+
+\subsection{Phase I, problem formulation}
+
+As depicted in Fig. \ref{fig:baffled-cavity}, the rectangular cavity
+with an opening located at an infinite baffle is investigated in the
+present paper. For the sake of simplicity, all boundaries are rigid. 
+
+\begin{figure}
+\begin{centering}
+\includegraphics[scale=0.5]{\string"E:/yuhui/OneDrive/YUHUI_UWA/2D_QNM/coupled mode theory/opencavity/opencavity_theory/opencavity_illustration\string".png}
+\par\end{centering}
+
+\caption{\label{fig:baffled-cavity}A schematic diaggram of an baffled open
+cavity.}
+\end{figure}
+
+
+The sound pressure (omitting the time dependence $e^{j\omega t}$)
+excited by a monopole source inside the cavity can be obtained by
+solving the inhomogeneous Helmholtz equation
+
+\begin{equation}
+\nabla^{2}p+k^{2}p=-q_{s}\delta(\boldsymbol{x}-\boldsymbol{x}_{s}),\label{eq:Helmholtz eqaution}
+\end{equation}
+where $k=\omega/c_{0}$ is the wavenumber, $q_{s}$ is the source
+strength, $\boldsymbol{x}_{s}$ is the position of the monopole source,
+which is supposed to be within the cavity. The solution of Eq. (\ref{eq:Helmholtz eqaution})
+can be written respectively for cavity area $\Omega_{a}$, and upper
+half space $\Omega_{b}$. For $\Omega_{a}$,
+
+\begin{equation}
+p_{a}(\boldsymbol{x})=\sum_{\mu,\nu,\xi}a_{\mu,\nu,\xi}\phi_{\mu,\nu,\xi}(\boldsymbol{x}),\label{eq:pressure_a}
+\end{equation}
+where $\phi_{\mu',\nu',\xi'}(\boldsymbol{x})=\psi_{\mu'}(x)\psi_{\nu'}(y)\psi_{\xi'}(z)$
+is the eigenmode for \emph{enclosed} cavity and $\psi_{m}(x)=\sqrt{\frac{2-\delta_{0,m}}{L_{x}}}\cos(\frac{m\pi}{L_{x}}x)$.
+For $\Omega_{b}$, 
+\begin{equation}
+p_{b}(\boldsymbol{x})=jk\rho c\iint_{S_{0}}G_{b}(\boldsymbol{x},\boldsymbol{x}')v_{\perp}(\boldsymbol{x}')dS',\label{eq:pressure_b}
+\end{equation}
+where $G_{b}(\boldsymbol{x},\boldsymbol{x}')=\frac{1}{2\pi}\frac{e^{-jk|\boldsymbol{x}-\boldsymbol{x}'|}}{|\boldsymbol{x}-\boldsymbol{x}'|}$
+is the Green's function for the upper half space, $v_{\perp}(\boldsymbol{x}')$
+is the normal velocity distribution at the opening $S_{0}$ (the intersection
+between $\Omega_{a}$ and $\Omega_{b}$), the integral is invaluated
+over $S_{0}$.
+
+In $\Omega_{a}$, $p_{a}$ satisfies,
+
+\begin{equation}
+\nabla^{2}p_{a}(\boldsymbol{x})+k^{2}p_{a}(\boldsymbol{x})=-q_{s}\delta(\boldsymbol{x}-\boldsymbol{x}_{s}),\label{eq:pa}
+\end{equation}
+together with corresponding boundary conditions, while $\phi_{\mu,\nu,\xi}$
+satisfies,
+
+\begin{equation}
+\nabla^{2}\phi_{\mu,\nu,\xi}+k_{\mu,\nu,\xi}^{2}\phi_{\mu,\nu,\xi}=0,\label{eq:phi}
+\end{equation}
+\[
+k_{\mu,\nu,\xi}^{2}=(\mu\pi/L_{x})^{2}+(\nu\pi/L_{y})^{2}+(\xi\pi/L_{z})^{2},
+\]
+and rigid boundary condition for all six walls of the rectangular
+cavity, including $S_{0}$. Multiplying Eq. (\ref{eq:pa}) and Eq.
+(\ref{eq:phi}) by $\phi_{\mu,\nu,\xi}$ and $p_{a}$ respectively
+and taking the difference of the resulting equations yields,
+
+\begin{equation}
+\left(p_{a}\nabla^{2}\phi_{\mu,\nu,\xi}-\phi_{\mu,\nu,\xi}\nabla^{2}p_{a}\right)+(k_{\mu,\nu,\xi}^{2}-k^{2})p_{a}\phi_{\mu,\nu,\xi}=q_{s}\phi_{\mu,\nu,\xi}\delta(\boldsymbol{x}-\boldsymbol{x}_{s}).
+\end{equation}
+
+
+Integrating over $\Omega_{a}$ and applying Green's theorem gives
+\begin{equation}
+jk\rho c\iint_{S_{0}}\phi_{\mu,\nu,\xi}v_{\perp}dS_{0}+(k_{\mu,\nu,\xi}^{2}-k^{2})a_{\mu,\nu,\xi}=q_{0}\phi_{\mu,\nu,\xi}(\boldsymbol{x}_{s}).
+\end{equation}
+
+
+The above equation can be further simplied into
+
+\begin{equation}
+\sum_{m,n}jk\psi_{\xi}(0)\delta_{\mu,m}\delta_{\nu,n}\rho_{0}c_{0}V_{m,n}+(k_{\mu,\nu,\xi}^{2}-k^{2})a_{\mu,\nu,\xi}=q_{0}\phi_{\mu,\nu,\xi}(\boldsymbol{x}_{s}),\label{eq:constrain1}
+\end{equation}
+by noting the expansion of $v_{\perp}(x,y)$
+
+\begin{equation}
+v_{\perp}(x,y)=\sum_{m,n}V_{m,n}\psi_{m}(x)\psi_{n}(y).
+\end{equation}
+
+
+Another constraint is the continuity condition for sound pressure
+at the interface, i.e., $\left.p_{a}\right|_{S_{0}}=\left.p_{b}\right|_{S_{0}}$
+such that
+
+\begin{equation}
+\sum_{\mu',\nu',\xi'}a_{\mu',\nu',\xi'}\psi_{\mu'}(x)\psi_{\nu'}(y)\psi_{\xi'}(0)=jk\rho c\iint_{S_{0}}\frac{e^{-jk\sqrt{(x-x')^{2}+(x-y')^{2}}}}{2\pi\sqrt{(x-x')^{2}+(x-y')^{2}}}\sum_{m,n}V_{m,n}\psi_{m}(x')\psi_{n}(y')dS_{0}
+\end{equation}
+
+
+Multiplying $\psi_{\mu}(x)\psi_{\nu}(y)$ and integrate over the interface
+leads to,
+
+\begin{equation}
+\sum_{\mu',\nu',\xi'}\delta_{\mu,\mu'}\delta_{\nu,\nu'}\psi_{\xi'}(0)a_{\mu',\nu',\xi'}=\rho_{0}c_{0}\sum_{m,n}Z_{\mu,\nu,m,n}V_{m,n},\label{eq:constraint2}
+\end{equation}
+where $Z_{\mu,\nu,m,n}$ is the radiation impedance of an baffled
+rectangular plate of $L_{x}\times L_{y}$ 
+\begin{equation}
+Z_{\mu,\nu,m,n}=jk\iint_{S_{0}}\iint_{S_{0}}\psi_{\mu}(x)\psi_{\nu}(y)\frac{e^{-jk\sqrt{(x-x')^{2}+(x-y')^{2}}}}{2\pi\sqrt{(x-x')^{2}+(x-y')^{2}}}\psi_{m}(x')\psi_{n}(y')dS'dS
+\end{equation}
+
+
+Using Eqs. (\ref{eq:constrain1}) and (\ref{eq:constraint2}), vectors
+$\boldsymbol{a}=\left[\begin{array}{ccc}
+\cdots & a_{\mu,\nu,\xi} & \cdots\end{array}\right]^{T}$ and $\boldsymbol{V}=\left[\begin{array}{ccc}
+\cdots & V_{m,n} & \cdots\end{array}\right]^{T}$can be determined by solving
+
+\begin{equation}
+\boldsymbol{H}\boldsymbol{V}+(\boldsymbol{K}-k^{2}\boldsymbol{I})\boldsymbol{a}=\boldsymbol{S}\label{eq:inner_equation}
+\end{equation}
+
+
+\begin{equation}
+\boldsymbol{M}\boldsymbol{a}=\boldsymbol{Z}\boldsymbol{V}\label{eq:Inner_Outer_connection}
+\end{equation}
+where corresponding matrices are defined as follows: $\boldsymbol{H}_{(\mu,\nu,\xi),(m,n)}=jk\delta_{\mu,m}\delta_{\nu,n}\psi_{\xi}(0)$,
+$\boldsymbol{K}_{(\mu,\nu,\xi),(\mu',\nu',\xi')}=k_{\mu,\nu,\xi}^{2}\delta_{\mu,\mu'}\delta_{\nu,\nu'}\delta_{\xi,\xi'},$
+$\boldsymbol{S}=q_{s}\left[\begin{array}{ccc}
+\cdots & \phi_{\mu,\nu,\xi}(\boldsymbol{x}_{s}) & \cdots\end{array}\right]^{T}$, $\boldsymbol{M}_{(m,n),(\mu,\nu,\xi)}=\delta_{\mu,\mu'}\delta_{\nu,\nu'}\psi_{\xi'}(0)$,
+$\boldsymbol{Z}_{(\mu,\nu),(m,n)}=Z_{\mu,\nu,m,n}$. Eqs. (\ref{eq:inner_equation})
+and (\ref{eq:Inner_Outer_connection}) can be further reduced as 
+
+\begin{equation}
+(\boldsymbol{D-k^{2}})\boldsymbol{a}=\boldsymbol{S},\label{eq:sp_governing_eq}
+\end{equation}
+where $\boldsymbol{D}=\boldsymbol{K}-\boldsymbol{H}\boldsymbol{Z}^{-1}\boldsymbol{M}$
+is known as effective Hamiltonian (reduced differential operator)
+on quantum physics.
+
+
+\subsection{Phase II Bi-orthogonal basis and modal expansion.}
+
+Eq. (\ref{eq:sp_governing_eq}) gives rise to the following eigenvalue
+problem
+
+\begin{equation}
+\boldsymbol{D}\boldsymbol{g}_{\mu,\nu,\xi}=K_{\mu,\nu,\xi}^{2}\boldsymbol{g}_{\mu,\nu,\xi},\label{eq:EVP}
+\end{equation}
+where $K_{\mu,\nu,\xi}^{2}$ is the eigenvalue and the eigenvector
+$\boldsymbol{g}_{\mu,\nu,\xi}$ satisfies the bi-orthogonal relation
+
+\begin{equation}
+\boldsymbol{g}_{\mu',\nu',\xi'}^{T}\boldsymbol{g}_{\mu,\nu,\xi}=\delta_{\mu',\mu}\delta_{\nu,\nu'}\delta_{\xi,\xi'}\boldsymbol{g}_{\mu,\nu,\xi}^{T}\boldsymbol{g}_{\mu,\nu,\xi}.\label{eq:bi-orthogonal_relation}
+\end{equation}
+An alternative expression of Eq. (\ref{eq:bi-orthogonal_relation})
+is written as,
+
+\begin{equation}
+\iiint_{V_{0}}\Phi_{\mu',\nu',\xi'}(\boldsymbol{x})\Phi_{\mu,\nu,\xi}(\boldsymbol{x})dV=\delta_{\mu',\mu}\delta_{\nu,\nu'}\delta_{\xi,\xi'}\iiint_{V_{0}}\Phi_{\mu,\nu,\xi}^{2}(\boldsymbol{x})dV,
+\end{equation}
+where $\Phi_{\mu,\nu,\xi}(\boldsymbol{x})$ is the modal function
+corresponding to $\boldsymbol{g}_{\mu,\nu,\xi}$ such that 
+
+\begin{equation}
+\Phi_{\mu,\nu,\xi}(\boldsymbol{x})=\sum_{\mu',\nu',\xi'}\left(\boldsymbol{g}_{\mu,\nu,\xi}\right)_{\mu',\nu',\xi'}\phi_{\mu',\nu',\xi'}(\boldsymbol{x}).
+\end{equation}
+
+
+Expanding $\boldsymbol{a}$ into $\left\{ \boldsymbol{g}_{\mu,\nu,\xi}\right\} $
+
+\begin{equation}
+\boldsymbol{a}=\sum_{\mu',\nu',\xi'}c_{\mu',\nu',\xi'}\boldsymbol{g}_{\mu',\nu',\xi'}\label{eq:eigen_modal_expansion}
+\end{equation}
+and making the substitution into Eq. (\ref{eq:sp_governing_eq}) yields 
+
+\begin{equation}
+c_{\mu,\nu,\xi}=\frac{\boldsymbol{g}_{\mu,\nu,\xi}^{T}\boldsymbol{S}}{(K_{\mu,\nu,\xi}^{2}-k^{2})\boldsymbol{g}_{\mu,\nu,\xi}^{T}\boldsymbol{g}_{\mu,\nu,\xi}}.
+\end{equation}
+Combining Eq. (\ref{eq:eigen_modal_expansion}) together with Eqs.
+(\ref{eq:pressure_a} ,\ref{eq:pressure_b},\ref{eq:Inner_Outer_connection})
+leads to the modal expansion of sound pressure of the open cavity,
+
+\[
+p(\boldsymbol{x})=\left(\begin{array}{c}
+p_{a}(\boldsymbol{x})\\
+p_{b}(\boldsymbol{x})
+\end{array}\right)=\sum_{\mu,\nu,\xi}c_{\mu,\nu,\xi}\left(\begin{array}{c}
+\Phi_{\mu,\nu,\xi}(\boldsymbol{x})\\
+\Psi_{\mu,\nu,\xi}(\boldsymbol{x})
+\end{array}\right),
+\]
+where $\Psi_{\mu,\nu,\xi}(\boldsymbol{x})$ is given by
+
+\[
+\Psi_{\mu,\nu,\xi}(\boldsymbol{x})=\boldsymbol{\varphi}^{T}\boldsymbol{Z}^{-1}\boldsymbol{M}\boldsymbol{g}_{\mu,\nu,\xi}.
+\]
+Noted $\boldsymbol{\varphi}=\left[\begin{array}{ccc}
+\cdots & \varphi_{m,n}(\boldsymbol{x}) & \cdots\end{array}\right]$, $\varphi_{m,n}(\boldsymbol{x})=jk\rho c\iint_{S_{0}}G_{b}(\boldsymbol{x},\boldsymbol{x}')\psi_{m}(x')\psi_{n}(y')dS'$
+is the sound pressure induced by velocity distribution $\psi_{m}(x')\psi_{n}(y')$
+on $S_{0}$.
+
+
+\section{Numerical validation}
+
+The theoretical results obtained in Sec. 2 is check numerically here.
+The cavity in Fig. \ref{fig:baffled-cavity} has the dimensions of
+0.432m long ($L_{x}$), 0.67m wide ($L_{y}$) and 0.598m high ($L_{z}$),
+which was considered in literature (Wang). The source is located at
+$(0.1,\ 0.1,\ -L_{z}+0.1)$ m with . The field points inside and outside
+the cavity are randomly chosen at $(0.2,\ 0.3,\ -L_{z}+0.4)$ m and
+$(1.3,\ 1.4,\ -L_{z}+1.5)$ m. The analytical method proposed in Sec.
+2 is obtained with MATLAB codes, when 140 \emph{closed} cavity modes
+are used for computation of eigensolutions to Eq. (\ref{eq:EVP}). 
+
+140 eigenmodes are obtained by analytical method for open rectangular
+cavity. Table. \ref{tab:eigen_frequencies} lists the first 15 eigen
+solutions when noise frequency $f=500$ Hz $(k=9.24)$, in constrast
+with the counterparts of closed cavity. It's clear that the eigenfrequencies
+of acoustic modes become complex in which the imaginary part corresponds
+to radiation loss. Table. \ref{tab:Modulus of modes} plots slices
+of $|\Psi_{\mu,\nu,\xi}|$, the modulus of modal function of $(\mu,\nu,\xi)$
+eigenmode. The nodal lines are distinguishable for these low frequency
+eigenmodes, which justifies the inheritance of the closed cavity modes'
+indexes $\mu,\nu,\xi$ to classify the open cavity modes. The bi-orthogonality
+of the eigensolutions is checked in Tab. \ref{tab:check_biorthogonality}.
+Figure. \ref{fig:Modal_coefficients} presents the amplitude each
+eigenmodes upon the monopole source with strength $q_{s}=jk\rho_{0}c_{0}q_{0}$,
+and $q_{0}=10^{-4}m^{3}/s$ where one can see that $|c_{\mu,\nu,\xi}|$
+decays rapidly as the order of modes grows. $|c_{\mu,\nu,\xi}|$ takes
+the maximum value at (1,1,0) mode, of which the eigenfrequency takes
+$484.95+1.83j$ Hz. It is then checked the number of eigenmodes needed
+for calculation. Figure. \ref{fig:convergence I} indicates less than
+15 eigenmodes is necessary for sound pressure to converge at the probe
+points inside the cavity, while less than 20 eigenmodes for probe
+points outside the cavity. This result is quite reasonable considering
+the resonant eigenmode is the $6^{th}$ one. 
+
+The performance of the proposed method is then verified by calculating
+the sound pressure at field points inside and outside cavity for multiple
+frequencies below 500 Hz, where 20 eigenmodes will be used for calculation.
+The The reference result is obtain via finite element software COMSOL,
+where perfectly matched layers (PMLs) are used to model the semi-infinite
+space above the baffle. Noted only frequencie above 30 Hz are treated
+in COMSOL, as at very low frequency, the PMLs needed for calculation
+become so thick to prevent reflected wave. The source strength is
+taken as $q_{s}=4\pi\times10^{-4}kg/s^{2}$. Figure. \ref{fig:Comparison_FEA_Analytical}
+plots the comparison between results obtained by both methods, where
+excellent agreement suggests the 
+
+\begin{table}
+\begin{centering}
+\begin{tabular}{|c|c|c|c|c|}
+\hline 
+\hline$\mu$ & $\nu$ & $\xi$  & $f_{\mu,\nu,\xi}$ (Hz) & $F_{\mu,\nu,\xi}$ (Hz)\tabularnewline
+\hline 
+\hline 
+0 & 0 & 0 & 0 & 133.26+23.55j\tabularnewline
+\hline 
+0 & 1 & 0 & 253.73 & 283.08+8.64j\tabularnewline
+\hline 
+0 & 0 & 1 & 284.28 & 382.88+71.04j\tabularnewline
+\hline 
+0 & 1 & 1 & 381.04 & 449.37+40.02j\tabularnewline
+\hline 
+1 & 0 & 0 & 393.51 & 413.08+3.68j\tabularnewline
+\hline 
+1 & 1 & 0 & 468.22 & 484.95+1.83j\tabularnewline
+\hline 
+1 & 0 & 1 & 485.46 & 544.96+20.79j\tabularnewline
+\hline 
+0 & 2 & 0 & 507.46 & 522.01+2.07j\tabularnewline
+\hline 
+1 & 1 & 1 & 547.77 & 603.52+11.06j\tabularnewline
+\hline 
+0 & 0 & 2 & 568.56 & 604.31+75.40j\tabularnewline
+\hline 
+0 & 2 & 1 & 581.66 & 631.25+11.13j\tabularnewline
+\hline 
+0 & 1 & 2 & 622.60 & 666.71+46.10j\tabularnewline
+\hline 
+1 & 2 & 0 & 642.16 & 655+0.40j\tabularnewline
+\hline 
+1 & 0 & 2 & 691.46 & 743.95+28.66j\tabularnewline
+\hline 
+1 & 2 & 1 & 702.03 & 752.1+3.30j\tabularnewline
+\hline 
+\end{tabular}
+\par\end{centering}
+
+\caption{\label{tab:eigen_frequencies}The first 15 modes of closed and open
+rectangular cavity, and the corresponding frequencies. $f_{\mu,\nu,\xi}=k_{\mu,\nu,\xi}c_{0}/2\pi$
+for closed cavity; $F_{\mu,\nu,\xi}=K_{\mu,\nu,\xi}c_{0}/2\pi$ for
+open cavity, at source frequency $f=500Hz$. }
+\end{table}
+
+
+\begin{table}
+\begin{centering}
+\begin{tabular}{ccc}
+\includegraphics[scale=0.5]{\string"E:/yuhui/OneDrive/YUHUI_UWA/2D_QNM/coupled mode theory/opencavity/opencavity_theory/pictures/XY1\string".png} & \includegraphics[scale=0.5]{\string"E:/yuhui/OneDrive/YUHUI_UWA/2D_QNM/coupled mode theory/opencavity/opencavity_theory/pictures/XZ1\string".png} & \includegraphics[scale=0.5]{\string"E:/yuhui/OneDrive/YUHUI_UWA/2D_QNM/coupled mode theory/opencavity/opencavity_theory/pictures/YZ1\string".png}\tabularnewline
+(0,0,0) mode $z=0$ plane & (0,0,0) mode $y=0$ plane & (0,0,0) mode $x=0$ plane\tabularnewline
+\includegraphics[scale=0.5]{\string"E:/yuhui/OneDrive/YUHUI_UWA/2D_QNM/coupled mode theory/opencavity/opencavity_theory/pictures/XY2\string".png} & \includegraphics[scale=0.5]{\string"E:/yuhui/OneDrive/YUHUI_UWA/2D_QNM/coupled mode theory/opencavity/opencavity_theory/pictures/XZ2\string".png} & \includegraphics[scale=0.5]{\string"E:/yuhui/OneDrive/YUHUI_UWA/2D_QNM/coupled mode theory/opencavity/opencavity_theory/pictures/YZ2\string".png}\tabularnewline
+(0,1,0) mode $z=0$ plane & (0,1,0) mode $y=0$ plane & (0,1,0) mode $x=0$ plane\tabularnewline
+\includegraphics[scale=0.5]{\string"E:/yuhui/OneDrive/YUHUI_UWA/2D_QNM/coupled mode theory/opencavity/opencavity_theory/pictures/XY3\string".png} & \includegraphics[scale=0.5]{\string"E:/yuhui/OneDrive/YUHUI_UWA/2D_QNM/coupled mode theory/opencavity/opencavity_theory/pictures/XZ3\string".png} & \includegraphics[scale=0.5]{\string"E:/yuhui/OneDrive/YUHUI_UWA/2D_QNM/coupled mode theory/opencavity/opencavity_theory/pictures/YZ3\string".png}\tabularnewline
+(0,0,1) mode $z=0$ plane & (0,0,1) mode $y=0$ plane & (0,0,1) mode $x=0$ plane\tabularnewline
+\includegraphics[scale=0.5]{\string"E:/yuhui/OneDrive/YUHUI_UWA/2D_QNM/coupled mode theory/opencavity/opencavity_theory/pictures/XY6\string".png} & \includegraphics[scale=0.5]{\string"E:/yuhui/OneDrive/YUHUI_UWA/2D_QNM/coupled mode theory/opencavity/opencavity_theory/pictures/XZ6\string".png} & \includegraphics[scale=0.5]{\string"E:/yuhui/OneDrive/YUHUI_UWA/2D_QNM/coupled mode theory/opencavity/opencavity_theory/pictures/YZ6\string".png}\tabularnewline
+(1,1,0) mode $z=0$ plane & (1,1,0) mode $y=0$ plane & (1,1,0) mode $x=0$ plane\tabularnewline
+\includegraphics[scale=0.5]{\string"E:/yuhui/OneDrive/YUHUI_UWA/2D_QNM/coupled mode theory/opencavity/opencavity_theory/pictures/XY10\string".png} & \includegraphics[scale=0.5]{\string"E:/yuhui/OneDrive/YUHUI_UWA/2D_QNM/coupled mode theory/opencavity/opencavity_theory/pictures/XZ10\string".png} & \includegraphics[scale=0.5]{\string"E:/yuhui/OneDrive/YUHUI_UWA/2D_QNM/coupled mode theory/opencavity/opencavity_theory/pictures/YZ10\string".png}\tabularnewline
+(0,0,2) mode $z=0$ plane & (0,0,2) mode $y=0$ plane & (0,0,2) mode $x=0$ plane\tabularnewline
+\end{tabular}
+\par\end{centering}
+
+\caption{\label{tab:Modulus of modes}The modulus of $\Psi_{\mu,\nu,\xi}(\boldsymbol{x})$
+for (0,0,0), (0,1,0), (0,0,1), (1,1,0), (0.0,2) modes, when source
+frequency $f=500$ Hz.}
+\end{table}
+\begin{table}
+\begin{centering}
+\begin{tabular}{|c|c|c|c|c|}
+\hline 
+ & 1 & 2 & 3 & 4\tabularnewline
+\hline 
+\hline 
+1 & 1 & 0 & 0 & 0\tabularnewline
+\hline 
+2 & 0 & 1 & 0 & 0\tabularnewline
+\hline 
+3 & 0 & 0 & 1 & 0\tabularnewline
+\hline 
+4 & 0 & 0 & 0 & 1\tabularnewline
+\hline 
+\end{tabular}
+\par\end{centering}
+
+\caption{\label{tab:check_biorthogonality}The bi-orthogonality of first 4
+modes.}
+\end{table}
+
+
+\begin{figure}
+\begin{centering}
+\includegraphics{\string"E:/yuhui/OneDrive/YUHUI_UWA/2D_QNM/coupled mode theory/opencavity/opencavity_theory/cvg_in_out\string".png}
+\par\end{centering}
+
+\caption{\label{fig:convergence I}The calculated amplitude and phase of the
+sound pressure as a function of eigenmodes orders. The sound source
+is located at $(0.1,\ 0.1,\ -L_{z}+0.1)$ m with $f=500Hz$, $q_{s}=10^{-4}kg/s^{2}$;
+(left) location $(0.2,\ 0.3,\ -L_{z}+0.4)$ m in the cavity and (right)
+location $(1.3,\ 1.4,\ -L_{z}+1.5)$ m outside the cavity. }
+\end{figure}
+
+
+\begin{figure}
+\begin{centering}
+\includegraphics{\string"E:/yuhui/OneDrive/YUHUI_UWA/2D_QNM/coupled mode theory/opencavity/opencavity_theory/modal_coefficients\string".png}
+\par\end{centering}
+
+\caption{\label{fig:Modal_coefficients}The amplitude of modal coefficients
+$|c_{\mu,\nu,\xi}|$, vs orders of mode, when source frequency is
+$500Hz$.}
+\end{figure}
+
+
+\begin{figure}
+\begin{centering}
+\includegraphics{\string"E:/yuhui/OneDrive/YUHUI_UWA/2D_QNM/coupled mode theory/opencavity/opencavity_theory/prediction_20eigenmodes\string".png}
+\par\end{centering}
+
+\caption{\label{fig:Comparison_FEA_Analytical}Comparison between the sound
+field obtained by the anlytical model (marked by MATLAB) and numerical
+simulations (marked by COMSOL) when the excitation point source is
+located at (0.1,0.1,0.1) m and $q0=10^{-4}m^{3}/s$; (a) sound pressure
+level at (0.2,0.3,0.4) m in the cavity and (1.3,1.4,1.5) m outside
+the cavity. }
+\end{figure}
+
+
+
+\section{Conclusions and discussion}
+
+
+\section*{Acknowledgement}
+\end{document}

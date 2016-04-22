@@ -1,0 +1,28 @@
+function [] = plotYZ(B, x0, Parameters)
+% plot pressure distribution of XY plane at z= z0
+Lx = Parameters.Lx;
+Ly = Parameters.Ly;
+Lz = Parameters.Lz;
+
+k = Parameters.k; % frequency
+
+Q = Parameters.Q;
+Nz = Parameters.Nz; % Nz
+P = Q*Nz;
+
+
+numz = 500;
+numy = 500;
+z = -Lz:Lz/numz:-0.2;
+y = 0:Ly/numy:Ly;
+pressure_field = zeros(length(z),length(y));
+for p = 1:P
+    [u,v,w] = inv_mapping3D(p,Parameters);
+    ku = u*pi/Lx;kv = v*pi/Ly;kw = w*pi/Lz;
+    constant = sqrt((2-KronDelta(0,u))/Lx)*sqrt((2-KronDelta(0,v))/Ly)*sqrt((2-KronDelta(0,w))/Lz);
+    pressure_field  = pressure_field + B(p)*(constant*cos(ku*x0)*cos(kv*(y.'))*cos(kw*z)).';
+end
+mesh(y,z,abs(pressure_field));
+
+end
+
