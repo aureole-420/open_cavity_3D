@@ -1,0 +1,103 @@
+% Encoding: UTF-8
+
+@Article{cattafesta2008active,
+  author =    {Cattafesta, Louis N and Song, Qi and Williams, David R and Rowley, Clarence W and Alvi, Farrukh S},
+  title =     {Active control of flow-induced cavity oscillations},
+  journal =   {Progress in Aerospace Sciences},
+  year =      {2008},
+  volume =    {44},
+  number =    {7},
+  pages =     {479--502},
+  publisher = {Elsevier}
+}
+
+@Article{gonzalez2013acoustic,
+  author =    {Gonz{\'a}lez, LM and Cobo, P and Theofilis, V and Valero, E},
+  title =     {Acoustic resonances in 2d open cavities},
+  journal =   {Acta Acustica united with Acustica},
+  year =      {2013},
+  volume =    {99},
+  number =    {4},
+  pages =     {572--581},
+  publisher = {S. Hirzel Verlag}
+}
+
+@Article{hein2004resonances,
+  author =    {Hein, Stefan and Hohage, Thorsten and Koch, Werner},
+  title =     {On resonances in open systems},
+  journal =   {Journal of Fluid Mechanics},
+  year =      {2004},
+  volume =    {506},
+  pages =     {255--284},
+  publisher = {Cambridge Univ Press}
+}
+
+@Article{hein2012trapped,
+  author =    {Hein, Stefan and Koch, Werner and Nannen, Lothar},
+  title =     {Trapped modes and Fano resonances in two-dimensional acoustical duct--cavity systems},
+  journal =   {Journal of fluid mechanics},
+  year =      {2012},
+  volume =    {692},
+  pages =     {257--287},
+  publisher = {Cambridge Univ Press}
+}
+
+@InProceedings{leadercompleteness,
+  author =    {Leader, James and Pan, Jie},
+  title =     {ON THE COMPLETENESS AND ORTHOGONALITY OF THE ACOUSTIC MODES OF AN OPEN CAVITY},
+  booktitle = {Acoustics 2015 Hunter Valley},
+  year =      {2015}
+}
+
+@Article{li2000determination,
+  author =    {Li, WL and Gibeling, HJ},
+  title =     {Determination of the mutual radiation resistances of a rectangular plate and their impact on the radiated sound power},
+  journal =   {Journal of Sound and Vibration},
+  year =      {2000},
+  volume =    {229},
+  number =    {5},
+  pages =     {1213--1233},
+  publisher = {Elsevier}
+}
+
+@Article{maksimov2015coupled,
+  author =    {Maksimov, Dmitrii N and Sadreev, Almas F and Lyapina, Alina A and Pilipchuk, Artem S},
+  title =     {Coupled mode theory for acoustic resonators},
+  journal =   {Wave Motion},
+  year =      {2015},
+  volume =    {56},
+  pages =     {52--66},
+  publisher = {Elsevier}
+}
+
+@Article{wang2015performance,
+  author =    {Wang, Shuping and Tao, Jiancheng and Qiu, Xiaojun},
+  title =     {Performance of a planar virtual sound barrier at the baffled opening of a rectangular cavity},
+  journal =   {The Journal of the Acoustical Society of America},
+  year =      {2015},
+  volume =    {138},
+  number =    {5},
+  pages =     {2836--2847},
+  publisher = {Acoustical Society of America}
+}
+
+@Article{xiong2016fano,
+  author =  {Xiong, Lei and Bi, Wenping and Aur{\'e}gan, Yves},
+  title =   {Fano resonance scatterings in waveguides with impedance boundary conditions},
+  journal = {The Journal of the Acoustical Society of America},
+  year =    {2016},
+  volume =  {139},
+  number =  {2},
+  pages =   {764-772}
+}
+
+@Article{yang2013mechanism,
+  author =    {Yang, Cheng and Pan, Jie and Cheng, Li},
+  title =     {A mechanism study of sound wave-trapping barriers},
+  journal =   {The Journal of the Acoustical Society of America},
+  year =      {2013},
+  volume =    {134},
+  number =    {3},
+  pages =     {1960--1969},
+  publisher = {Acoustical Society of America}
+}

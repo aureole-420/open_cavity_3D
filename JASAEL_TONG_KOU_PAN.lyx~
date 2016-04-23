@@ -24,8 +24,8 @@
 \output_sync 0
 \bibtex_command default
 \index_command default
-\paperfontsize default
-\spacing single
+\paperfontsize 12
+\spacing double
 \use_hyperref false
 \papersize letterpaper
 \use_geometry true
@@ -39,8 +39,8 @@
 \use_package stackrel 1
 \use_package stmaryrd 1
 \use_package undertilde 1
-\cite_engine basic
-\cite_engine_type default
+\cite_engine natbib
+\cite_engine_type numerical
 \biblio_style plain
 \use_bibtopic false
 \use_indices false
@@ -52,10 +52,10 @@
 \shortcut idx
 \color #008000
 \end_index
-\leftmargin 4.5cm
-\topmargin 2cm
-\rightmargin 4.5cm
-\bottommargin 2cm
+\leftmargin 4cm
+\topmargin 3cm
+\rightmargin 4cm
+\bottommargin 3cm
 \secnumdepth 3
 \tocdepth 3
 \paragraph_separation indent
@@ -77,36 +77,112 @@
 Acoustic modal expansion of open cavity using coupled mode theory
 \end_layout
 
+\begin_layout Author
+Yuhui Tong, Yiwei Kou, Jie Pan
+\begin_inset Foot
+status open
+
+\begin_layout Plain Layout
+Author to whom correspondence should be addressed.
+ 
+\begin_inset Newline newline
+\end_inset
+
+Email: jie.pan@uwa.edu.au
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Address
+Schoold of Mechanical and Chemical Engineering, The University of Western
+ Australia, Crawley, WA 6009, Australia
+\end_layout
+
+\begin_layout Abstract
+The modal description of closed acoustical systems such as rooms and enclosure
+ is well known and is commonly used to find the forced response at a given
+ frequency as the superposition of the eigenmodes.
+ Not much literature, however, exists on calculating the forced reponse
+ using the modal description of sound radiated from open cavities, despite
+ their significant practical importance.
+ Taking a baffled rectangular open cavity as an example, it is provided
+ in the present paper a solid theoretical formulation and corresponding
+ numerical verification to show that, the forced response of such an open
+ cavity system can be expressed via superposition of bi-orthogonal frequency-dep
+endent eigenmodes.
+\end_layout
+
 \begin_layout Section
 Introduction 
 \end_layout
 
 \begin_layout Standard
-Open cavity widely ...
- problem
-\end_layout
+Open acoustic cavities are common structures in the context of wheel wells
+ of aircrafts, sound barriers, and etc.
+ The eigenmodes of acoustic resonance of the open cavity were investigated
+ intensively for the benifits of passive and active noise control 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "hein2004resonances,cattafesta2008active"
 
-\begin_layout Standard
-Intensive study eigenvalue problem, the modal expansion has long been absence.
+\end_inset
+
+.
+ It is noted, however, there has long been an abscence of literature that
+ successfully dealt with the calculation of the forced response using the
+ eigen-modal description of sound radiated from open cavities.
+ The challenge lies in the non-orthogonality and incompleteness of eigenmodes
+ defined by the acoustic resonance, as implicitly or explicitly stated in
+ Refs.
+ 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "leadercompleteness,gonzalez2013acoustic,yang2013mechanism"
+
+\end_inset
+
+.
+ For example, Yang, et al., 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "yang2013mechanism"
+
+\end_inset
+
+, predicted the transmission loss of a noise barrier by expanding sound
+ field into eigenmodes solved numerically using perfectly matched layers
+ (PMLs), but found predictions reliable only at frequencies close to eigenvalues
+ and inaccurate elsewhere.
  
 \end_layout
 
 \begin_layout Standard
-Several attempts done before, but none solve the problem nor did provide
- any information to verify the ...
-\end_layout
+Progresses were reported in a related problem regarding the scattering in
+ acoustic scatterers that coupled mode theory were employed to include the
+ coupling between cavity and rigid ducts
+\begin_inset CommandInset citation
+LatexCommand cite
+key "maksimov2015coupled,xiong2016fano"
 
-\begin_layout Standard
-A recent progress made in acoustic resonators for using coupled mode theory,
- to .
- It is also proved that with frequency-dependent eigenmodes.
- 
-\end_layout
+\end_inset
 
-\begin_layout Standard
-In the present paper, it is extended to open cavity problem.
- The baffled being treated ...
- 
+.
+ It is then demostrated that the scattered field can be expressed as the
+ superposition of a set of frequency-dependent eigenmodes [Tong, Pan, 2016,
+ arXiv].
+ In the present paper, the approach in Ref.
+ [Tong, Pan, 2016, arXiv] is extened to open cavity problem where a baffled
+ rectangular open cavity with sound source placed inside the cavity is considere
+d.
+ The eigen value problem is derived at a given frequency for the definition
+ of the corresponding frequency-dependent eigenmodes (not the eigenmode
+ of acoustic resonance), giving rise to the modal expansion of sound field
+ inside and outside the cavity in terms of these eigenmodes.
+ Numerical study is also presented and discussed to examine the effectiveness
+ as well as the accuracy of the proposed method.
 \end_layout
 
 \begin_layout Section
@@ -128,7 +204,7 @@ reference "fig:baffled-cavity"
 
 , the rectangular cavity with an opening located at an infinite baffle is
  investigated in the present paper.
- For the sake of simplicity, all boundaries are rigid.
+ For the sake of simplicity, all boundaries are assumed to be rigid.
  
 \end_layout
 
@@ -194,6 +270,10 @@ where
 \end_inset
 
  is the wavenumber, 
+\begin_inset Formula $c_{0}$
+\end_inset
+
+ is the speed of sound, 
 \begin_inset Formula $q_{s}$
 \end_inset
 
@@ -211,7 +291,7 @@ reference "eq:Helmholtz eqaution"
 
 \end_inset
 
-) can be written respectively for cavity area 
+) can be written respectively for the volume occupied by the cavity 
 \begin_inset Formula $\Omega_{a}$
 \end_inset
 
@@ -255,7 +335,7 @@ enclosed
 , 
 \begin_inset Formula 
 \begin{equation}
-p_{b}(\boldsymbol{x})=jk\rho c\iint_{S_{0}}G_{b}(\boldsymbol{x},\boldsymbol{x}')v_{\perp}(\boldsymbol{x}')dS',\label{eq:pressure_b}
+p_{b}(\boldsymbol{x})=jk\rho_{0}c_{0}\iint_{S_{0}}G_{b}(\boldsymbol{x},\boldsymbol{x}')v_{\perp}(\boldsymbol{x}')dS',\label{eq:pressure_b}
 \end{equation}
 
 \end_inset
@@ -265,6 +345,10 @@ where
 \end_inset
 
  is the Green's function for the upper half space, 
+\begin_inset Formula $\rho_{0}$
+\end_inset
+
+ is the ambient air density, 
 \begin_inset Formula $v_{\perp}(\boldsymbol{x}')$
 \end_inset
 
@@ -382,7 +466,7 @@ Integrating over
  and applying Green's theorem gives
 \begin_inset Formula 
 \begin{equation}
-jk\rho c\iint_{S_{0}}\phi_{\mu,\nu,\xi}v_{\perp}dS_{0}+(k_{\mu,\nu,\xi}^{2}-k^{2})a_{\mu,\nu,\xi}=q_{0}\phi_{\mu,\nu,\xi}(\boldsymbol{x}_{s}).
+jk\rho_{0}c_{0}\iint_{S_{0}}\phi_{\mu,\nu,\xi}v_{\perp}dS_{0}+(k_{\mu,\nu,\xi}^{2}-k^{2})a_{\mu,\nu,\xi}=q_{0}\phi_{\mu,\nu,\xi}(\boldsymbol{x}_{s}).
 \end{equation}
 
 \end_inset
@@ -402,7 +486,7 @@ The above equation can be further simplied into
 
 \end_inset
 
-by noting the expansion of 
+by using the expansion of 
 \begin_inset Formula $v_{\perp}(x,y)$
 \end_inset
 
@@ -432,7 +516,7 @@ Another constraint is the continuity condition for sound pressure at the
 \begin_layout Standard
 \begin_inset Formula 
 \begin{equation}
-\sum_{\mu',\nu',\xi'}a_{\mu',\nu',\xi'}\psi_{\mu'}(x)\psi_{\nu'}(y)\psi_{\xi'}(0)=jk\rho c\iint_{S_{0}}\frac{e^{-jk\sqrt{(x-x')^{2}+(x-y')^{2}}}}{2\pi\sqrt{(x-x')^{2}+(x-y')^{2}}}\sum_{m,n}V_{m,n}\psi_{m}(x')\psi_{n}(y')dS_{0}
+\sum_{\mu',\nu',\xi'}a_{\mu',\nu',\xi'}\psi_{\mu'}(x)\psi_{\nu'}(y)\psi_{\xi'}(0)=jk\rho_{0}c_{0}\iint_{S_{0}}\frac{e^{-jk\sqrt{(x-x')^{2}+(x-y')^{2}}}}{2\pi\sqrt{(x-x')^{2}+(x-y')^{2}}}\sum_{m,n}V_{m,n}\psi_{m}(x')\psi_{n}(y')dS_{0}
 \end{equation}
 
 \end_inset
@@ -460,7 +544,14 @@ where
 \begin_inset Formula $Z_{\mu,\nu,m,n}$
 \end_inset
 
- is the radiation impedance of an baffled rectangular plate of 
+ is the radiation impedance of an baffled rectangular plate 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "li2000determination"
+
+\end_inset
+
+ of 
 \begin_inset Formula $L_{x}\times L_{y}$
 \end_inset
 
@@ -560,7 +651,7 @@ reference "eq:Inner_Outer_connection"
 
 \end_inset
 
-) can be further reduced as 
+) can be further reduced to
 \end_layout
 
 \begin_layout Standard
@@ -575,8 +666,15 @@ where
 \begin_inset Formula $\boldsymbol{D}=\boldsymbol{K}-\boldsymbol{H}\boldsymbol{Z}^{-1}\boldsymbol{M}$
 \end_inset
 
- is known as effective Hamiltonian (reduced differential operator) on quantum
- physics.
+ is known as effective Hamiltonian (reduced differential operator) in quantum
+ physics 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "okolowicz2003dynamics"
+
+\end_inset
+
+.
 \end_layout
 
 \begin_layout Subsection
@@ -611,7 +709,7 @@ where
 \begin_inset Formula $\boldsymbol{g}_{\mu,\nu,\xi}$
 \end_inset
 
- satisfies the bi-orthogonal relation
+ satisfies the bi-orthogonal relation [Tong, Pan, arXiv]
 \end_layout
 
 \begin_layout Standard
@@ -737,7 +835,7 @@ reference "eq:Inner_Outer_connection"
 
 \begin_layout Standard
 \begin_inset Formula 
-\[
+\begin{equation}
 p(\boldsymbol{x})=\left(\begin{array}{c}
 p_{a}(\boldsymbol{x})\\
 p_{b}(\boldsymbol{x})
@@ -745,7 +843,7 @@ p_{b}(\boldsymbol{x})
 \Phi_{\mu,\nu,\xi}(\boldsymbol{x})\\
 \Psi_{\mu,\nu,\xi}(\boldsymbol{x})
 \end{array}\right),
-\]
+\end{equation}
 
 \end_inset
 
@@ -758,9 +856,9 @@ where
 
 \begin_layout Standard
 \begin_inset Formula 
-\[
+\begin{equation}
 \Psi_{\mu,\nu,\xi}(\boldsymbol{x})=\boldsymbol{\varphi}^{T}\boldsymbol{Z}^{-1}\boldsymbol{M}\boldsymbol{g}_{\mu,\nu,\xi}.
-\]
+\end{equation}
 
 \end_inset
 
@@ -770,7 +868,7 @@ Noted
 \end_inset
 
 , 
-\begin_inset Formula $\varphi_{m,n}(\boldsymbol{x})=jk\rho c\iint_{S_{0}}G_{b}(\boldsymbol{x},\boldsymbol{x}')\psi_{m}(x')\psi_{n}(y')dS'$
+\begin_inset Formula $\varphi_{m,n}(\boldsymbol{x})=jk\rho_{0}c_{0}\iint_{S_{0}}G_{b}(\boldsymbol{x},\boldsymbol{x}')\psi_{m}(x')\psi_{n}(y')dS'$
 \end_inset
 
  is the sound pressure induced by velocity distribution 
@@ -811,13 +909,21 @@ reference "fig:baffled-cavity"
 \begin_inset Formula $L_{z}$
 \end_inset
 
-), which was considered in literature (Wang).
+), which was considered in Ref.
+ 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "wang2015performance"
+
+\end_inset
+
+.
  The source is located at 
 \begin_inset Formula $(0.1,\ 0.1,\ -L_{z}+0.1)$
 \end_inset
 
- m with .
- The field points inside and outside the cavity are randomly chosen at 
+ m while the field points inside and outside the cavity are randomly chosen
+ at 
 \begin_inset Formula $(0.2,\ 0.3,\ -L_{z}+0.4)$
 \end_inset
 
@@ -887,12 +993,28 @@ reference "tab:Modulus of modes"
 \end_inset
 
  to classify the open cavity modes.
- The bi-orthogonality of the eigensolutions is checked in Tab.
+ The bi-orthogonality of the eigensolutions is validated in Tab.
  
 \begin_inset CommandInset ref
 LatexCommand ref
 reference "tab:check_biorthogonality"
 
+\end_inset
+
+ by calculating 
+\begin_inset Formula 
+\begin{equation}
+A_{(\mu,\nu,\xi),(\mu',\nu',\xi')}=|\boldsymbol{g}_{\mu,\nu,\xi}^{T}\boldsymbol{g}_{\mu,\nu,\xi}|,
+\end{equation}
+
+\end_inset
+
+where 
+\begin_inset Formula $\boldsymbol{g}_{\mu,\nu,\xi}$
+\end_inset
+
+ is normalized such that 
+\begin_inset Formula $|\boldsymbol{g}_{\mu,\nu,\xi}^{\dagger}\boldsymbol{g}_{\mu,\nu,\xi}|=1$
 \end_inset
 
 .
@@ -904,8 +1026,8 @@ reference "fig:Modal_coefficients"
 
 \end_inset
 
- presents the amplitude each eigenmodes upon the monopole source with strength
- 
+ presents the amplitude of each eigenmodes upon the monopole source with
+ strength 
 \begin_inset Formula $q_{s}=jk\rho_{0}c_{0}q_{0}$
 \end_inset
 
@@ -913,7 +1035,7 @@ reference "fig:Modal_coefficients"
 \begin_inset Formula $q_{0}=10^{-4}m^{3}/s$
 \end_inset
 
- where one can see that 
+, where one can see that 
 \begin_inset Formula $|c_{\mu,\nu,\xi}|$
 \end_inset
 
@@ -928,7 +1050,7 @@ reference "fig:Modal_coefficients"
 \end_inset
 
  Hz.
- It is then checked the number of eigenmodes needed for calculation.
+ It is then examined the number of eigenmodes needed for calculation.
  Figure.
  
 \begin_inset CommandInset ref
@@ -952,10 +1074,9 @@ reference "fig:convergence I"
 \begin_layout Standard
 The performance of the proposed method is then verified by calculating the
  sound pressure at field points inside and outside cavity for multiple frequenci
-es below 500 Hz, where 20 eigenmodes will be used for calculation.
- The The reference result is obtain via finite element software COMSOL,
- where perfectly matched layers (PMLs) are used to model the semi-infinite
- space above the baffle.
+es below 500 Hz, where calculation is implemented utilising 20 eigenmodes.
+ The reference result is obtained via finite element software COMSOL, where
+ PMLs are used to model the semi-infinite space above the baffle.
  Noted only frequencie above 30 Hz are treated in COMSOL, as at very low
  frequency, the PMLs needed for calculation become so thick to prevent reflected
  wave.
@@ -963,7 +1084,7 @@ es below 500 Hz, where 20 eigenmodes will be used for calculation.
 \begin_inset Formula $q_{s}=4\pi\times10^{-4}kg/s^{2}$
 \end_inset
 
-.
+ for all frequencies.
  Figure.
  
 \begin_inset CommandInset ref
@@ -972,44 +1093,34 @@ reference "fig:Comparison_FEA_Analytical"
 
 \end_inset
 
- plots the comparison between results obtained by both methods, where excellent
- agreement suggests the 
+ plots the comparison between results obtained by both methods, in which
+ the excellent agreement verifies the effectiveness and accuracy of the
+ proposed method.
 \end_layout
 
 \begin_layout Standard
 \begin_inset Float table
 wide false
 sideways false
-status collapsed
+status open
 
 \begin_layout Plain Layout
 \align center
 \begin_inset Tabular
 <lyxtabular version="3" rows="16" columns="5">
 <features rotate="0" tabularvalignment="middle">
+<column alignment="center" valignment="top" width="0pt">
 <column alignment="center" valignment="top">
 <column alignment="center" valignment="top">
 <column alignment="center" valignment="top">
-<column alignment="center" valignment="top">
-<column alignment="center" valignment="top">
+<column alignment="center" valignment="top" width="0pt">
 <row>
-<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+<cell alignment="center" valignment="top" topline="true" bottomline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
-\begin_inset ERT
-status open
 
-\begin_layout Plain Layout
-
-
-\backslash
-hline
-\end_layout
-
-\end_inset
-
-
+\size footnotesize
 \begin_inset Formula $\mu$
 \end_inset
 
@@ -1018,10 +1129,12 @@ hline
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+<cell alignment="center" valignment="top" topline="true" bottomline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
+
+\size footnotesize
 \begin_inset Formula $\nu$
 \end_inset
 
@@ -1030,10 +1143,12 @@ hline
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+<cell alignment="center" valignment="top" topline="true" bottomline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
+
+\size footnotesize
 \begin_inset Formula $\xi$
 \end_inset
 
@@ -1042,10 +1157,12 @@ hline
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+<cell alignment="center" valignment="top" topline="true" bottomline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
+
+\size footnotesize
 \begin_inset Formula $f_{\mu,\nu,\xi}$
 \end_inset
 
@@ -1054,10 +1171,12 @@ hline
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+<cell alignment="center" valignment="top" topline="true" bottomline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
+
+\size footnotesize
 \begin_inset Formula $F_{\mu,\nu,\xi}$
 \end_inset
 
@@ -1068,46 +1187,56 @@ hline
 </cell>
 </row>
 <row>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+<cell alignment="center" valignment="top" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
+
+\size footnotesize
 0
 \end_layout
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+<cell alignment="center" valignment="top" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
+
+\size footnotesize
 0
 \end_layout
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+<cell alignment="center" valignment="top" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
+
+\size footnotesize
 0
 \end_layout
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+<cell alignment="center" valignment="top" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
+
+\size footnotesize
 0
 \end_layout
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+<cell alignment="center" valignment="top" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
+
+\size footnotesize
 133.26+23.55j
 \end_layout
 
@@ -1115,46 +1244,56 @@ hline
 </cell>
 </row>
 <row>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+<cell alignment="center" valignment="top" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
+
+\size footnotesize
 0
 \end_layout
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+<cell alignment="center" valignment="top" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
+
+\size footnotesize
 1
 \end_layout
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+<cell alignment="center" valignment="top" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
+
+\size footnotesize
 0
 \end_layout
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+<cell alignment="center" valignment="top" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
+
+\size footnotesize
 253.73
 \end_layout
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+<cell alignment="center" valignment="top" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
+
+\size footnotesize
 283.08+8.64j
 \end_layout
 
@@ -1162,46 +1301,56 @@ hline
 </cell>
 </row>
 <row>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+<cell alignment="center" valignment="top" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
+
+\size footnotesize
 0
 \end_layout
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+<cell alignment="center" valignment="top" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
+
+\size footnotesize
 0
 \end_layout
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+<cell alignment="center" valignment="top" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
+
+\size footnotesize
 1
 \end_layout
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+<cell alignment="center" valignment="top" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
+
+\size footnotesize
 284.28
 \end_layout
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+<cell alignment="center" valignment="top" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
+
+\size footnotesize
 382.88+71.04j
 \end_layout
 
@@ -1209,46 +1358,56 @@ hline
 </cell>
 </row>
 <row>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+<cell alignment="center" valignment="top" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
+
+\size footnotesize
 0
 \end_layout
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+<cell alignment="center" valignment="top" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
+
+\size footnotesize
 1
 \end_layout
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+<cell alignment="center" valignment="top" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
+
+\size footnotesize
 1
 \end_layout
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+<cell alignment="center" valignment="top" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
+
+\size footnotesize
 381.04
 \end_layout
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+<cell alignment="center" valignment="top" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
+
+\size footnotesize
 449.37+40.02j
 \end_layout
 
@@ -1256,46 +1415,56 @@ hline
 </cell>
 </row>
 <row>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+<cell alignment="center" valignment="top" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
+
+\size footnotesize
 1
 \end_layout
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+<cell alignment="center" valignment="top" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
+
+\size footnotesize
 0
 \end_layout
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+<cell alignment="center" valignment="top" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
+
+\size footnotesize
 0
 \end_layout
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+<cell alignment="center" valignment="top" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
+
+\size footnotesize
 393.51
 \end_layout
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+<cell alignment="center" valignment="top" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
+
+\size footnotesize
 413.08+3.68j
 \end_layout
 
@@ -1303,46 +1472,56 @@ hline
 </cell>
 </row>
 <row>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+<cell alignment="center" valignment="top" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
+
+\size footnotesize
 1
 \end_layout
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+<cell alignment="center" valignment="top" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
+
+\size footnotesize
 1
 \end_layout
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+<cell alignment="center" valignment="top" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
+
+\size footnotesize
 0
 \end_layout
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+<cell alignment="center" valignment="top" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
+
+\size footnotesize
 468.22
 \end_layout
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+<cell alignment="center" valignment="top" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
+
+\size footnotesize
 484.95+1.83j
 \end_layout
 
@@ -1350,46 +1529,56 @@ hline
 </cell>
 </row>
 <row>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+<cell alignment="center" valignment="top" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
+
+\size footnotesize
 1
 \end_layout
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+<cell alignment="center" valignment="top" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
+
+\size footnotesize
 0
 \end_layout
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+<cell alignment="center" valignment="top" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
+
+\size footnotesize
 1
 \end_layout
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+<cell alignment="center" valignment="top" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
+
+\size footnotesize
 485.46
 \end_layout
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+<cell alignment="center" valignment="top" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
+
+\size footnotesize
 544.96+20.79j
 \end_layout
 
@@ -1397,46 +1586,56 @@ hline
 </cell>
 </row>
 <row>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+<cell alignment="center" valignment="top" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
+
+\size footnotesize
 0
 \end_layout
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+<cell alignment="center" valignment="top" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
+
+\size footnotesize
 2
 \end_layout
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+<cell alignment="center" valignment="top" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
+
+\size footnotesize
 0
 \end_layout
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+<cell alignment="center" valignment="top" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
+
+\size footnotesize
 507.46
 \end_layout
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+<cell alignment="center" valignment="top" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
+
+\size footnotesize
 522.01+2.07j
 \end_layout
 
@@ -1444,46 +1643,56 @@ hline
 </cell>
 </row>
 <row>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+<cell alignment="center" valignment="top" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
+
+\size footnotesize
 1
 \end_layout
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+<cell alignment="center" valignment="top" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
+
+\size footnotesize
 1
 \end_layout
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+<cell alignment="center" valignment="top" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
+
+\size footnotesize
 1
 \end_layout
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+<cell alignment="center" valignment="top" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
+
+\size footnotesize
 547.77
 \end_layout
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+<cell alignment="center" valignment="top" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
+
+\size footnotesize
 603.52+11.06j
 \end_layout
 
@@ -1491,46 +1700,56 @@ hline
 </cell>
 </row>
 <row>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+<cell alignment="center" valignment="top" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
+
+\size footnotesize
 0
 \end_layout
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+<cell alignment="center" valignment="top" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
+
+\size footnotesize
 0
 \end_layout
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+<cell alignment="center" valignment="top" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
+
+\size footnotesize
 2
 \end_layout
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+<cell alignment="center" valignment="top" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
+
+\size footnotesize
 568.56
 \end_layout
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+<cell alignment="center" valignment="top" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
+
+\size footnotesize
 604.31+75.40j
 \end_layout
 
@@ -1538,46 +1757,56 @@ hline
 </cell>
 </row>
 <row>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+<cell alignment="center" valignment="top" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
+
+\size footnotesize
 0
 \end_layout
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+<cell alignment="center" valignment="top" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
+
+\size footnotesize
 2
 \end_layout
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+<cell alignment="center" valignment="top" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
+
+\size footnotesize
 1
 \end_layout
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+<cell alignment="center" valignment="top" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
+
+\size footnotesize
 581.66
 \end_layout
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+<cell alignment="center" valignment="top" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
+
+\size footnotesize
 631.25+11.13j
 \end_layout
 
@@ -1585,46 +1814,56 @@ hline
 </cell>
 </row>
 <row>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+<cell alignment="center" valignment="top" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
+
+\size footnotesize
 0
 \end_layout
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+<cell alignment="center" valignment="top" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
+
+\size footnotesize
 1
 \end_layout
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+<cell alignment="center" valignment="top" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
+
+\size footnotesize
 2
 \end_layout
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+<cell alignment="center" valignment="top" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
+
+\size footnotesize
 622.60
 \end_layout
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+<cell alignment="center" valignment="top" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
+
+\size footnotesize
 666.71+46.10j
 \end_layout
 
@@ -1632,46 +1871,56 @@ hline
 </cell>
 </row>
 <row>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+<cell alignment="center" valignment="top" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
+
+\size footnotesize
 1
 \end_layout
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+<cell alignment="center" valignment="top" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
+
+\size footnotesize
 2
 \end_layout
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+<cell alignment="center" valignment="top" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
+
+\size footnotesize
 0
 \end_layout
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+<cell alignment="center" valignment="top" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
+
+\size footnotesize
 642.16
 \end_layout
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+<cell alignment="center" valignment="top" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
+
+\size footnotesize
 655+0.40j
 \end_layout
 
@@ -1679,46 +1928,56 @@ hline
 </cell>
 </row>
 <row>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+<cell alignment="center" valignment="top" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
+
+\size footnotesize
 1
 \end_layout
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+<cell alignment="center" valignment="top" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
+
+\size footnotesize
 0
 \end_layout
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+<cell alignment="center" valignment="top" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
+
+\size footnotesize
 2
 \end_layout
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+<cell alignment="center" valignment="top" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
+
+\size footnotesize
 691.46
 \end_layout
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+<cell alignment="center" valignment="top" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
+
+\size footnotesize
 743.95+28.66j
 \end_layout
 
@@ -1726,46 +1985,56 @@ hline
 </cell>
 </row>
 <row>
-<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+<cell alignment="center" valignment="top" bottomline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
+
+\size footnotesize
 1
 \end_layout
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+<cell alignment="center" valignment="top" bottomline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
+
+\size footnotesize
 2
 \end_layout
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+<cell alignment="center" valignment="top" bottomline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
+
+\size footnotesize
 1
 \end_layout
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+<cell alignment="center" valignment="top" bottomline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
+
+\size footnotesize
 702.03
 \end_layout
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+<cell alignment="center" valignment="top" bottomline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
+
+\size footnotesize
 752.1+3.30j
 \end_layout
 
@@ -1821,7 +2090,7 @@ The first 15 modes of closed and open rectangular cavity, and the corresponding
 \begin_inset Float table
 wide false
 sideways false
-status collapsed
+status open
 
 \begin_layout Plain Layout
 \align center
@@ -2311,200 +2580,274 @@ The modulus of
 \begin_inset Float table
 wide false
 sideways false
-status collapsed
+status open
 
 \begin_layout Plain Layout
 \align center
 \begin_inset Tabular
-<lyxtabular version="3" rows="5" columns="5">
+<lyxtabular version="3" rows="11" columns="11">
 <features rotate="0" tabularvalignment="middle">
+<column alignment="center" valignment="top" width="0pt">
+<column alignment="center" valignment="top" width="0pt">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
 <column alignment="center" valignment="top">
 <column alignment="center" valignment="top">
 <column alignment="center" valignment="top">
 <column alignment="center" valignment="top">
 <column alignment="center" valignment="top">
 <row>
-<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+<cell alignment="center" valignment="top" bottomline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
 
+\size tiny
+(
+\begin_inset Formula $\mu,\nu,\xi$
+\end_inset
+
+)
+\backslash
+(
+\begin_inset Formula $\mu',\nu',\xi'$
+\end_inset
+
+)
 \end_layout
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+<cell alignment="center" valignment="top" bottomline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
-1
+
+\size tiny
+(0,0,0)
 \end_layout
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+<cell alignment="center" valignment="top" bottomline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
-2
+
+\size tiny
+(0,1,0)
 \end_layout
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+<cell alignment="center" valignment="top" bottomline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
-3
+
+\size tiny
+0,0,2)
 \end_layout
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+<cell alignment="center" valignment="top" bottomline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
-4
+
+\size tiny
+(1,1,0)
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size tiny
+(0,0,1)
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size tiny
+(1,0,0)
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size tiny
+(0,2,0)
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size tiny
+(1,0,1)
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size tiny
+(1,1,1)
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size tiny
+(0,0,2)
 \end_layout
 
 \end_inset
 </cell>
 </row>
 <row>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+<cell alignment="center" valignment="top" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
-1
+
+\size tiny
+(0,0,0)
 \end_layout
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+<cell alignment="center" valignment="top" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
-1
+
+\size tiny
+0.9517
 \end_layout
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+<cell alignment="center" valignment="top" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
+
+\size tiny
 0
 \end_layout
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+<cell alignment="center" valignment="top" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
+
+\size tiny
 0
 \end_layout
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+<cell alignment="center" valignment="top" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
+
+\size tiny
 0
 \end_layout
 
 \end_inset
 </cell>
-</row>
-<row>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+<cell alignment="center" valignment="top" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
-2
-\end_layout
 
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
+\size tiny
 0
 \end_layout
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+<cell alignment="center" valignment="top" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
-1
-\end_layout
 
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
+\size tiny
 0
 \end_layout
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+<cell alignment="center" valignment="top" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
+
+\size tiny
 0
 \end_layout
 
 \end_inset
 </cell>
-</row>
-<row>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+<cell alignment="center" valignment="top" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
-3
-\end_layout
 
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
+\size tiny
 0
 \end_layout
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+<cell alignment="center" valignment="top" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
+
+\size tiny
 0
 \end_layout
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+<cell alignment="center" valignment="top" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
-1
-\end_layout
 
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
+\size tiny
 0
 \end_layout
 
@@ -2512,47 +2855,1107 @@ status collapsed
 </cell>
 </row>
 <row>
-<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+<cell alignment="center" valignment="top" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
-4
+
+\size tiny
+(0,1,0)
 \end_layout
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+<cell alignment="center" valignment="top" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
+
+\size tiny
 0
 \end_layout
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+<cell alignment="center" valignment="top" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
+
+\size tiny
+0.9717
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size tiny
 0
 \end_layout
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+<cell alignment="center" valignment="top" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
+
+\size tiny
 0
 \end_layout
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+<cell alignment="center" valignment="top" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
-1
+
+\size tiny
+0
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size tiny
+0
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size tiny
+0
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size tiny
+0
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size tiny
+0
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size tiny
+0
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size tiny
+0,0,2)
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size tiny
+0
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size tiny
+0
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size tiny
+0.7803
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size tiny
+0
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size tiny
+0
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size tiny
+0
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size tiny
+0
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size tiny
+0
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size tiny
+0
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size tiny
+0
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size tiny
+(1,1,0)
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size tiny
+0
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size tiny
+0
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size tiny
+0
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size tiny
+0.9889
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size tiny
+0
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size tiny
+0
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size tiny
+0
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size tiny
+0
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size tiny
+0
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size tiny
+0
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size tiny
+(0,0,1)
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size tiny
+0
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size tiny
+0
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size tiny
+0
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size tiny
+0
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size tiny
+0.8956
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size tiny
+0
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size tiny
+0
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size tiny
+0
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size tiny
+0
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size tiny
+0
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size tiny
+(1,0,0)
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size tiny
+0
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size tiny
+0
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size tiny
+0
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size tiny
+0
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size tiny
+0
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size tiny
+0.9962
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size tiny
+0
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size tiny
+0
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size tiny
+0
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size tiny
+0
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size tiny
+(0,2,0)
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size tiny
+0
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size tiny
+0
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size tiny
+0
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size tiny
+0
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size tiny
+0
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size tiny
+0
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size tiny
+0.9890
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size tiny
+0
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size tiny
+0
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size tiny
+0
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size tiny
+(1,0,1)
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size tiny
+0
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size tiny
+0
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size tiny
+0
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size tiny
+0
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size tiny
+0
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size tiny
+0
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size tiny
+0
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size tiny
+0.9541
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size tiny
+0
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size tiny
+0
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size tiny
+(1,1,1)
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size tiny
+0
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size tiny
+0
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size tiny
+0
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size tiny
+0
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size tiny
+0
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size tiny
+0
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size tiny
+0
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size tiny
+0
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size tiny
+0.9835
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size tiny
+0
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size tiny
+(0,0,2)
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size tiny
+0
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size tiny
+0
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size tiny
+0
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size tiny
+0
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size tiny
+0
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size tiny
+0
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size tiny
+0
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size tiny
+0
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size tiny
+0
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size tiny
+0.7098
 \end_layout
 
 \end_inset
@@ -2575,7 +3978,21 @@ name "tab:check_biorthogonality"
 
 \end_inset
 
-The bi-orthogonality of first 4 modes.
+
+\begin_inset Formula $A_{(\mu,\nu,\xi),(\mu',\nu',\xi')}$
+\end_inset
+
+ for first 10 eigenmodes, at source frequency 
+\begin_inset Formula $f=500$
+\end_inset
+
+ Hz.
+ Noted in the table, values below 
+\begin_inset Formula $10^{-13}$
+\end_inset
+
+ are taken as 0.
+ 
 \end_layout
 
 \end_inset
@@ -2724,9 +4141,9 @@ name "fig:Comparison_FEA_Analytical"
 \end_inset
 
 Comparison between the sound field obtained by the anlytical model (marked
- by MATLAB) and numerical simulations (marked by COMSOL) when the excitation
+ by MATLAB) and finite element simulation (marked by COMSOL) when the excitation
  point source is located at (0.1,0.1,0.1) m and 
-\begin_inset Formula $q0=10^{-4}m^{3}/s$
+\begin_inset Formula $q_{s}=4\pi\times10^{-4}kg/s^{2}$
 \end_inset
 
 ; (a) sound pressure level at (0.2,0.3,0.4) m in the cavity and (1.3,1.4,1.5)
@@ -2745,11 +4162,143 @@ Comparison between the sound field obtained by the anlytical model (marked
 \end_layout
 
 \begin_layout Section
-Conclusions and discussion
+Conclusions and remarks
+\end_layout
+
+\begin_layout Standard
+The acoustic forced response of a baffled rectangular open cavity at a given
+ frequency has been formulated as the superposition of the bi-orthogonal
+ frequency-dependent eigenmodes.
+ The effectiveness of the proposed modal representation was demonstrated
+ numerically by showing the accurate sound pressure prediction can be obtained
+ using only a few eigenmodes for expansion, for field points either inside
+ or outside the cavity.
+ Noted the proposed method can be extended to baffled irregular open cavity
+ straightforwardly by expanding the sound field inside the cavity with eigensolu
+tions of the closed irregular cavity (corresponding to 
+\begin_inset Formula $\Psi_{\mu,\nu,\xi}(\boldsymbol{x})$
+\end_inset
+
+ in the present paper ), and that ouside the cavity with sound field radiated
+ by baffled plate (corresponding to 
+\begin_inset Formula $\varphi_{m,n}(\boldsymbol{x})$
+\end_inset
+
+).
+ In the present paper, the source placed is placed inside the cavity; the
+ case with source outside the cavity is technically solvable following the
+ same step, but is more complex as the basis for external space, 
+\begin_inset Formula $\varphi_{m,n}(\boldsymbol{x})$
+\end_inset
+
+ are non-orthogonal.
+ The method may also be applicable to unbaffled open cavity, on condition
+ that appropriate bases are found for internal and external spaces.
+ 
+\end_layout
+
+\begin_layout Standard
+Finally, a remark is made on an eigenvalue problem similar to Eq.
+ (
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:EVP"
+
+\end_inset
+
+),
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+\boldsymbol{D}(\widetilde{K}_{\mu,\nu,\xi}^{2})\boldsymbol{\widetilde{g}}_{\mu,\nu,\xi}=\widetilde{K}_{\mu,\nu,\xi}^{2}\boldsymbol{\widetilde{g}}_{\mu,\nu,\xi},\label{eq:EVP_natural}
+\end{equation}
+
+\end_inset
+
+where the matrix 
+\begin_inset Formula $\boldsymbol{D}$
+\end_inset
+
+ is eigenvalue dependent rather than 
+\begin_inset Formula $k$
+\end_inset
+
+ dependent.
+ It corresponds to the natural vibration of the system in the absence of
+ noise source, which is the 
+\emph on
+acoustic resonance
+\emph default
+ commonly encounted in literatures 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "hein2004resonances"
+
+\end_inset
+
+.
+ The Eq.
+ (
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:EVP_natural"
+
+\end_inset
+
+) can be solved directly 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "xiong2016fano"
+
+\end_inset
+
+ and is equivalent to the solution by using the finite element eigen solver
+ 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "hein2012trapped"
+
+\end_inset
+
+.
+ It is noted that eigensolutions to Eq.
+ (
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:EVP_natural"
+
+\end_inset
+
+) are non-orthogonal and may not be complete for modal representation of
+ the forced response of the system.
 \end_layout
 
 \begin_layout Section*
 Acknowledgement
+\end_layout
+
+\begin_layout Standard
+The financial support from Australian Research Council (ARC LP) is gratefully
+ ackowledged.
+ The authors also wish to thank Shuping Wang from Nanjing University for
+ discussion on the calculation of radiation impedance.
+\end_layout
+
+\begin_layout Section*
+References
+\end_layout
+
+\begin_layout Standard
+\begin_inset CommandInset bibtex
+LatexCommand bibtex
+bibfiles "jasael_references"
+options "plain"
+
+\end_inset
+
+
 \end_layout
 
 \end_body

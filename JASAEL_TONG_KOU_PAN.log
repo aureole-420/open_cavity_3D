@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (MiKTeX 2.9) (preloaded format=pdflatex 2016.2.22)  23 APR 2016 01:02
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (MiKTeX 2.9) (preloaded format=pdflatex 2016.2.22)  23 APR 2016 20:36
 entering extended mode
 **JASAEL_TONG_KOU_PAN.tex
 (JASAEL_TONG_KOU_PAN.tex
@@ -6,8 +6,8 @@ LaTeX2e <2015/01/01> patch level 2
 Babel <3.9m> and hyphenation patterns for 69 languages loaded.
 ("E:\Program Files\MiKTeX 2.9\tex\latex\base\article.cls"
 Document Class: article 2014/09/29 v1.4h Standard LaTeX document class
-("E:\Program Files\MiKTeX 2.9\tex\latex\base\size10.clo"
-File: size10.clo 2014/09/29 v1.4h Standard LaTeX file (size option)
+("E:\Program Files\MiKTeX 2.9\tex\latex\base\size12.clo"
+File: size12.clo 2014/09/29 v1.4h Standard LaTeX file (size option)
 )
 \c@part=\count79
 \c@section=\count80
@@ -106,9 +106,19 @@ Package: ltxcmds 2011/11/09 v1.22 LaTeX kernel commands for general use (HO)
 \Gin@req@height=\dimen113
 \Gin@req@width=\dimen114
 )
+("E:\Program Files\MiKTeX 2.9\tex\latex\setspace\setspace.sty"
+Package: setspace 2011/12/19 v6.7a set line spacing
+)
 ("E:\Program Files\MiKTeX 2.9\tex\latex\esint\esint.sty"
 Package: esint 
 \symlargesymbolsA=\mathgroup4
+)
+("E:\Program Files\MiKTeX 2.9\tex\latex\natbib\natbib.sty"
+Package: natbib 2010/09/13 8.31b (PWD, AO)
+\bibhang=\skip43
+\bibsep=\skip44
+LaTeX Info: Redefining \cite on input line 694.
+\c@NAT@ctr=\count91
 )
 ("E:\Program Files\MiKTeX 2.9\tex\generic\babel\babel.sty"
 Package: babel 2015/08/03 3.9m The Babel package
@@ -124,7 +134,7 @@ Language: english 2012/08/20 v3.3p English support from the babel system
 
 ("E:\Program Files\MiKTeX 2.9\tex\generic\babel\babel.def"
 File: babel.def 2015/08/03 3.9m Babel common definitions
-\babel@savecnt=\count91
+\babel@savecnt=\count92
 \U@D=\dimen115
 )
 \l@canadian = a dialect from \language\l@american 
@@ -132,18 +142,18 @@ File: babel.def 2015/08/03 3.9m Babel common definitions
 \l@newzealand = a dialect from \language\l@british 
 ))
 (JASAEL_TONG_KOU_PAN.aux)
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 28.
-LaTeX Font Info:    ... okay on input line 28.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 28.
-LaTeX Font Info:    ... okay on input line 28.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 28.
-LaTeX Font Info:    ... okay on input line 28.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 28.
-LaTeX Font Info:    ... okay on input line 28.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 28.
-LaTeX Font Info:    ... okay on input line 28.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 28.
-LaTeX Font Info:    ... okay on input line 28.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 31.
+LaTeX Font Info:    ... okay on input line 31.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 31.
+LaTeX Font Info:    ... okay on input line 31.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 31.
+LaTeX Font Info:    ... okay on input line 31.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 31.
+LaTeX Font Info:    ... okay on input line 31.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 31.
+LaTeX Font Info:    ... okay on input line 31.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 31.
+LaTeX Font Info:    ... okay on input line 31.
 
 *geometry* driver: auto-detecting
 *geometry* detected driver: pdftex
@@ -153,23 +163,23 @@ LaTeX Font Info:    ... okay on input line 28.
 * layout: <same size as paper>
 * layoutoffset:(h,v)=(0.0pt,0.0pt)
 * modes: 
-* h-part:(L,W,R)=(128.0374pt, 358.2202pt, 128.0374pt)
-* v-part:(T,H,B)=(56.9055pt, 681.15898pt, 56.9055pt)
+* h-part:(L,W,R)=(113.81102pt, 386.67296pt, 113.81102pt)
+* v-part:(T,H,B)=(85.35826pt, 624.25346pt, 85.35826pt)
 * \paperwidth=614.295pt
 * \paperheight=794.96999pt
-* \textwidth=358.2202pt
-* \textheight=681.15898pt
-* \oddsidemargin=55.76741pt
-* \evensidemargin=55.76741pt
-* \topmargin=-52.36449pt
+* \textwidth=386.67296pt
+* \textheight=624.25346pt
+* \oddsidemargin=41.54103pt
+* \evensidemargin=41.54103pt
+* \topmargin=-23.91173pt
 * \headheight=12.0pt
 * \headsep=25.0pt
-* \topskip=10.0pt
+* \topskip=12.0pt
 * \footskip=30.0pt
-* \marginparwidth=65.0pt
-* \marginparsep=11.0pt
+* \marginparwidth=44.0pt
+* \marginparsep=10.0pt
 * \columnsep=10.0pt
-* \skip\footins=9.0pt plus 4.0pt minus 2.0pt
+* \skip\footins=10.8pt plus 4.0pt minus 2.0pt
 * \hoffset=0.0pt
 * \voffset=0.0pt
 * \mag=1000
@@ -181,30 +191,42 @@ LaTeX Font Info:    ... okay on input line 28.
 
 ("E:\Program Files\MiKTeX 2.9\tex\context\base\supp-pdf.mkii"
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count92
+\scratchcounter=\count93
 \scratchdimen=\dimen116
 \scratchbox=\box26
-\nofMPsegments=\count93
-\nofMParguments=\count94
+\nofMPsegments=\count94
+\nofMParguments=\count95
 \everyMPshowfont=\toks19
-\MPscratchCnt=\count95
+\MPscratchCnt=\count96
 \MPscratchDim=\dimen117
-\MPnumerator=\count96
-\makeMPintoPDFobject=\count97
+\MPnumerator=\count97
+\makeMPintoPDFobject=\count98
 \everyMPtoPDFconversion=\toks20
 )
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <12> on input line 35.
+(Font)              <14.4> on input line 39.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <8> on input line 35.
-LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <6> on input line 35.
-LaTeX Font Info:    Try loading font information for U+esint on input line 35.
+(Font)              <7> on input line 39.
+LaTeX Font Info:    Try loading font information for U+esint on input line 39.
  ("E:\Program Files\MiKTeX 2.9\tex\latex\esint\uesint.fd"
 File: uesint.fd 
 )
+LaTeX Font Info:    Try loading font information for OMS+cmr on input line 39.
+
+("E:\Program Files\MiKTeX 2.9\tex\latex\base\omscmr.fd"
+File: omscmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
+)
+LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <10> not available
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 39.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <5> on input line 39.
+LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <7> not available
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 39.
+ [1
+
+{C:/Users/21355188/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map}] [2]
 <"E:/yuhui/OneDrive/YUHUI_UWA/2D_QNM/coupled mode theory/opencavity/opencavity_
-theory/opencavity_illustration".png, id=1, 379.4175pt x 319.9152pt>
+theory/opencavity_illustration".png, id=17, 379.4175pt x 319.9152pt>
 File: "E:/yuhui/OneDrive/YUHUI_UWA/2D_QNM/coupled mode theory/opencavity/openca
 vity_theory/opencavity_illustration".png Graphic file (type png)
 
@@ -212,244 +234,260 @@ vity_theory/opencavity_illustration".png Graphic file (type png)
 ity_theory/opencavity_illustration".png>
 Package pdftex.def Info: "E:/yuhui/OneDrive/YUHUI_UWA/2D_QNM/coupled mode theor
 y/opencavity/opencavity_theory/opencavity_illustration".png used on input line 
-69.
+103.
 (pdftex.def)             Requested size: 189.70828pt x 159.9572pt.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <7> on input line 77.
+(Font)              <12> on input line 111.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <5> on input line 77.
- [1
-
-{C:/Users/21355188/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map} <E:/yuhui
-/OneDrive/YUHUI_UWA/2D_QNM/coupled mode theory/opencavity/opencavity_theory/ope
-ncavity_illustration.png>]
-Overfull \hbox (63.16188pt too wide) detected at line 153
-[] \OML/cmm/m/it/10 a[] []\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 x\OT1/cmr/m/n/10 )\
-OML/cmm/m/it/10  []\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 y\OT1/cmr/m/n/10 )\OML/cmm
-/m/it/10  []\OT1/cmr/m/n/10 (0) = \OML/cmm/m/it/10 jkc [][] [] [] V[] []\OT1/c
-mr/m/n/10 (\OML/cmm/m/it/10 x[]\OT1/cmr/m/n/10 )\OML/cmm/m/it/10  []\OT1/cmr/m/
-n/10 (\OML/cmm/m/it/10 y[]\OT1/cmr/m/n/10 )\OML/cmm/m/it/10 dS[]
- []
-
-[2]
-Overfull \hbox (53.69646pt too wide) in paragraph at lines 169--173
-[]\T1/cmr/m/n/10 Using Eqs. (8[]) and (11[]), vec-tors $[] \OT1/cmr/m/n/10 = []
-[]$ \T1/cmr/m/n/10 and $[] \OT1/cmr/m/n/10 = [][]$\T1/cmr/m/n/10 can
+(Font)              <8> on input line 111.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <6> on input line 111.
+ [3 <E:/yuhui/OneDrive/YUHUI_UWA/2D_QNM/coupled mode theory/opencavity/opencavi
+ty_theory/opencavity_illustration.png>] [4]
+Overfull \hbox (95.07439pt too wide) detected at line 188
+[] \OML/cmm/m/it/12 a[] []\OT1/cmr/m/n/12 (\OML/cmm/m/it/12 x\OT1/cmr/m/n/12 )\
+OML/cmm/m/it/12  []\OT1/cmr/m/n/12 (\OML/cmm/m/it/12 y\OT1/cmr/m/n/12 )\OML/cmm
+/m/it/12  []\OT1/cmr/m/n/12 (0) = \OML/cmm/m/it/12 jk[]c[] [][] [] [] V[] []\O
+T1/cmr/m/n/12 (\OML/cmm/m/it/12 x[]\OT1/cmr/m/n/12 )\OML/cmm/m/it/12  []\OT1/cm
+r/m/n/12 (\OML/cmm/m/it/12 y[]\OT1/cmr/m/n/12 )\OML/cmm/m/it/12 dS[]
  []
 
 
-Overfull \hbox (11.46622pt too wide) in paragraph at lines 181--188
-\T1/cmr/m/n/10 where cor-re-spond-ing ma-tri-ces are de-fined as fol-lows: $[][
-] \OT1/cmr/m/n/10 = \OML/cmm/m/it/10 jk[][] []\OT1/cmr/m/n/10 (0)$\T1/cmr/m/n
-/10 ,
+Overfull \hbox (9.00697pt too wide) detected at line 201
+\OML/cmm/m/it/12 Z[] \OT1/cmr/m/n/12 = \OML/cmm/m/it/12 jk [][] [][]  []\OT1/cm
+r/m/n/12 (\OML/cmm/m/it/12 x\OT1/cmr/m/n/12 )\OML/cmm/m/it/12  []\OT1/cmr/m/n/1
+2 (\OML/cmm/m/it/12 y\OT1/cmr/m/n/12 )[]\OML/cmm/m/it/12  []\OT1/cmr/m/n/12 (\O
+ML/cmm/m/it/12 x[]\OT1/cmr/m/n/12 )\OML/cmm/m/it/12  []\OT1/cmr/m/n/12 (\OML/cm
+m/m/it/12 y[]\OT1/cmr/m/n/12 )\OML/cmm/m/it/12 dS[]dS
+ []
+
+[5]
+Overfull \hbox (37.35576pt too wide) in paragraph at lines 216--223
+\T1/cmr/m/n/12 where cor-re-spond-ing ma-tri-ces are de-fined as fol-lows: $[][
+] \OT1/cmr/m/n/12 = \OML/cmm/m/it/12 jk[][] []\OT1/cmr/m/n/12 (0)$\T1/cmr/m/n
+/12 ,
  []
 
 
-Overfull \hbox (26.29657pt too wide) in paragraph at lines 181--188
-$[][] \OT1/cmr/m/n/10 = \OML/cmm/m/it/10 k[][][][];$ $[] \OT1/cmr/m/n/10 = \
-OML/cmm/m/it/10 q[] [][]$\T1/cmr/m/n/10 , $[][] \OT1/cmr/m/n/10 =$
+Overfull \hbox (34.17363pt too wide) in paragraph at lines 216--223
+$[][] \OT1/cmr/m/n/12 = \OML/cmm/m/it/12 k[][][][];$ $[] \OT1/cmr/m/n/12 = \
+OML/cmm/m/it/12 q[] [][]$\T1/cmr/m/n/12 , $[][] \OT1/cmr/m/n/12 =$
  []
 
-[3]
+[6]
+Overfull \hbox (27.87756pt too wide) in paragraph at lines 288--293
+\T1/cmr/m/n/12 Noted $[] \OT1/cmr/m/n/12 = []$\T1/cmr/m/n/12 , $\OML/cmm/m/it/1
+2 '[]\OT1/cmr/m/n/12 ([]) = \OML/cmm/m/it/12 jk[]c[] [][] G[]\OT1/cmr/m/n/12 (
+[]\OML/cmm/m/it/12 ; [][]\OT1/cmr/m/n/12 )\OML/cmm/m/it/12  []\OT1/cmr/m/n/12 (
+\OML/cmm/m/it/12 x[]\OT1/cmr/m/n/12 )\OML/cmm/m/it/12  []\OT1/cmr/m/n/12 (\OML/
+cmm/m/it/12 y[]\OT1/cmr/m/n/12 )\OML/cmm/m/it/12 dS[]$
+ []
+
+[7] [8]
 <"E:/yuhui/OneDrive/YUHUI_UWA/2D_QNM/coupled mode theory/opencavity/opencavity_
-theory/pictures/XY1".png, id=34, 240.9pt x 180.675pt>
+theory/pictures/XY1".png, id=54, 240.9pt x 180.675pt>
 File: "E:/yuhui/OneDrive/YUHUI_UWA/2D_QNM/coupled mode theory/opencavity/openca
 vity_theory/pictures/XY1".png Graphic file (type png)
 
 <use "E:/yuhui/OneDrive/YUHUI_UWA/2D_QNM/coupled mode theory/opencavity/opencav
 ity_theory/pictures/XY1".png>
 Package pdftex.def Info: "E:/yuhui/OneDrive/YUHUI_UWA/2D_QNM/coupled mode theor
-y/opencavity/opencavity_theory/pictures/XY1".png used on input line 356.
+y/opencavity/opencavity_theory/pictures/XY1".png used on input line 383.
 (pdftex.def)             Requested size: 120.44969pt x 90.33727pt.
 
 <"E:/yuhui/OneDrive/YUHUI_UWA/2D_QNM/coupled mode theory/opencavity/opencavity_
-theory/pictures/XZ1".png, id=36, 240.9pt x 180.675pt>
+theory/pictures/XZ1".png, id=56, 240.9pt x 180.675pt>
 File: "E:/yuhui/OneDrive/YUHUI_UWA/2D_QNM/coupled mode theory/opencavity/openca
 vity_theory/pictures/XZ1".png Graphic file (type png)
 
 <use "E:/yuhui/OneDrive/YUHUI_UWA/2D_QNM/coupled mode theory/opencavity/opencav
 ity_theory/pictures/XZ1".png>
 Package pdftex.def Info: "E:/yuhui/OneDrive/YUHUI_UWA/2D_QNM/coupled mode theor
-y/opencavity/opencavity_theory/pictures/XZ1".png used on input line 356.
+y/opencavity/opencavity_theory/pictures/XZ1".png used on input line 383.
 (pdftex.def)             Requested size: 120.44969pt x 90.33727pt.
 
 <"E:/yuhui/OneDrive/YUHUI_UWA/2D_QNM/coupled mode theory/opencavity/opencavity_
-theory/pictures/YZ1".png, id=37, 240.9pt x 180.675pt>
+theory/pictures/YZ1".png, id=57, 240.9pt x 180.675pt>
 File: "E:/yuhui/OneDrive/YUHUI_UWA/2D_QNM/coupled mode theory/opencavity/openca
 vity_theory/pictures/YZ1".png Graphic file (type png)
 
 <use "E:/yuhui/OneDrive/YUHUI_UWA/2D_QNM/coupled mode theory/opencavity/opencav
 ity_theory/pictures/YZ1".png>
 Package pdftex.def Info: "E:/yuhui/OneDrive/YUHUI_UWA/2D_QNM/coupled mode theor
-y/opencavity/opencavity_theory/pictures/YZ1".png used on input line 356.
+y/opencavity/opencavity_theory/pictures/YZ1".png used on input line 383.
 (pdftex.def)             Requested size: 120.44969pt x 90.33727pt.
 
 <"E:/yuhui/OneDrive/YUHUI_UWA/2D_QNM/coupled mode theory/opencavity/opencavity_
-theory/pictures/XY2".png, id=38, 240.9pt x 180.675pt>
+theory/pictures/XY2".png, id=58, 240.9pt x 180.675pt>
 File: "E:/yuhui/OneDrive/YUHUI_UWA/2D_QNM/coupled mode theory/opencavity/openca
 vity_theory/pictures/XY2".png Graphic file (type png)
 
 <use "E:/yuhui/OneDrive/YUHUI_UWA/2D_QNM/coupled mode theory/opencavity/opencav
 ity_theory/pictures/XY2".png>
 Package pdftex.def Info: "E:/yuhui/OneDrive/YUHUI_UWA/2D_QNM/coupled mode theor
-y/opencavity/opencavity_theory/pictures/XY2".png used on input line 358.
+y/opencavity/opencavity_theory/pictures/XY2".png used on input line 385.
 (pdftex.def)             Requested size: 120.44969pt x 90.33727pt.
 
 <"E:/yuhui/OneDrive/YUHUI_UWA/2D_QNM/coupled mode theory/opencavity/opencavity_
-theory/pictures/XZ2".png, id=39, 240.9pt x 180.675pt>
+theory/pictures/XZ2".png, id=59, 240.9pt x 180.675pt>
 File: "E:/yuhui/OneDrive/YUHUI_UWA/2D_QNM/coupled mode theory/opencavity/openca
 vity_theory/pictures/XZ2".png Graphic file (type png)
 
 <use "E:/yuhui/OneDrive/YUHUI_UWA/2D_QNM/coupled mode theory/opencavity/opencav
 ity_theory/pictures/XZ2".png>
 Package pdftex.def Info: "E:/yuhui/OneDrive/YUHUI_UWA/2D_QNM/coupled mode theor
-y/opencavity/opencavity_theory/pictures/XZ2".png used on input line 358.
+y/opencavity/opencavity_theory/pictures/XZ2".png used on input line 385.
 (pdftex.def)             Requested size: 120.44969pt x 90.33727pt.
 
 <"E:/yuhui/OneDrive/YUHUI_UWA/2D_QNM/coupled mode theory/opencavity/opencavity_
-theory/pictures/YZ2".png, id=40, 240.9pt x 180.675pt>
+theory/pictures/YZ2".png, id=60, 240.9pt x 180.675pt>
 File: "E:/yuhui/OneDrive/YUHUI_UWA/2D_QNM/coupled mode theory/opencavity/openca
 vity_theory/pictures/YZ2".png Graphic file (type png)
 
 <use "E:/yuhui/OneDrive/YUHUI_UWA/2D_QNM/coupled mode theory/opencavity/opencav
 ity_theory/pictures/YZ2".png>
 Package pdftex.def Info: "E:/yuhui/OneDrive/YUHUI_UWA/2D_QNM/coupled mode theor
-y/opencavity/opencavity_theory/pictures/YZ2".png used on input line 358.
+y/opencavity/opencavity_theory/pictures/YZ2".png used on input line 385.
 (pdftex.def)             Requested size: 120.44969pt x 90.33727pt.
 
 <"E:/yuhui/OneDrive/YUHUI_UWA/2D_QNM/coupled mode theory/opencavity/opencavity_
-theory/pictures/XY3".png, id=41, 240.9pt x 180.675pt>
+theory/pictures/XY3".png, id=61, 240.9pt x 180.675pt>
 File: "E:/yuhui/OneDrive/YUHUI_UWA/2D_QNM/coupled mode theory/opencavity/openca
 vity_theory/pictures/XY3".png Graphic file (type png)
 
 <use "E:/yuhui/OneDrive/YUHUI_UWA/2D_QNM/coupled mode theory/opencavity/opencav
 ity_theory/pictures/XY3".png>
 Package pdftex.def Info: "E:/yuhui/OneDrive/YUHUI_UWA/2D_QNM/coupled mode theor
-y/opencavity/opencavity_theory/pictures/XY3".png used on input line 360.
+y/opencavity/opencavity_theory/pictures/XY3".png used on input line 387.
 (pdftex.def)             Requested size: 120.44969pt x 90.33727pt.
 
 <"E:/yuhui/OneDrive/YUHUI_UWA/2D_QNM/coupled mode theory/opencavity/opencavity_
-theory/pictures/XZ3".png, id=42, 240.9pt x 180.675pt>
+theory/pictures/XZ3".png, id=62, 240.9pt x 180.675pt>
 File: "E:/yuhui/OneDrive/YUHUI_UWA/2D_QNM/coupled mode theory/opencavity/openca
 vity_theory/pictures/XZ3".png Graphic file (type png)
 
 <use "E:/yuhui/OneDrive/YUHUI_UWA/2D_QNM/coupled mode theory/opencavity/opencav
 ity_theory/pictures/XZ3".png>
 Package pdftex.def Info: "E:/yuhui/OneDrive/YUHUI_UWA/2D_QNM/coupled mode theor
-y/opencavity/opencavity_theory/pictures/XZ3".png used on input line 360.
+y/opencavity/opencavity_theory/pictures/XZ3".png used on input line 387.
 (pdftex.def)             Requested size: 120.44969pt x 90.33727pt.
 
 <"E:/yuhui/OneDrive/YUHUI_UWA/2D_QNM/coupled mode theory/opencavity/opencavity_
-theory/pictures/YZ3".png, id=43, 240.9pt x 180.675pt>
+theory/pictures/YZ3".png, id=63, 240.9pt x 180.675pt>
 File: "E:/yuhui/OneDrive/YUHUI_UWA/2D_QNM/coupled mode theory/opencavity/openca
 vity_theory/pictures/YZ3".png Graphic file (type png)
 
 <use "E:/yuhui/OneDrive/YUHUI_UWA/2D_QNM/coupled mode theory/opencavity/opencav
 ity_theory/pictures/YZ3".png>
 Package pdftex.def Info: "E:/yuhui/OneDrive/YUHUI_UWA/2D_QNM/coupled mode theor
-y/opencavity/opencavity_theory/pictures/YZ3".png used on input line 360.
+y/opencavity/opencavity_theory/pictures/YZ3".png used on input line 387.
 (pdftex.def)             Requested size: 120.44969pt x 90.33727pt.
 
 <"E:/yuhui/OneDrive/YUHUI_UWA/2D_QNM/coupled mode theory/opencavity/opencavity_
-theory/pictures/XY6".png, id=44, 240.9pt x 180.675pt>
+theory/pictures/XY6".png, id=64, 240.9pt x 180.675pt>
 File: "E:/yuhui/OneDrive/YUHUI_UWA/2D_QNM/coupled mode theory/opencavity/openca
 vity_theory/pictures/XY6".png Graphic file (type png)
 
 <use "E:/yuhui/OneDrive/YUHUI_UWA/2D_QNM/coupled mode theory/opencavity/opencav
 ity_theory/pictures/XY6".png>
 Package pdftex.def Info: "E:/yuhui/OneDrive/YUHUI_UWA/2D_QNM/coupled mode theor
-y/opencavity/opencavity_theory/pictures/XY6".png used on input line 362.
+y/opencavity/opencavity_theory/pictures/XY6".png used on input line 389.
 (pdftex.def)             Requested size: 120.44969pt x 90.33727pt.
 
 <"E:/yuhui/OneDrive/YUHUI_UWA/2D_QNM/coupled mode theory/opencavity/opencavity_
-theory/pictures/XZ6".png, id=45, 240.9pt x 180.675pt>
+theory/pictures/XZ6".png, id=65, 240.9pt x 180.675pt>
 File: "E:/yuhui/OneDrive/YUHUI_UWA/2D_QNM/coupled mode theory/opencavity/openca
 vity_theory/pictures/XZ6".png Graphic file (type png)
 
 <use "E:/yuhui/OneDrive/YUHUI_UWA/2D_QNM/coupled mode theory/opencavity/opencav
 ity_theory/pictures/XZ6".png>
 Package pdftex.def Info: "E:/yuhui/OneDrive/YUHUI_UWA/2D_QNM/coupled mode theor
-y/opencavity/opencavity_theory/pictures/XZ6".png used on input line 362.
+y/opencavity/opencavity_theory/pictures/XZ6".png used on input line 389.
 (pdftex.def)             Requested size: 120.44969pt x 90.33727pt.
 
 <"E:/yuhui/OneDrive/YUHUI_UWA/2D_QNM/coupled mode theory/opencavity/opencavity_
-theory/pictures/YZ6".png, id=46, 240.9pt x 180.675pt>
+theory/pictures/YZ6".png, id=66, 240.9pt x 180.675pt>
 File: "E:/yuhui/OneDrive/YUHUI_UWA/2D_QNM/coupled mode theory/opencavity/openca
 vity_theory/pictures/YZ6".png Graphic file (type png)
 
 <use "E:/yuhui/OneDrive/YUHUI_UWA/2D_QNM/coupled mode theory/opencavity/opencav
 ity_theory/pictures/YZ6".png>
 Package pdftex.def Info: "E:/yuhui/OneDrive/YUHUI_UWA/2D_QNM/coupled mode theor
-y/opencavity/opencavity_theory/pictures/YZ6".png used on input line 362.
+y/opencavity/opencavity_theory/pictures/YZ6".png used on input line 389.
 (pdftex.def)             Requested size: 120.44969pt x 90.33727pt.
 
 <"E:/yuhui/OneDrive/YUHUI_UWA/2D_QNM/coupled mode theory/opencavity/opencavity_
-theory/pictures/XY10".png, id=47, 240.9pt x 180.675pt>
+theory/pictures/XY10".png, id=67, 240.9pt x 180.675pt>
 File: "E:/yuhui/OneDrive/YUHUI_UWA/2D_QNM/coupled mode theory/opencavity/openca
 vity_theory/pictures/XY10".png Graphic file (type png)
 
 <use "E:/yuhui/OneDrive/YUHUI_UWA/2D_QNM/coupled mode theory/opencavity/opencav
 ity_theory/pictures/XY10".png>
 Package pdftex.def Info: "E:/yuhui/OneDrive/YUHUI_UWA/2D_QNM/coupled mode theor
-y/opencavity/opencavity_theory/pictures/XY10".png used on input line 364.
+y/opencavity/opencavity_theory/pictures/XY10".png used on input line 391.
 (pdftex.def)             Requested size: 120.44969pt x 90.33727pt.
 
 <"E:/yuhui/OneDrive/YUHUI_UWA/2D_QNM/coupled mode theory/opencavity/opencavity_
-theory/pictures/XZ10".png, id=48, 240.9pt x 180.675pt>
+theory/pictures/XZ10".png, id=68, 240.9pt x 180.675pt>
 File: "E:/yuhui/OneDrive/YUHUI_UWA/2D_QNM/coupled mode theory/opencavity/openca
 vity_theory/pictures/XZ10".png Graphic file (type png)
 
 <use "E:/yuhui/OneDrive/YUHUI_UWA/2D_QNM/coupled mode theory/opencavity/opencav
 ity_theory/pictures/XZ10".png>
 Package pdftex.def Info: "E:/yuhui/OneDrive/YUHUI_UWA/2D_QNM/coupled mode theor
-y/opencavity/opencavity_theory/pictures/XZ10".png used on input line 364.
+y/opencavity/opencavity_theory/pictures/XZ10".png used on input line 391.
 (pdftex.def)             Requested size: 120.44969pt x 90.33727pt.
 
 <"E:/yuhui/OneDrive/YUHUI_UWA/2D_QNM/coupled mode theory/opencavity/opencavity_
-theory/pictures/YZ10".png, id=49, 240.9pt x 180.675pt>
+theory/pictures/YZ10".png, id=69, 240.9pt x 180.675pt>
 File: "E:/yuhui/OneDrive/YUHUI_UWA/2D_QNM/coupled mode theory/opencavity/openca
 vity_theory/pictures/YZ10".png Graphic file (type png)
 
 <use "E:/yuhui/OneDrive/YUHUI_UWA/2D_QNM/coupled mode theory/opencavity/opencav
 ity_theory/pictures/YZ10".png>
 Package pdftex.def Info: "E:/yuhui/OneDrive/YUHUI_UWA/2D_QNM/coupled mode theor
-y/opencavity/opencavity_theory/pictures/YZ10".png used on input line 364.
+y/opencavity/opencavity_theory/pictures/YZ10".png used on input line 391.
 (pdftex.def)             Requested size: 120.44969pt x 90.33727pt.
 
-Overfull \hbox (39.12888pt too wide) in paragraph at lines 355--367
+Overfull \hbox (33.7283pt too wide) in paragraph at lines 382--394
+ [][] 
+ []
+
+
+Overfull \hbox (16.35504pt too wide) in paragraph at lines 402--416
  [][] 
  []
 
 
 <"E:/yuhui/OneDrive/YUHUI_UWA/2D_QNM/coupled mode theory/opencavity/opencavity_
-theory/cvg_in_out".png, id=50, 433.62pt x 216.81pt>
+theory/cvg_in_out".png, id=70, 433.62pt x 216.81pt>
 File: "E:/yuhui/OneDrive/YUHUI_UWA/2D_QNM/coupled mode theory/opencavity/openca
 vity_theory/cvg_in_out".png Graphic file (type png)
 
 <use "E:/yuhui/OneDrive/YUHUI_UWA/2D_QNM/coupled mode theory/opencavity/opencav
 ity_theory/cvg_in_out".png>
 Package pdftex.def Info: "E:/yuhui/OneDrive/YUHUI_UWA/2D_QNM/coupled mode theor
-y/opencavity/opencavity_theory/cvg_in_out".png used on input line 398.
+y/opencavity/opencavity_theory/cvg_in_out".png used on input line 426.
 (pdftex.def)             Requested size: 433.61894pt x 216.80946pt.
 
-Overfull \hbox (75.39874pt too wide) in paragraph at lines 398--399
+Overfull \hbox (46.94598pt too wide) in paragraph at lines 426--427
  [][] 
  []
 
 
 <"E:/yuhui/OneDrive/YUHUI_UWA/2D_QNM/coupled mode theory/opencavity/opencavity_
-theory/modal_coefficients".png, id=51, 289.08pt x 216.81pt>
+theory/modal_coefficients".png, id=71, 289.08pt x 216.81pt>
 File: "E:/yuhui/OneDrive/YUHUI_UWA/2D_QNM/coupled mode theory/opencavity/openca
 vity_theory/modal_coefficients".png Graphic file (type png)
 
 <use "E:/yuhui/OneDrive/YUHUI_UWA/2D_QNM/coupled mode theory/opencavity/opencav
 ity_theory/modal_coefficients".png>
 Package pdftex.def Info: "E:/yuhui/OneDrive/YUHUI_UWA/2D_QNM/coupled mode theor
-y/opencavity/opencavity_theory/modal_coefficients".png used on input line 411.
+y/opencavity/opencavity_theory/modal_coefficients".png used on input line 439.
 (pdftex.def)             Requested size: 289.07928pt x 216.80946pt.
 
 <"E:/yuhui/OneDrive/YUHUI_UWA/2D_QNM/coupled mode theory/opencavity/opencavity_
-theory/prediction_20eigenmodes".png, id=52, 289.08pt x 216.81pt>
+theory/prediction_20eigenmodes".png, id=72, 289.08pt x 216.81pt>
 File: "E:/yuhui/OneDrive/YUHUI_UWA/2D_QNM/coupled mode theory/opencavity/openca
 vity_theory/prediction_20eigenmodes".png Graphic file (type png)
 
@@ -457,67 +495,76 @@ vity_theory/prediction_20eigenmodes".png Graphic file (type png)
 ity_theory/prediction_20eigenmodes".png>
 Package pdftex.def Info: "E:/yuhui/OneDrive/YUHUI_UWA/2D_QNM/coupled mode theor
 y/opencavity/opencavity_theory/prediction_20eigenmodes".png used on input line 
-422.
+450.
 (pdftex.def)             Requested size: 289.07928pt x 216.80946pt.
- [4] [5 <E:/yuhui/OneDrive/YUHUI_UWA/2D_QNM/coupled mode theory/opencavity/open
-cavity_theory/cvg_in_out.png (PNG copy)>] [6 <E:/yuhui/OneDrive/YUHUI_UWA/2D_QN
-M/coupled mode theory/opencavity/opencavity_theory/pictures/XY1.png> <E:/yuhui/
+ [9] [10 <E:/yuhui/OneDrive/YUHUI_UWA/2D_QNM/coupled mode theory/opencavity/ope
+ncavity_theory/cvg_in_out.png (PNG copy)>] [11 <E:/yuhui/OneDrive/YUHUI_UWA/2D_
+QNM/coupled mode theory/opencavity/opencavity_theory/pictures/XY1.png> <E:/yuhu
+i/OneDrive/YUHUI_UWA/2D_QNM/coupled mode theory/opencavity/opencavity_theory/pi
+ctures/XZ1.png> <E:/yuhui/OneDrive/YUHUI_UWA/2D_QNM/coupled mode theory/opencav
+ity/opencavity_theory/pictures/YZ1.png> <E:/yuhui/OneDrive/YUHUI_UWA/2D_QNM/cou
+pled mode theory/opencavity/opencavity_theory/pictures/XY2.png> <E:/yuhui/OneDr
+ive/YUHUI_UWA/2D_QNM/coupled mode theory/opencavity/opencavity_theory/pictures/
+XZ2.png> <E:/yuhui/OneDrive/YUHUI_UWA/2D_QNM/coupled mode theory/opencavity/ope
+ncavity_theory/pictures/YZ2.png> <E:/yuhui/OneDrive/YUHUI_UWA/2D_QNM/coupled mo
+de theory/opencavity/opencavity_theory/pictures/XY3.png> <E:/yuhui/OneDrive/YUH
+UI_UWA/2D_QNM/coupled mode theory/opencavity/opencavity_theory/pictures/XZ3.png
+> <E:/yuhui/OneDrive/YUHUI_UWA/2D_QNM/coupled mode theory/opencavity/opencavity
+_theory/pictures/YZ3.png> <E:/yuhui/OneDrive/YUHUI_UWA/2D_QNM/coupled mode theo
+ry/opencavity/opencavity_theory/pictures/XY6.png> <E:/yuhui/OneDrive/YUHUI_UWA/
+2D_QNM/coupled mode theory/opencavity/opencavity_theory/pictures/XZ6.png> <E:/y
+uhui/OneDrive/YUHUI_UWA/2D_QNM/coupled mode theory/opencavity/opencavity_theory
+/pictures/YZ6.png> <E:/yuhui/OneDrive/YUHUI_UWA/2D_QNM/coupled mode theory/open
+cavity/opencavity_theory/pictures/XY10.png> <E:/yuhui/OneDrive/YUHUI_UWA/2D_QNM
+/coupled mode theory/opencavity/opencavity_theory/pictures/XZ10.png> <E:/yuhui/
 OneDrive/YUHUI_UWA/2D_QNM/coupled mode theory/opencavity/opencavity_theory/pict
-ures/XZ1.png> <E:/yuhui/OneDrive/YUHUI_UWA/2D_QNM/coupled mode theory/opencavit
-y/opencavity_theory/pictures/YZ1.png> <E:/yuhui/OneDrive/YUHUI_UWA/2D_QNM/coupl
-ed mode theory/opencavity/opencavity_theory/pictures/XY2.png> <E:/yuhui/OneDriv
-e/YUHUI_UWA/2D_QNM/coupled mode theory/opencavity/opencavity_theory/pictures/XZ
-2.png> <E:/yuhui/OneDrive/YUHUI_UWA/2D_QNM/coupled mode theory/opencavity/openc
-avity_theory/pictures/YZ2.png> <E:/yuhui/OneDrive/YUHUI_UWA/2D_QNM/coupled mode
- theory/opencavity/opencavity_theory/pictures/XY3.png> <E:/yuhui/OneDrive/YUHUI
-_UWA/2D_QNM/coupled mode theory/opencavity/opencavity_theory/pictures/XZ3.png> 
-<E:/yuhui/OneDrive/YUHUI_UWA/2D_QNM/coupled mode theory/opencavity/opencavity_t
-heory/pictures/YZ3.png> <E:/yuhui/OneDrive/YUHUI_UWA/2D_QNM/coupled mode theory
-/opencavity/opencavity_theory/pictures/XY6.png> <E:/yuhui/OneDrive/YUHUI_UWA/2D
-_QNM/coupled mode theory/opencavity/opencavity_theory/pictures/XZ6.png> <E:/yuh
-ui/OneDrive/YUHUI_UWA/2D_QNM/coupled mode theory/opencavity/opencavity_theory/p
-ictures/YZ6.png> <E:/yuhui/OneDrive/YUHUI_UWA/2D_QNM/coupled mode theory/openca
-vity/opencavity_theory/pictures/XY10.png> <E:/yuhui/OneDrive/YUHUI_UWA/2D_QNM/c
-oupled mode theory/opencavity/opencavity_theory/pictures/XZ10.png> <E:/yuhui/On
-eDrive/YUHUI_UWA/2D_QNM/coupled mode theory/opencavity/opencavity_theory/pictur
-es/YZ10.png>] [7 <E:/yuhui/OneDrive/YUHUI_UWA/2D_QNM/coupled mode theory/openca
-vity/opencavity_theory/modal_coefficients.png (PNG copy)> <E:/yuhui/OneDrive/YU
-HUI_UWA/2D_QNM/coupled mode theory/opencavity/opencavity_theory/prediction_20ei
-genmodes.png (PNG copy)>]
-(JASAEL_TONG_KOU_PAN.aux) ) 
+ures/YZ10.png>] [12 <E:/yuhui/OneDrive/YUHUI_UWA/2D_QNM/coupled mode theory/ope
+ncavity/opencavity_theory/modal_coefficients.png (PNG copy)>] [13 <E:/yuhui/One
+Drive/YUHUI_UWA/2D_QNM/coupled mode theory/opencavity/opencavity_theory/predict
+ion_20eigenmodes.png (PNG copy)>]
+(JASAEL_TONG_KOU_PAN.bbl [14] [15]) [16] (JASAEL_TONG_KOU_PAN.aux) ) 
 Here is how much of TeX's memory you used:
- 2521 strings out of 493673
- 40156 string characters out of 3143951
- 114918 words of memory out of 3000000
- 5823 multiletter control sequences out of 15000+200000
- 14835 words of font info for 45 fonts, out of 3000000 for 9000
+ 2956 strings out of 493673
+ 46077 string characters out of 3143951
+ 119134 words of memory out of 3000000
+ 6238 multiletter control sequences out of 15000+200000
+ 19684 words of font info for 54 fonts, out of 3000000 for 9000
  1025 hyphenation exceptions out of 8191
- 27i,12n,23p,596b,315s stack positions out of 5000i,500n,10000p,200000b,50000s
- <C:\Users\21355188\AppData\Local\MiKTeX\2.9\fonts\p
-k\ljfour\jknappen\ec\dpi600\ecti1000.pk> <C:\Users\21355188\AppData\Local\MiKTe
-X\2.9\fonts\pk\ljfour\jknappen\ec\dpi600\ecbx1200.pk> <C:\Users\21355188\AppDat
-a\Local\MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec\dpi600\ecbx1440.pk> <C:\Users\21
-355188\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec\dpi600\ecrm1000.pk>
- <C:\Users\21355188\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec\dpi600
-\ecrm1200.pk> <C:\Users\21355188\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jknap
-pen\ec\dpi600\ecrm1728.pk><E:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfo
-nts/cm/cmbsy10.pfb><E:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/
-cmbx7.pfb><E:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmex10.pf
-b><E:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi10.pfb><E:/Pr
-ogram Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi5.pfb><E:/Program Fil
-es/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi7.pfb><E:/Program Files/MiKTeX
- 2.9/fonts/type1/public/amsfonts/cm/cmmib10.pfb><E:/Program Files/MiKTeX 2.9/fo
-nts/type1/public/amsfonts/cmextra/cmmib5.pfb><E:/Program Files/MiKTeX 2.9/fonts
-/type1/public/amsfonts/cmextra/cmmib7.pfb><E:/Program Files/MiKTeX 2.9/fonts/ty
-pe1/public/amsfonts/cm/cmr10.pfb><E:/Program Files/MiKTeX 2.9/fonts/type1/publi
-c/amsfonts/cm/cmr5.pfb><E:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts
-/cm/cmr7.pfb><E:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy10
-.pfb><E:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy5.pfb><E:/
-Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy7.pfb><E:/Program F
-iles/MiKTeX 2.9/fonts/type1/public/esint/esint10.pfb>
-Output written on JASAEL_TONG_KOU_PAN.pdf (7 pages, 2140582 bytes).
+ 27i,12n,28p,596b,320s stack positions out of 5000i,500n,10000p,200000b,50000s
+ <C:\Users\
+21355188\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec\dpi600\ecrm0600.p
+k> <C:\Users\21355188\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec\dpi6
+00\ecti1200.pk> <C:\Users\21355188\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jkn
+appen\ec\dpi600\ecbx1440.pk> <C:\Users\21355188\AppData\Local\MiKTeX\2.9\fonts\
+pk\ljfour\jknappen\ec\dpi600\ecbx1728.pk> <C:\Users\21355188\AppData\Local\MiKT
+eX\2.9\fonts\pk\ljfour\jknappen\ec\dpi600\ecrm1000.pk> <C:\Users\21355188\AppDa
+ta\Local\MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec\dpi600\ecrm1095.pk> <C:\Users\2
+1355188\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec\dpi600\ecbx1095.pk
+> <C:\Users\21355188\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec\dpi60
+0\ecrm1200.pk> <C:\Users\21355188\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jkna
+ppen\ec\dpi600\ecrm1440.pk> <C:\Users\21355188\AppData\Local\MiKTeX\2.9\fonts\p
+k\ljfour\jknappen\ec\dpi600\ecrm2074.pk><E:/Program Files/MiKTeX 2.9/fonts/type
+1/public/amsfonts/cm/cmbsy10.pfb><E:/Program Files/MiKTeX 2.9/fonts/type1/publi
+c/amsfonts/cm/cmbx8.pfb><E:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfont
+s/cm/cmex10.pfb><E:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmm
+i10.pfb><E:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi12.pfb>
+<E:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi6.pfb><E:/Progr
+am Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi7.pfb><E:/Program Files/
+MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi8.pfb><E:/Program Files/MiKTeX 2.
+9/fonts/type1/public/amsfonts/cm/cmmib10.pfb><E:/Program Files/MiKTeX 2.9/fonts
+/type1/public/amsfonts/cmextra/cmmib6.pfb><E:/Program Files/MiKTeX 2.9/fonts/ty
+pe1/public/amsfonts/cmextra/cmmib8.pfb><E:/Program Files/MiKTeX 2.9/fonts/type1
+/public/amsfonts/cm/cmr12.pfb><E:/Program Files/MiKTeX 2.9/fonts/type1/public/a
+msfonts/cm/cmr6.pfb><E:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm
+/cmr8.pfb><E:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy10.pf
+b><E:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy5.pfb><E:/Pro
+gram Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy6.pfb><E:/Program File
+s/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy7.pfb><E:/Program Files/MiKTeX 
+2.9/fonts/type1/public/amsfonts/cm/cmsy8.pfb><E:/Program Files/MiKTeX 2.9/fonts
+/type1/public/esint/esint10.pfb>
+Output written on JASAEL_TONG_KOU_PAN.pdf (16 pages, 2235091 bytes).
 PDF statistics:
- 322 PDF objects out of 1000 (max. 8388607)
+ 518 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
  96 words of extra memory for PDF output out of 10000 (max. 10000000)
 

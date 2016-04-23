@@ -28,8 +28,8 @@ for k = 9.24:0.05:9.24
     freq(NUM) = k*340/2/pi;
     Parameters.k = k;
     Parameters.kdir = ['zmat/k',num2str(k)];
-    q0 = (10^-4)*rho0*k*c0;
-%     q0 = 4*pi*10^-4;
+%     q0 = (10^-4)*rho0*k*c0;
+    q0 = 4*pi*10^-4;
     load Modes2D.mat;
     load Modes3D.mat;
     
@@ -188,6 +188,15 @@ for q = 1:Q
     n = Modes2D(q,3);
     phiQ(q) = getPrOut_mn(m,n,xp2,yp2,zp2,Parameters);
 end
+bi_relation = zeros(10,10);
+for n = 1:10
+    for n1 = 1:10
+        gn = exp_mat(n,2:P+1);gn = gn.';
+        gn1 = exp_mat(n1,2:P+1);gn1 = gn1.';
+        bi_relation(n,n1) = gn1.'*gn;
+    end
+end
+bi_relation  = abs(bi_relation);
 % % % % 
 % ---------- plot  modal shape for nnn = 6th eigenmode------------%
 % % % gn = exp_mat(1,2:P+1);gn = gn.';
@@ -199,59 +208,58 @@ end
 % % plotYZ(a,0,Parameters)
 
 
-% % % % num = 1
-% % % % %%%---------------------------(1)plot Pr~Nn-------------------------------%
-% % % % %%%%-------------------------(2)plot cn~n---------------------------------%
-% % % % % bi_basis
-% % % % % orth_basis
-% % % % for Nn = 1:1:40
-% % % % % Nn = 25
-% % % %     pr_in_recstr = 0;
-% % % %     pr_out_recstr = 0;
-% % % %     for n = 1:Nn
-% % % %         gn = exp_mat(n,2:P+1);gn = gn.';
-% % % %         lambda_n = exp_mat(n,1);
-% % % %         c_n = (gn.'*S)/((lambda_n-k^2)*(gn.'*gn));
-% % % %         bi_basis(n) = c_n;
-% % % %         orth_basis(n) = a(n);
-% % % %         % reconstructed pr_out
-% % % %         pn = phiQ.'*(Z\M)*gn;
-% % % %         pr_out_recstr = pr_out_recstr + c_n*pn;
-% % % %         pr_n = 0;
-% % % %         pn = 0;
-% % % %         % reconstructed pr_in
-% % % %         for p = 1:P
-% % % %             u = Modes3D(p,2);
-% % % %             v = Modes3D(p,3);
-% % % %             w = Modes3D(p,4);
-% % % %             ku = u*pi/Lx; kv = v*pi/Ly; kw = w*pi/Lz;
-% % % %             constant = sqrt((2-KronDelta(0,u))/Lx)*sqrt((2-KronDelta(0,v))/Ly)*sqrt((2-KronDelta(0,w))/Lz);
-% % % %             pr_n = pr_n + gn(p)*constant*cos(ku*xp)*cos(kv*yp)*cos(kw*zp);
-% % % %         end
-% % % %         pr_n
-% % % %         pr_in_recstr = pr_in_recstr + c_n*pr_n;
-% % % %     end
-% % % %     NoM(num) = Nn;
-% % % %     pr_in_Nn(num) = abs(pr_in_recstr);
-% % % %     ph_in_Nn(num) = angle(pr_in_recstr);
-% % % %     pr_out_Nn(num) = abs(pr_out_recstr);
-% % % %     ph_out_Nn(num) = angle(pr_out_recstr);
-% % % %     num = num +1
-% % % % end
-% % % % figure(1)
-% % % % nmodes = 1:40;
-% % % % % plot(nmodes, abs(bi_basis),'LineWidth',2)
-% % % % % hold on;
-% % % % % plot(nmodes, abs(orth_basis),'LineWidth',2);
-% % % % bar1 = bar(nmodes,[abs(orth_basis);abs(bi_basis)]','BarWidth',1);
-% % % % set(bar1(1),'FaceColor',[0 0 0]);
-% % % % set(bar1(2),'FaceColor',[1 0 0]);
-% % % % legend('Orthogonal bases','Bi-orthogonal bases')
-% % % % xlabel('Order of Modes');
-% % % % ylabel('Modal coefficients')
-% % % % xlim([0,30])
-% % % % set(gcf,'PaperUnits','inches','PaperPosition',[0 -1 4 3]);
-% % % % saveas(gcf, 'modal_coefficients.png')
+num = 1
+%%%---------------------------(1)plot Pr~Nn-------------------------------%
+%%%%-------------------------(2)plot cn~n---------------------------------%
+% bi_basis
+% orth_basis
+for Nn = 40:1:40
+% Nn = 25
+    pr_in_recstr = 0;
+    pr_out_recstr = 0;
+    for n = 1:Nn
+        gn = exp_mat(n,2:P+1);gn = gn.';
+        lambda_n = exp_mat(n,1);
+        c_n = (gn.'*S)/((lambda_n-k^2)*(gn.'*gn));
+        bi_basis(n) = c_n;
+        orth_basis(n) = a(n);
+        % reconstructed pr_out
+        pn = phiQ.'*(Z\M)*gn;
+        pr_out_recstr = pr_out_recstr + c_n*pn;
+        pr_n = 0;
+        pn = 0;
+        % reconstructed pr_in
+        for p = 1:P
+            u = Modes3D(p,2);
+            v = Modes3D(p,3);
+            w = Modes3D(p,4);
+            ku = u*pi/Lx; kv = v*pi/Ly; kw = w*pi/Lz;
+            constant = sqrt((2-KronDelta(0,u))/Lx)*sqrt((2-KronDelta(0,v))/Ly)*sqrt((2-KronDelta(0,w))/Lz);
+            pr_n = pr_n + gn(p)*constant*cos(ku*xp)*cos(kv*yp)*cos(kw*zp);
+        end
+        pr_n
+        pr_in_recstr = pr_in_recstr + c_n*pr_n;
+    end
+    NoM(num) = Nn;
+    pr_in_Nn(num) = abs(pr_in_recstr);
+    ph_in_Nn(num) = angle(pr_in_recstr);
+    pr_out_Nn(num) = abs(pr_out_recstr);
+    ph_out_Nn(num) = angle(pr_out_recstr);
+    num = num +1
+end
+figure(1)
+nmodes = 1:40;
+% bar1 = bar(nmodes,[abs(orth_basis);abs(bi_basis)]','BarWidth',1);
+% set(bar1(1),'FaceColor',[0 0 0]);
+% set(bar1(2),'FaceColor',[1 0 0]);
+bar1 = bar(nmodes,[abs(bi_basis)]','BarWidth',0.6);
+% legend('Orthogonal bases','Bi-orthogonal bases')
+legend('Bi-orthogonal bases')
+xlabel('Order of Modes');
+ylabel('Modal coefficients')
+xlim([0,30])
+set(gcf,'PaperUnits','inches','PaperPosition',[0 -1 4 3]);
+saveas(gcf, 'modal_coefficients.png')
 
 % % % % % % figure(1)
 % % % % % % subplot(2,2,1)
