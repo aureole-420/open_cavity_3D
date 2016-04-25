@@ -3,6 +3,9 @@
 \begin_document
 \begin_header
 \textclass article
+\begin_preamble
+\date{}
+\end_preamble
 \use_default_options true
 \maintain_unincluded_children false
 \language english
@@ -74,13 +77,16 @@
 \begin_body
 
 \begin_layout Title
+
+\series bold
 Acoustic modal expansion of open cavity using coupled mode theory
 \end_layout
 
 \begin_layout Author
+\paragraph_spacing single
 Yuhui Tong, Yiwei Kou, Jie Pan
 \begin_inset Foot
-status open
+status collapsed
 
 \begin_layout Plain Layout
 Author to whom correspondence should be addressed.
@@ -97,6 +103,7 @@ Email: jie.pan@uwa.edu.au
 \end_layout
 
 \begin_layout Address
+\paragraph_spacing single
 Schoold of Mechanical and Chemical Engineering, The University of Western
  Australia, Crawley, WA 6009, Australia
 \end_layout
@@ -950,159 +957,10 @@ reference "eq:EVP"
 \end_layout
 
 \begin_layout Standard
-140 eigenmodes are obtained by analytical method for open rectangular cavity.
- Table.
- 
-\begin_inset CommandInset ref
-LatexCommand ref
-reference "tab:eigen_frequencies"
-
-\end_inset
-
- lists the first 15 eigen solutions when noise frequency 
-\begin_inset Formula $f=500$
-\end_inset
-
- Hz 
-\begin_inset Formula $(k=9.24)$
-\end_inset
-
-, in constrast with the counterparts of closed cavity.
- It's clear that the eigenfrequencies of acoustic modes become complex in
- which the imaginary part corresponds to radiation loss.
- Table.
- 
-\begin_inset CommandInset ref
-LatexCommand ref
-reference "tab:Modulus of modes"
-
-\end_inset
-
- plots slices of 
-\begin_inset Formula $|\Psi_{\mu,\nu,\xi}|$
-\end_inset
-
-, the modulus of modal function of 
-\begin_inset Formula $(\mu,\nu,\xi)$
-\end_inset
-
- eigenmode.
- The nodal lines are distinguishable for these low frequency eigenmodes,
- which justifies the inheritance of the closed cavity modes' indexes 
-\begin_inset Formula $\mu,\nu,\xi$
-\end_inset
-
- to classify the open cavity modes.
- The bi-orthogonality of the eigensolutions is validated in Tab.
- 
-\begin_inset CommandInset ref
-LatexCommand ref
-reference "tab:check_biorthogonality"
-
-\end_inset
-
- by calculating 
-\begin_inset Formula 
-\begin{equation}
-A_{(\mu,\nu,\xi),(\mu',\nu',\xi')}=|\boldsymbol{g}_{\mu,\nu,\xi}^{T}\boldsymbol{g}_{\mu,\nu,\xi}|,
-\end{equation}
-
-\end_inset
-
-where 
-\begin_inset Formula $\boldsymbol{g}_{\mu,\nu,\xi}$
-\end_inset
-
- is normalized such that 
-\begin_inset Formula $|\boldsymbol{g}_{\mu,\nu,\xi}^{\dagger}\boldsymbol{g}_{\mu,\nu,\xi}|=1$
-\end_inset
-
-.
- Figure.
- 
-\begin_inset CommandInset ref
-LatexCommand ref
-reference "fig:Modal_coefficients"
-
-\end_inset
-
- presents the amplitude of each eigenmodes upon the monopole source with
- strength 
-\begin_inset Formula $q_{s}=jk\rho_{0}c_{0}q_{0}$
-\end_inset
-
-, and 
-\begin_inset Formula $q_{0}=10^{-4}m^{3}/s$
-\end_inset
-
-, where one can see that 
-\begin_inset Formula $|c_{\mu,\nu,\xi}|$
-\end_inset
-
- decays rapidly as the order of modes grows.
- 
-\begin_inset Formula $|c_{\mu,\nu,\xi}|$
-\end_inset
-
- takes the maximum value at (1,1,0) mode, of which the eigenfrequency takes
- 
-\begin_inset Formula $484.95+1.83j$
-\end_inset
-
- Hz.
- It is then examined the number of eigenmodes needed for calculation.
- Figure.
- 
-\begin_inset CommandInset ref
-LatexCommand ref
-reference "fig:convergence I"
-
-\end_inset
-
- indicates less than 15 eigenmodes is necessary for sound pressure to converge
- at the probe points inside the cavity, while less than 20 eigenmodes for
- probe points outside the cavity.
- This result is quite reasonable considering the resonant eigenmode is the
- 
-\begin_inset Formula $6^{th}$
-\end_inset
-
- one.
- 
-\end_layout
-
-\begin_layout Standard
-The performance of the proposed method is then verified by calculating the
- sound pressure at field points inside and outside cavity for multiple frequenci
-es below 500 Hz, where calculation is implemented utilising 20 eigenmodes.
- The reference result is obtained via finite element software COMSOL, where
- PMLs are used to model the semi-infinite space above the baffle.
- Noted only frequencie above 30 Hz are treated in COMSOL, as at very low
- frequency, the PMLs needed for calculation become so thick to prevent reflected
- wave.
- The source strength is taken as 
-\begin_inset Formula $q_{s}=4\pi\times10^{-4}kg/s^{2}$
-\end_inset
-
- for all frequencies.
- Figure.
- 
-\begin_inset CommandInset ref
-LatexCommand ref
-reference "fig:Comparison_FEA_Analytical"
-
-\end_inset
-
- plots the comparison between results obtained by both methods, in which
- the excellent agreement verifies the effectiveness and accuracy of the
- proposed method.
-\end_layout
-
-\begin_layout Standard
 \begin_inset Float table
 wide false
 sideways false
-status open
+status collapsed
 
 \begin_layout Plain Layout
 \align center
@@ -2090,7 +1948,7 @@ The first 15 modes of closed and open rectangular cavity, and the corresponding
 \begin_inset Float table
 wide false
 sideways false
-status open
+status collapsed
 
 \begin_layout Plain Layout
 \align center
@@ -2577,10 +2435,13 @@ The modulus of
 \end_inset
 
 
+\end_layout
+
+\begin_layout Standard
 \begin_inset Float table
 wide false
 sideways false
-status open
+status collapsed
 
 \begin_layout Plain Layout
 \align center
@@ -4006,6 +3867,155 @@ name "tab:check_biorthogonality"
 \end_layout
 
 \begin_layout Standard
+140 eigenmodes are obtained by analytical method for open rectangular cavity.
+ Table.
+ 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "tab:eigen_frequencies"
+
+\end_inset
+
+ lists the first 15 eigen solutions when noise frequency 
+\begin_inset Formula $f=500$
+\end_inset
+
+ Hz 
+\begin_inset Formula $(k=9.24)$
+\end_inset
+
+, in constrast with the counterparts of closed cavity.
+ It's clear that the eigenfrequencies of acoustic modes become complex in
+ which the imaginary part corresponds to radiation loss.
+ Table.
+ 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "tab:Modulus of modes"
+
+\end_inset
+
+ plots slices of 
+\begin_inset Formula $|\Psi_{\mu,\nu,\xi}|$
+\end_inset
+
+, the modulus of modal function of 
+\begin_inset Formula $(\mu,\nu,\xi)$
+\end_inset
+
+ eigenmode.
+ The nodal lines are distinguishable for these low frequency eigenmodes,
+ which justifies the inheritance of the closed cavity modes' indexes 
+\begin_inset Formula $\mu,\nu,\xi$
+\end_inset
+
+ to classify the open cavity modes.
+ The bi-orthogonality of the eigensolutions is validated in Tab.
+ 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "tab:check_biorthogonality"
+
+\end_inset
+
+ by calculating 
+\begin_inset Formula 
+\begin{equation}
+A_{(\mu,\nu,\xi),(\mu',\nu',\xi')}=|\boldsymbol{g}_{\mu,\nu,\xi}^{T}\boldsymbol{g}_{\mu,\nu,\xi}|,
+\end{equation}
+
+\end_inset
+
+where 
+\begin_inset Formula $\boldsymbol{g}_{\mu,\nu,\xi}$
+\end_inset
+
+ is normalized such that 
+\begin_inset Formula $|\boldsymbol{g}_{\mu,\nu,\xi}^{\dagger}\boldsymbol{g}_{\mu,\nu,\xi}|=1$
+\end_inset
+
+.
+ Figure.
+ 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:Modal_coefficients"
+
+\end_inset
+
+ presents the amplitude of each eigenmodes upon the monopole source with
+ strength 
+\begin_inset Formula $q_{s}=jk\rho_{0}c_{0}q_{0}$
+\end_inset
+
+, and 
+\begin_inset Formula $q_{0}=10^{-4}m^{3}/s$
+\end_inset
+
+, where one can see that 
+\begin_inset Formula $|c_{\mu,\nu,\xi}|$
+\end_inset
+
+ decays rapidly as the order of modes grows.
+ 
+\begin_inset Formula $|c_{\mu,\nu,\xi}|$
+\end_inset
+
+ takes the maximum value at (1,1,0) mode, of which the eigenfrequency takes
+ 
+\begin_inset Formula $484.95+1.83j$
+\end_inset
+
+ Hz.
+ It is then examined the number of eigenmodes needed for calculation.
+ Figure.
+ 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:convergence I"
+
+\end_inset
+
+ indicates less than 15 eigenmodes is necessary for sound pressure to converge
+ at the probe points inside the cavity, while less than 20 eigenmodes for
+ probe points outside the cavity.
+ This result is quite reasonable considering the resonant eigenmode is the
+ 
+\begin_inset Formula $6^{th}$
+\end_inset
+
+ one.
+ 
+\end_layout
+
+\begin_layout Standard
+The performance of the proposed method is then verified by calculating the
+ sound pressure at field points inside and outside cavity for multiple frequenci
+es below 500 Hz, where calculation is implemented utilising 20 eigenmodes.
+ The reference result is obtained via finite element software COMSOL, where
+ PMLs are used to model the semi-infinite space above the baffle.
+ Noted only frequencie above 30 Hz are treated in COMSOL, as at very low
+ frequency, the PMLs needed for calculation become so thick to prevent reflected
+ wave.
+ The source strength is taken as 
+\begin_inset Formula $q_{s}=4\pi\times10^{-4}kg/s^{2}$
+\end_inset
+
+ for all frequencies.
+ Figure.
+ 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:Comparison_FEA_Analytical"
+
+\end_inset
+
+ plots the comparison between results obtained by both methods, in which
+ the excellent agreement verifies the effectiveness and accuracy of the
+ proposed method.
+\end_layout
+
+\begin_layout Standard
 \begin_inset Float figure
 wide false
 sideways false
@@ -4263,7 +4273,7 @@ key "hein2012trapped"
 \end_inset
 
 .
- It is noted that eigensolutions to Eq.
+ As mentioned in the introduction part, the eigensolutions to Eq.
  (
 \begin_inset CommandInset ref
 LatexCommand ref
@@ -4280,14 +4290,9 @@ Acknowledgement
 \end_layout
 
 \begin_layout Standard
-The financial support from Australian Research Council (ARC LP) is gratefully
- ackowledged.
- The authors also wish to thank Shuping Wang from Nanjing University for
- discussion on the calculation of radiation impedance.
-\end_layout
-
-\begin_layout Section*
-References
+Discussion with Shuping Wang from Nanjing University on the calculation
+ of radiation impedance is gratefully acknowledged.
+ The research is supported by Australian Research Council (ARC LP).
 \end_layout
 
 \begin_layout Standard

@@ -1,0 +1,238 @@
+% Version:	1.0.0  [15/05/13] - Initial build
+% Author: 	Pete R Jones <petejonze@gmail.com>
+
+% USER OPTIONS:
+\newif\ifismanuscript
+%\ismanuscripttrue % uncomment this for 'manuscript' mode (double-line spacing with figures/tables at end)
+
+
+%%%%%%%%%%%%%%%%%%% LOAD BASIC CLASS %%%%%%%%%%%%%%%%%%%
+\ifismanuscript
+	\documentclass[12pt,letterpaper]{article}
+\else
+	\documentclass[10pt,letterpaper]{article}
+\fi
+
+%%%%%%%%%%%%%%%%%%% REQUIRED PACKAGES %%%%%%%%%%%%%%%%%%%
+\usepackage{graphicx} 						% figures
+\usepackage{geometry} 						% page layout
+\usepackage{amsmath,amsfonts,bm}			% mathematical typesetting
+\usepackage{enumitem} 						% nicer enumerated lists
+\usepackage{natbib} 						% references
+\usepackage[hidelinks, colorlinks=true, 
+linkcolor=black, citecolor=blue]{hyperref} 	% links (esp. for references)
+\usepackage{fancyhdr, calc, lastpage} 		% headers/footers
+\usepackage{booktabs} 						% tables
+%\usepackage{lipsum} 						% for generating dummy text
+\usepackage{endnotes}						% endotes
+
+%%%%%%%%%%%%%%%%%%% MANUSCRIPT OPTIONS %%%%%%%%%%%%%%%%%%%
+\ifismanuscript
+	\usepackage{endfloat} % for placing figures/tables at end (with marker in appropriate place)		
+	\linespread{1.8}
+	\fontsize{12pt}{14pt}\selectfont
+\fi
+
+%%%%%%%%%%%%%%%%%%% JASA EXPRESS STYLING %%%%%%%%%%%%%%%%%%%
+% Notes:
+% 	NO NEED TO EDIT ANY OF THIS!
+%	Instructions for authors can be found at: http://scitation.aip.org/journals/doc/ASALIB-home/corp/pdf/jasael/jasaelstyle.pdf
+% 	The submission guidelines require a copyright notice be placed on the line immediately following the Abstract. However, since this doesn't seem to appear in the published 		letter this has been omitted.
+% 	Headers and footers have not been made to match exactly the published ones (e.g., different for odd/even pages) - though it would be easy to do so. This is in part because the submission guidelines follow a different convention to the published article (somewhat confusingly).
+%	Currently no support for footnotes (would be easy enough to add, but these are supposed to be short reports after all)
+
+%% Page-layout commands
+\geometry{nohead,right=4.4cm,left=4cm,top=1.65cm,bottom=4cm} %% uses geometry.sty%% 12 pt = 1 pc; 6 pc = 1 in.
+
+% set font (not an exact match to the font used by JASA(?), but a pretty close approximation. Plus bitstream charter is a really nice font)
+\renewcommand{\familydefault}{bch}	
+
+% Set headers and footers
+\pagestyle{fancy}
+\fancyhead{} % clear existing header
+\renewcommand{\headrulewidth}{0pt}  % remove the line
+\fancyhead[L]{\footnotesize USE \textbackslash{}setheader to set running head} %Authors al.: JASA Express Letters}
+\fancyhead[C]{\footnotesize page \arabic{page} of \pageref{LastPage}} % [http://dx.doi.org/12.3456/1.2345678]}
+\fancyhead[R]{\footnotesize YOUR\_SURNAME, JASA-EL} % Published Online 15 May 2013}
+\fancyfoot{} % clear existing footer
+\fancyfoot[L]{\footnotesize \today} % J. Acoust. Soc. Am}			
+% extend beyond horizontal margins
+\fancyheadoffset[L,R]{\marginparsep+1cm} % requires \usepackage{calc}
+\fancyfootoffset[L]{\marginparsep+1cm} % requires \usepackage{calc}
+% set vertical spacing
+\setlength\headsep{1cm} % rule to body content
+\setlength\footskip{1.5cm} % rule to body content
+	
+\newcommand\setheader[2]{
+	\fancyhead[L]{\footnotesize #1}
+	\fancyhead[R]{\footnotesize #2, JASA-EL}
+}	
+		
+%% Format title/author info
+% article title
+\renewcommand\title[1]{{\linespread{1} \noindent\LARGE \bf \hskip2.25pc \parbox{.8\textwidth}{%
+\LARGE \bf \begin{center} #1 \end{center}\rm } \rm\normalfont\normalsize} }
+% author name
+\renewcommand\author[1]{{\linespread{1} \noindent\hskip2.25pc \parbox{.8\textwidth}{%
+   \normalsize \bf \begin{center} #1 \end{center}\rm } \vskip-1.4pc }}
+% address
+\newcommand\address[1]{{\linespread{1} \noindent\hskip2.25pc \parbox{.8\textwidth}{%
+   \footnotesize \it \begin{center} #1 \end{center}\rm }  \normalsize \vskip-1pc }}
+% email
+\newcommand\email[1]{\vskip-.3cm \noindent\parskip0pc\hskip2.25pc \footnotesize%
+   \parbox{.8\textwidth}{\begin{center}\it #1 \rm \end{center} } \normalsize  \vskip-.2cm}
+% PACS codes
+\newcommand\PACS[1]{\vskip-2.75pc \begin{center}\parbox{.8\textwidth}{\small\bf PACS numbers: \rm #1 \hfill} \end{center}\vskip4pt}%
+
+%% Abstract
+\renewenvironment{abstract}%%
+{\vskip1pc\noindent\begin{center} \begin{minipage}{.8\textwidth} {\bf Abstract: } }
+{ \vspace{.25cm} \end{minipage}\end{center}\normalsize\vskip-1.5pc}%
+
+%% Various customizations
+\renewcommand\figurename{Fig.}
+\def\fps@table{h}%\def\fps@table{!htb}
+\renewcommand\refname{\normalsize References and links \rm}
+
+%% New caption commands
+\makeatletter
+\newcommand\@MaxCapWidth{4.25in}
+\setlength\belowcaptionskip{1pt}
+\long\def\@makecaption#1#2{%
+  \small
+  \vskip\abovecaptionskip
+  \sbox\@tempboxa{#1. #2}%
+  \ifdim \wd\@tempboxa >\@MaxCapWidth
+    \hskip2.25pc\parbox{4.5in}{#1. #2}
+  \else
+    \global \@minipagefalse
+    \hb@xt@\hsize{\hfil\box\@tempboxa\hfil}%
+  \fi
+  \vskip\belowcaptionskip\normalsize}
+\makeatother
+
+%% Formatting of section headers
+\makeatletter
+\renewcommand\@seccntformat[1]{\csname the#1\endcsname.\hspace{.1cm}}
+\renewcommand\thesubsection{\thesection.\arabic{subsection}}
+\renewcommand\thesubsubsection{\thesubsection.\arabic{subsubsection}}
+
+\renewcommand\section{\@startsection {section}{1}{0pt}%
+                                     {-2ex plus -1ex minus -.2ex}%
+                                     {0.65ex plus 1.2ex}%
+                                     {\normalsize\bfseries}}
+\renewcommand\subsection{\@startsection{subsection}{2}{0pt}%
+                                     {-2.25ex plus -1ex minus -.2ex}%
+                                     {.45ex plus .2ex}%
+                                     {\normalsize\itshape}}
+\renewcommand\subsubsection{\@startsection{subsubsection}{3}{0pt}%
+                                     {-2.25ex plus -1ex minus -.2ex}%
+                                     {1ex plus .2ex}%
+                                     {\small\upshape}}
+\makeatother
+                         
+% Bodytext spacing                                     
+\frenchspacing
+\setlength\parindent{1.25cm}
+
+% Endnotes
+% Set indent to be same as references
+\def\enoteformat{\rightskip=0pt \leftskip=0pt \parindent=1cm
+  \leavevmode\llap{\makeenmark}}
+% Add a vertical gap between endnotes and references
+\makeatletter
+\let\old@theendnotes\theendnotes
+\renewcommand{\theendnotes}{\old@theendnotes\vspace{.3cm}}
+\makeatother
+% Make footnote alias onto endnote (so can use either command interchangably)  
+\let\footnote=\endnote 
+% Remove heading
+\def\enoteheading{\hspace{.1cm}\vspace{-.25cm}}
+
+% bibliography formatting
+\makeatletter
+\renewenvironment{thebibliography}[1]
+	% spacing
+     {\section*{\refname}%
+      \@mkboth{\MakeUppercase\refname}{\MakeUppercase\refname}%
+      	\footnotesize
+      	
+      	% print endnotes (if any)
+      	\ifnum\value{endnote} > 0
+      	\theendnotes % print endnotes
+      	\fi
+      	
+      \list{\@biblabel{\@arabic\c@enumiv}}%
+           {\settowidth\labelwidth{\@biblabel{#1}}%
+            %\advance\leftmargin-6pt
+            \setlength\itemindent{0pt}% change using the inverse of the length used before
+            \setlength\itemsep{-1pt}
+            }}
+     {\endlist}
+     % individual reference formatting
+ 	\newcommand{\enquote}[1]{``#1''}
+	\expandafter\ifx\csname natexlab\endcsname\relax\def\natexlab#1{#1}\fi
+	\expandafter\ifx\csname url\endcsname\relax
+	\def\url#1{\texttt{#1}}\fi
+	\expandafter\ifx\csname urlprefix\endcsname\relax\def\urlprefix{URL }\fi
+	\providecommand{\bibinfo}[2]{#2}
+	\providecommand{\noopsort}[1]{}
+	\providecommand{\switchargs}[2]{#2#1}
+\makeatother
+
+% Tables
+\renewcommand{\toprule}{\specialrule{.35pt}{.3cm}{1pt} \specialrule{.35pt}{1pt}{5pt} } % double rules at top (.3cm vertical gap from caption)
+\renewcommand{\bottomrule}{\specialrule{.35pt}{0cm}{1pt} \specialrule{.35pt}{1pt}{0pt} } % and bottom
+
+%%%%%%%%%%%%%%%%%%%%%%% DOCUMENT BEGINS HERE %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{document}
+
+% ================================================================================================
+\setheader{Unofficial template}{Jones}
+
+\title{Acoustic modal expansion of open cavity using coupled mode theory}
+
+\author{Yuhui Tong$^1$, Yiwei Kou$^2$, Jie Pan$^{1,*}$\thanks{yyyyyyyyyyy}  }
+\address{$^1$Schoold of Mechanical and Chemical Engineering, The University of
+Western Australia, Crawley, WA 6009, Australia}
+\email{yuhui.tong@research.uwa.edu.au,$^*$jie.pan@uwa.edu.au}
+\address{$^2$Key Laboratory of Noise and Vibration Research, Institute of Acoustics, Chinese Academy of Sciences,100190, Beijing, China}
+
+\author{testauthor}
+\address{testaddress}
+\email{testemail}
+
+% ================================================================================================
+\begin{abstract}
+%\lipsum[1]
+\end{abstract}
+\PACS{xxxxxx} % replace with appropriate codes (Section 43 Acoustics):  http://www.aip.org/pacs/pacs2010/individuals/pacs2010_regular_edition/reg_acoustics_appendix.htm
+
+
+% ================================================================================================
+\section{Introduction}
+%\lipsum[1-2]
+\citep{leadercompleteness}
+% ================================================================================================
+\section{Methods}
+
+%------------------------------------------------------------------------------
+\subsection{Participants}
+%\lipsum[1]
+
+%------------------------------------------------------------------------------
+\subsection{Procedure}
+%\lipsum[1]
+
+%------------------------------------------------------------------------------
+\subsection{Stimuli}
+%\lipsum[1]
+
+
+% 
+% ================================================================================================
+
+\bibliographystyle{plain}
+\bibliography{jasael_references}
+% ================================================================================================
+\end{document} 

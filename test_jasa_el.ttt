@@ -1,0 +1,19 @@
+\begin{table}[h!]
+\caption
+{
+Correlation coefficients, $r$, between A, B, and C.
+}
+\centering
+\begin{tabular}{cccc}
+\toprule
+&A&B&C\\
+\midrule
+A&-&0.81&0.82\\
+B&0.80&-&0.45\\
+C&0.62&0.89&-\\
+\bottomrule
+\end{tabular}
+\label{tab:example}
+\end{table}
+\efloatseparator
+ 

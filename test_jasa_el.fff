@@ -1,0 +1,8 @@
+\begin{figure}[h!]
+\centering
+\rule{10cm}{5cm} % e.g., replace with: \includegraphics[width=7cm]{my_figure.png}%
+\caption{Sample caption.}
+\label{fig:example}
+\end{figure}
+\efloatseparator
+ 
